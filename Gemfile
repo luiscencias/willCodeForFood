@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.2'
 gem 'puma', '~> 3.11'
 
 # Create-React-App    
-gem 'webpacker', '~> 3.5.5'
+#gem 'webpacker', '~> 3.5.5'
 gem 'foreman', '~> 0.82.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

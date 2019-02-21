@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # willCodeForFood
 =======
 # README
@@ -26,3 +27,17 @@ Things you may want to cover:
 
 * ...
 >>>>>>> database setup
+=======
+# willCodeForFood
+
+Team Members:
+  Scrum Master: Kylan Snyder
+  Product Owner: Ian Berns
+  Other Members: Stephanie Keck, Jonathan Mejia, Luis Davila, Blake Stolle
+  
+Commands:
+  start servers: rails start
+  
+Tools: 
+  Create-React-App, Redux, Ruby v. 2.4.5 
+>>>>>>> 1194ad077d4bb0a786a2315615cab4bece8a26d7

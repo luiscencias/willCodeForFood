@@ -5,8 +5,10 @@ import { Footer } from '../footer';
 
 const AppLayout = ({ children }) => (
 	<>
-		<Header />
-		{ children }
+		<Header isAuthenticated={false} />
+			<main>
+				{ children }
+			</main>
 		<Footer />
 	</>
 );

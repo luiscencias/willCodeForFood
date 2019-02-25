@@ -16,11 +16,13 @@ class App extends Component {
     return (
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <AppLayout>
+        
           <Router>
-            <Routes />
+            <AppLayout>
+              <Routes />
+            </AppLayout>
           </Router>
-        </AppLayout>
+        
       </MuiThemeProvider>
     );
   }

@@ -12,6 +12,8 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import styles from './header.module.css';
+
 const navLinks = [
 	{name: "About", path: '/about'},
 	{name: "Events", path: '/events'},
@@ -22,6 +24,7 @@ const navLinks = [
 
 const renderAuth = props => (
 	<>
+		{console.log(styles)}
 		{props.isAuthenticated ?
 			''
 		:
@@ -36,13 +39,13 @@ const renderAuth = props => (
 const renderNavLinks = (props) => (
 	<>
 	{navLinks.map( route => 
-		(<Button component={NavLink} to={route.path} variant="text" key={route.name}>{route.name}</Button>) 
+		(<Button component={NavLink} to={route.path} variant="text" size="small" key={route.name} classes={{ sizeSmall: styles.navLink }}>{route.name}</Button>) 
 	)}
 	</>
 );
 
 const renderLogo = props => (
-	<Typography component={Link} to="/" inline>PBE</Typography>
+	<Button size="small" component={Link} to="/" inline>PBE</Button>
 );
 
 const renderDesktopNav = (props) => (

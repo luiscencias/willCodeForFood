@@ -9,7 +9,10 @@ const theme = createMuiTheme({
 		secondary: {
 			main: cyan[300]
 		}
-	}
+	},
+	typography: {
+    useNextVariants: true,
+  },
 });
 
 export default theme;

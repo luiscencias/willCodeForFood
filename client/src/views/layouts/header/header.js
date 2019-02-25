@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-const navLinks = [
+export const navLinks = [
 	{name: "About", path: '/about'},
 	{name: "Events", path: '/events'},
 	{name: "Members", path: '/members'},

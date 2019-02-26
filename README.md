@@ -1,43 +1,29 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# willCodeForFood
-=======
+
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
->>>>>>> database setup
-=======
 # willCodeForFood
 
-Team Members:
-  Scrum Master: Kylan Snyder
-  Product Owner: Ian Berns
-  Other Members: Stephanie Keck, Jonathan Mejia, Luis Davila, Blake Stolle
+###Team Members:
+
+  - Scrum Master: **Kylan Snyder**
+  - Product Owner: **Ian Berns**
+  - Other Members: **Stephanie Keck, Jonathan Mejia, Luis Davila, Blake Stolle**
   
-Commands:
-  start servers: rails start
+###Commands:
+  - start servers: rails start
+  - push to heroku: git push -f heroku master
   
+###Tools: 
+  - Create-React-App
+  - Redux
+  - Ruby v. 2.4.5 
+  - Jest
+  
+###Version: 
+  - 0.1.1
+=======
 Tools: 
   Create-React-App, Redux, Ruby v. 2.4.5 
->>>>>>> 1194ad077d4bb0a786a2315615cab4bece8a26d7
+
+Version: 
+   0.1.1

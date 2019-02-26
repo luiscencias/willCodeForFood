@@ -9,8 +9,8 @@
   - Other Members: **Stephanie Keck, Jonathan Mejia, Luis Davila, Blake Stolle**
   
 ###Commands:
-  - start servers: rails start
-  - push to heroku: git push -f heroku master
+  - Start Servers: **rails start**
+  - Push to Heroku: **git push -f heroku master**
   
 ###Tools: 
   - Create-React-App

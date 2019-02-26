@@ -3,12 +3,14 @@ import React from 'react';
 import { Header } from '../header';
 import { Footer } from '../footer';
 
+import { Main } from './styles';
+
 const AppLayout = ({ children }) => (
 	<>
 		<Header isAuthenticated={false} />
-			<main>
+			<Main>
 				{ children }
-			</main>
+			</Main>
 		<Footer />
 	</>
 );

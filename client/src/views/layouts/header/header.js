@@ -2,19 +2,18 @@ import React from 'react';
 
 import { NavLink, Link } from 'react-router-dom';
 
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Hidden from '@material-ui/core/Hidden';
+import NavigationLinks from './NavigationLinks';
+import AuthLinks from './AuthLinks';
 
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import AppBar from '@material-ui/core/AppBar';
+import Hidden from '@material-ui/core/Hidden';
 
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import styles from './header.module.css';
+import { LogoLink, MainToolBar, spacerStyles, appBarStyles } from './styles.js';
 
-const navLinks = [
+const routes = [
 	{name: "About", path: '/about'},
 	{name: "Events", path: '/events'},
 	{name: "Members", path: '/members'},
@@ -22,37 +21,12 @@ const navLinks = [
 	{name: "Shop", path: '/shop'}
 ];
 
-const renderAuth = props => (
-	<>
-		{console.log(styles)}
-		{props.isAuthenticated ?
-			''
-		:
-			<>
-				<Button variant="outlined" color="secondary" size="small">Log In</Button>
-				<Button variant="contained" color="secondary" size="small">Apply</Button>
-			</>
-		}
-	</>
-);
-
-const renderNavLinks = (props) => (
-	<>
-	{navLinks.map( route => 
-		(<Button component={NavLink} to={route.path} variant="text" size="small" key={route.name} classes={{ sizeSmall: styles.navLink }}>{route.name}</Button>) 
-	)}
-	</>
-);
-
-const renderLogo = props => (
-	<Button size="small" component={Link} to="/" inline>PBE</Button>
-);
-
 const renderDesktopNav = (props) => (
 	<Hidden xsDown>
-		{renderLogo(props)}
-		{renderNavLinks(props)}
-		{renderAuth(props)}
+		<LogoLink size="small" component={Link} to="/" inline>PBE</LogoLink>
+		<span style={spacerStyles}/>
+		<NavigationLinks routes={routes} />
+		<AuthLinks />
 	</Hidden>
 );
 
@@ -61,19 +35,19 @@ const renderMobileNav = (props) => (
 		<IconButton>
 			<MenuIcon />
 		</IconButton>
-		{renderLogo(props)}
-		{renderAuth(props)}
+		<span style={spacerStyles}/>
+		<LogoLink size="small" component={Link} to="/" inline>PBE</LogoLink>
+		<span style={spacerStyles}/>
+		<AuthLinks />
 	</Hidden>
 );
 
 const Header = (props) => (
-	<AppBar position="static" color="default">
-		<Toolbar>
-			<nav>
-				{renderDesktopNav(props)}
-				{renderMobileNav(props)}
-			</nav>
-		</Toolbar>
+	<AppBar style={appBarStyles} position="static" color="default">
+		<MainToolBar>
+			{renderDesktopNav(props)}
+			{renderMobileNav(props)}
+		</MainToolBar>
 	</AppBar>
 );
 

@@ -1,16 +1,16 @@
 import React from 'react';
 
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+
+import { HeroSection, HeroLogo, CallToActionButton, SummarySection } from './styles'
 
 const Home = () => (
 	<>
-		<section>
-			<Typography variant="h1">PBE</Typography>
-			<Button variant="contained" size="large">Apply</Button>
-			<Button variant="outlined" size="large">Log In</Button>
-		</section>
-		<section>
+		<HeroSection>
+			<HeroLogo variant="h1">PBE</HeroLogo>
+			<CallToActionButton variant="contained" color="secondary" size="large">Apply</CallToActionButton>
+		</HeroSection>
+		<SummarySection>
 			<section>
 				<Typography variant="h5">About</Typography>
 				<Typography paragraph>
@@ -20,7 +20,7 @@ const Home = () => (
 			<section>
 				<Typography variant="h5">Events</Typography>
 			</section>
-		</section>
+		</SummarySection>
 	</>
 );
 

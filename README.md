@@ -1,4 +1,3 @@
-
 # README
 
 # willCodeForFood
@@ -10,8 +9,8 @@
   - Other Members: **Stephanie Keck, Jonathan Mejia, Luis Davila, Blake Stolle**
   
 ###Commands:
-  - start servers: rails start
-  - push to heroku: git push -f heroku master
+  - Start Servers: **rails start**
+  - Push to Heroku: **git push -f heroku master**
   
 ###Tools: 
   - Create-React-App
@@ -21,9 +20,3 @@
   
 ###Version: 
   - 0.1.1
-=======
-Tools: 
-  Create-React-App, Redux, Ruby v. 2.4.5 
-
-Version: 
-   0.1.1

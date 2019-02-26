@@ -1,3 +1,4 @@
+
 # README
 
 # willCodeForFood
@@ -20,3 +21,9 @@
   
 ###Version: 
   - 0.1.1
+=======
+Tools: 
+  Create-React-App, Redux, Ruby v. 2.4.5 
+
+Version: 
+   0.1.1

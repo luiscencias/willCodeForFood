@@ -10,7 +10,8 @@ const theme = createMuiTheme({
 		},
 		secondary: {
 			main: cyan[300]
-		}
+		},
+		tonalOffset: 0.3
 	},
 	typography: {
     useNextVariants: true,

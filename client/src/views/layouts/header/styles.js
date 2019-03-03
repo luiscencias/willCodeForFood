@@ -5,6 +5,9 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 
+const createTag = tag => props => 
+	React.createElement(tag, { ...props, className: props.classes.root }, props.children);
+
 export const spacerStyles = {
 	flexGrow: 1
 };
@@ -26,10 +29,10 @@ export const LogoLink = withStyles(theme => ({
 }))(Button);
 
 export const MainNav = withStyles(theme => ({
-	'nav': {
+	root: {
 		marginRight: theme.spacing.unit * 2
 	}
-}))( ({ children, classes }) => (<nav className={classes.nav}>{children}</nav>) );
+}))(createTag('nav'));
 
 export const MainNavigationLink = withStyles(theme => ({
 	root: {

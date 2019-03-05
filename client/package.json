@@ -10,6 +10,7 @@
     "http-proxy-middleware": "^0.19.1",
     "jest-enzyme": "^7.0.1",
     "jss": "^9.8.7",
+    "prop-types": "^15.7.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-jss": "^8.6.1",

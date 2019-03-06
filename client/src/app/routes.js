@@ -7,12 +7,12 @@ import {
 
 import { Home } from '../views/home';
 import { NotFound } from '../views/notfound';
-import { Gallery } from '../views/gallery';
+import { About } from '../views/about';
 
 export default () => (
 	<Switch>
 		<Route exact path="/" component={Home} />
-		<Route exact path="/Gallery" component={Gallery} />
+		<Route exact path="/About" component={About} />
 		<Route path="*" component={NotFound} />
 	</Switch>
 );

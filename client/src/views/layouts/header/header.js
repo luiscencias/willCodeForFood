@@ -17,7 +17,7 @@ const routes = [
 	{name: "About", path: '/about'},
 	{name: "Events", path: '/events'},
 	{name: "Members", path: '/members'},
-	{name: "Gallery", path: '/gallery'},
+	{name: "Gallery", path: '/about'},
 	{name: "Shop", path: '/shop'}
 ];
 

@@ -1,25 +1,33 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import { MainNav, MainNavigationLink } from './styles';
+import { withStyles } from '@material-ui/core/styles';
+import { styledTag } from '../../../helpers';
 
-import { Link } from 'react-router-dom';
+import NavLink from './NavLink';
 
-const renderLink = ( route, index ) => (
-	<MainNavigationLink
-		component={Link}
-		to={route.path}
-		variant="text"
-		size="small"
-		key={index}
-	>
-		{ route.name }
-	</MainNavigationLink>
-);
+
+const Nav = withStyles(theme => ({
+	root: {
+		[ theme.breakpoints.down('xs')]: {
+			display: 'flex',
+			flexDirection: 'column',
+			margin: theme.spacing.unit * 2
+		}
+	}
+}))(styledTag('nav'))
+
 
 const NavigationLinks = ({ routes }) => (
-	<MainNav>
-		{ routes.map(renderLink) }
-	</MainNav>
+	<Nav>
+		{ routes.map( ({ path, name }) => <NavLink path={path} key={path}>{ name }</NavLink> ) }
+	</Nav>
 );
+
+NavigationLinks.propTypes = {
+	routes: PropTypes.arrayOf(
+		PropTypes.shape({ path: PropTypes.string.isRequired, name: PropTypes.string.isRequired })
+	).isRequired
+};
 
 export default NavigationLinks;

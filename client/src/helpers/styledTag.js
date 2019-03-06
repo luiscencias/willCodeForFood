@@ -8,12 +8,6 @@ const styledTag = tag => props => {
 		props.children
 	);
 
-	Tag.propTypes = {
-		classes: PropTypes.shape({
-			root: PropTypes.string.isRequired
-		}).isRequired
-	};
-
 	return Tag;
 };
 

@@ -7,6 +7,7 @@
     "@material-ui/icons": "^3.0.2",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "formik": "^1.5.1",
     "http-proxy-middleware": "^0.19.1",
     "jest-enzyme": "^7.0.1",
     "jss": "^9.8.7",
@@ -19,7 +20,8 @@
     "react-scripts": "2.1.5",
     "react-test-renderer": "^16.8.3",
     "redux": "^4.0.1",
-    "redux-starter-kit": "^0.4.3"
+    "redux-starter-kit": "^0.4.3",
+    "yup": "^0.26.10"
   },
   "scripts": {
     "start": "react-scripts start",

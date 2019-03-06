@@ -1,23 +1,28 @@
 import React from 'react';
 import Thumbnail from './thumbnail'
 
-const ThumbnailGrid = () => {
+const ThumbnailGrid = ({ thumbnails, handleClick }) => {
+    console.log(thumbnails)
     return (
         <div style = {styles}>
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
-            <Thumbnail />
+            {
+                thumbnails.map((thumbnail, i) => {
+                    return (
+                        <Thumbnail
+                            key={thumbnail.imgUrl}
+                            imgUrl={thumbnail.imgUrl}
+                            handleClick={handleClick}
+                            index={i}
+                        />
+                    )
+                })
+            }
         </div>
     )
 };
 
 const styles = {
-    height: '35%',
+    height: '25%',
     width: '100%',
     background: 'yellow',
     display: 'flex',

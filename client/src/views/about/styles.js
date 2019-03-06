@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 
 export const thumbnailGalleryStyles = {
     background: '#ddd',
-    height: '500px',
+    height: '700px',
     width: '1024px',
     margin: '40px auto',
     display: 'flex'

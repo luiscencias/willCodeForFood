@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {thumbnailGalleryStyles, HeroLogo, HeroSection, missionStatement} from "./styles";
-import ActiveThumbnailWindow from './ActiveThumbnailWindow'
-import ThumbnailGrid from './thumbnailGrid'
+import ActiveThumbnailWindow from './Components/ActiveThumbnailWindow'
+import ThumbnailGrid from './Components/thumbnailGrid'
 
 import axios from 'axios'
 

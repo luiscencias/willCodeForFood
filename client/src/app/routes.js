@@ -7,11 +7,13 @@ import {
 
 import { Home } from '../views/home';
 import { NotFound } from '../views/notfound';
+import { About } from '../views/about';
 import { Gallery } from '../views/gallery';
 
 export default () => (
 	<Switch>
 		<Route exact path="/" component={Home} />
+		<Route exact path="/About" component={About} />
 		<Route path="/gallery" component={Gallery} />
 
 

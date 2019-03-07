@@ -7,9 +7,12 @@ import ThumbnailGrid from './Components/thumbnailGrid'
 import axios from 'axios'
 
 export default class About extends React.Component {
-    state = {
-        thumbnails: [],
-        activeIndex: 0
+    constructor(props){
+        super(props)
+        this.state = {
+            thumbnails: [],
+            activeIndex: 0
+        }
     }
 
     componentDidMount() {

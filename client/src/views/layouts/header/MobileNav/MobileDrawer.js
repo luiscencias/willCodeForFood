@@ -6,8 +6,13 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 
 const StyledDrawer = withStyles(theme => ({
+	root: {
+		
+	},
 	paper: {
-		minWidth: '60%'
+		minWidth: '60%',
+		maxHeight: '100vh',
+		overflowY: 'scroll'
 	}
 }))(Drawer);
 

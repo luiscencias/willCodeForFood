@@ -14,7 +14,11 @@ const Home = () => (
 			<section>
 				<Typography variant="h5">About</Typography>
 				<Typography paragraph>
-					The Professional Brotherhood of Engineers is an organization focused on developing leaders for the future. Throughout the semester, PBE will have guest speakers from industry, entrepreneurship events, social events with other organizations on campus, and tailgates. PBE will expose its members to different career paths not exclusive to technical engineering. Change your college experience and join PBE at a minimum you will have 40 new friends!
+					The Professional Brotherhood of Engineers is an organization focused on developing leaders for
+					the future. Throughout the semester, PBE will have guest speakers from industry, entrepreneurship
+					events, social events with other organizations on campus, and tailgates. PBE will expose its members
+					to different career paths not exclusive to technical engineering. Change your college experience and
+					join PBE at a minimum you will have 40 new friends!
 				</Typography>
 			</section>
 			<section>

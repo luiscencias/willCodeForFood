@@ -1,54 +1,43 @@
 import React from 'react';
 
-import { NavLink, Link } from 'react-router-dom';
-
-import NavigationLinks from './NavigationLinks';
-import AuthLinks from './AuthLinks';
-
-import AppBar from '@material-ui/core/AppBar';
 import Hidden from '@material-ui/core/Hidden';
 
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import MainAppBar from './MainAppBar';
+import DesktopNav from './DesktopNav';
+import MobileNav from './MobileNav';
 
-import { LogoLink, MainToolBar, spacerStyles, appBarStyles } from './styles.js';
-
-const routes = [
+const publicRoutes = [
 	{name: "About", path: '/about'},
+	{name: 'How To Apply', path: './how-to-apply'},
+	{name: "Gallery", path: '/gallery'},
 	{name: "Events", path: '/events'},
-	{name: "Members", path: '/members'},
-	{name: "Gallery", path: '/about'},
+	{name: 'Contact', path: '/contact'},
 	{name: "Shop", path: '/shop'}
 ];
 
-const renderDesktopNav = (props) => (
-	<Hidden xsDown>
-		<LogoLink size="small" component={Link} to="/" inline>PBE</LogoLink>
-		<span style={spacerStyles}/>
-		<NavigationLinks routes={routes} />
-		<AuthLinks />
-	</Hidden>
-);
+const authenticatedRoutes = [
+	{name: "About", path: '/about'},
+	{name: "Gallery", path: '/gallery'},
+	{name: "Events", path: '/events'},
+	{name: 'Contact', path: '/contact'},
+	{name: "Shop", path: '/shop'}
+];
 
-const renderMobileNav = (props) => (
-	<Hidden smUp>
-		<IconButton>
-			<MenuIcon />
-		</IconButton>
-		<span style={spacerStyles}/>
-		<LogoLink size="small" component={Link} to="/" inline>PBE</LogoLink>
-		<span style={spacerStyles}/>
-		<AuthLinks />
-	</Hidden>
-);
-
-const Header = (props) => (
-	<AppBar style={appBarStyles} position="static" color="default">
-		<MainToolBar>
-			{renderDesktopNav(props)}
-			{renderMobileNav(props)}
-		</MainToolBar>
-	</AppBar>
+const Header = ({ isAuthenticated = false }) => (
+	<MainAppBar>
+		<Hidden xsDown>
+			<DesktopNav 
+				routes={ isAuthenticated ? authenticatedRoutes : publicRoutes } 
+				isAuthenticated={isAuthenticated} 
+			/>
+		</Hidden>
+		<Hidden smUp>
+			<MobileNav 
+				routes={ isAuthenticated ? authenticatedRoutes : publicRoutes } 
+				isAuthenticated={isAuthenticated} 
+			/>
+		</Hidden>
+	</MainAppBar>
 );
 
 export default Header;

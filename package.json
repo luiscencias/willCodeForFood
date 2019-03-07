@@ -11,6 +11,8 @@
   "dependencies": {
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "react": "^16.8.3",
+    "react-bnb-gallery": "^1.1.5",
     "react-image-gallery": "^0.8.14",
     "react-jss": "^8.6.1",
     "react-test-renderer": "^16.8.3"

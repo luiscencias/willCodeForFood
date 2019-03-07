@@ -9,7 +9,6 @@ import { Home } from '../views/home';
 import { NotFound } from '../views/notfound';
 import { Gallery } from '../views/gallery';
 
-
 export default () => (
 	<Switch>
 		<Route exact path="/" component={Home} />
@@ -18,7 +17,8 @@ export default () => (
 
 
 
-		/* 	keep not found route below everything else			*/
+
+		/* 	keep not found route below everything else	*/
 		<Route path="*" component={NotFound} />
 	</Switch>
 );

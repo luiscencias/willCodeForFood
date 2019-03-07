@@ -36,3 +36,6 @@ yarn-debug.log*
 
 # Production
 /public
+
+# Ignore .idea files
+.idea/*

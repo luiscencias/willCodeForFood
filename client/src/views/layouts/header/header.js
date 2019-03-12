@@ -11,7 +11,6 @@ const publicRoutes = [
 	{name: 'How To Apply', path: './how-to-apply'},
 	{name: "Gallery", path: '/gallery'},
 	{name: "Events", path: '/events'},
-	{name: 'Contact', path: '/contact'},
 	{name: "Shop", path: '/shop'}
 ];
 
@@ -19,7 +18,6 @@ const authenticatedRoutes = [
 	{name: "About", path: '/about'},
 	{name: "Gallery", path: '/gallery'},
 	{name: "Events", path: '/events'},
-	{name: 'Contact', path: '/contact'},
 	{name: "Shop", path: '/shop'}
 ];
 

@@ -9,6 +9,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "formik": "^1.5.1",
+    "formik-material-fields": "0.0.3",
     "http-proxy-middleware": "^0.19.1",
     "jest-enzyme": "^7.0.1",
     "jss": "^9.8.7",

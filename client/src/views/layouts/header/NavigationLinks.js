@@ -18,16 +18,17 @@ const Nav = withStyles(theme => ({
 }))(styledTag('nav'))
 
 
-const NavigationLinks = ({ routes }) => (
+const NavigationLinks = ({ routes, handleClick }) => (
 	<Nav>
-		{ routes.map( ({ path, name }) => <NavLink path={path} key={path}>{ name }</NavLink> ) }
+		{ routes.map( ({ path, name }) => <NavLink handleClick={handleClick} path={path} key={path}>{ name }</NavLink> ) }
 	</Nav>
 );
 
 NavigationLinks.propTypes = {
 	routes: PropTypes.arrayOf(
 		PropTypes.shape({ path: PropTypes.string.isRequired, name: PropTypes.string.isRequired })
-	).isRequired
+	).isRequired,
+	handleClick: PropTypes.func
 };
 
 export default NavigationLinks;

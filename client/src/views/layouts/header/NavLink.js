@@ -33,15 +33,16 @@ const StyledButton = withStyles(theme => ({
 	}
 }))(Button);
 
-const NavLink = ({ path, children }) => (
-	<StyledButton component={Link} to={path} variant="text" size="small">
+const NavLink = ({ path, children, handleClick }) => (
+	<StyledButton onClick={handleClick} component={Link} to={path} variant="text" size="small">
 		{ children }
 	</StyledButton>
 );
 
 NavLink.propTypes = {
 	path: PropTypes.string.isRequired,
-	children: PropTypes.node.isRequired
+	children: PropTypes.node.isRequired,
+	handleClick: PropTypes.func
 };
 
 export default NavLink;

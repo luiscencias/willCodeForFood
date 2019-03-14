@@ -39,14 +39,12 @@ const Header = ({ isAuthenticated = false }) => {
 				<DesktopNav 
 					routes={ routes } 
 					isAuthenticated={isAuthenticated}
-					scrolled={scrolled}
 				/>
 			</Hidden>
 			<Hidden mdUp>
 				<MobileNav 
 					routes={ routes } 
 					isAuthenticated={isAuthenticated} 
-					scrolled={scrolled}
 				/>
 			</Hidden>
 		</MainHeader>

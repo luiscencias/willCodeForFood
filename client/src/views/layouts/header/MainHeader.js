@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { styledTag } from '../../../helpers';
 
+import { withRouter } from 'react-router';
+
 const StyledHeader = withStyles(theme => ({
 	root: {
 		position: 'static', // Fallback for older browsers
@@ -25,11 +27,13 @@ const StyledHeader = withStyles(theme => ({
 	}
 }))(styledTag('header'));
 
-let MainHeader = ({ children, scrolled, classes }) => (
-	<StyledHeader classes={{ root: scrolled ? classes.scrolled : classes.atTop }}>
+let MainHeader = ({ children, scrolled, classes, location }) => (
+	<StyledHeader classes={{ root: scrolled || location.pathname != '/' ? classes.scrolled : classes.atTop }}>
 		{children}
 	</StyledHeader>
 );
+
+MainHeader = withRouter(MainHeader);
 
 MainHeader = withStyles(theme => ({
 	atTop: {

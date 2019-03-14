@@ -14,7 +14,8 @@ const Nav = withStyles(theme => ({
 		display: 'flex',
 
 		[ theme.breakpoints.down('sm')]: {
-			flexDirection: 'column'
+			flexDirection: 'column',
+			marginTop: theme.spacing.unit
 		},
 
 		[theme.breakpoints.up('md')]: {

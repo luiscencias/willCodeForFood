@@ -11,8 +11,6 @@ const styles = theme => ({
 		color: theme.palette.text.primary,
 		textDecoration: 'none',
 
-		borderRadius: theme.shape.borderRadius,
-
 		display: 'inline-flex',
 		justifyContent: 'center',
 		alignItems: 'center',
@@ -31,6 +29,8 @@ const styles = theme => ({
 			height: theme.spacing.unit * 4.5,
 			padding: `0 ${theme.spacing.unit}px`,
 
+			borderRadius: theme.shape.borderRadius,
+
 			'&:hover': {
 				backgroundColor: theme.palette.grey[200]
 			}
@@ -41,7 +41,11 @@ const styles = theme => ({
 		fontWeight: theme.typography.fontWeightMedium,
 
 		[theme.breakpoints.down('sm')]: {
+			backgroundColor: theme.palette.grey[300],
 
+			'&:hover': {
+				backgroundColor: theme.palette.grey[300]
+			}
 		},
 
 		[theme.breakpoints.up('md')]: {

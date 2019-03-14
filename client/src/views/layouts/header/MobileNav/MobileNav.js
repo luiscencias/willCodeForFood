@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 
 import Logo from '../Logo';
 import { Spacer, LoginForm } from '../../../../components';
-import Login from '../Login';
+import LoginButton from '../LoginButton';
 import ApplyButton from '../ApplyButton';
 import NavigationLinks from '../NavigationLinks';
+import NavHeader from './NavHeader';
 
 import DrawerButton from './DrawerButton';
 import MobileDrawer from './MobileDrawer';
@@ -22,7 +23,7 @@ const MobileNav = ({ isAuthenticated, routes }) => {
 				isOpen={ drawerIsOpen }
 				onClose={ () => setDrawerIsOpen(false) }
 			>
-				{ isAuthenticated ? '' : <LoginForm /> }
+				{ isAuthenticated ? '' : <NavHeader handleClick={() => setDrawerIsOpen(false)} /> }
 				<Divider />
 				<NavigationLinks handleClick={() => setDrawerIsOpen(false)} routes={routes} />
 			</MobileDrawer>
@@ -32,7 +33,7 @@ const MobileNav = ({ isAuthenticated, routes }) => {
 			<Spacer />
 			<Logo />
 			<Spacer />
-			{ isAuthenticated ? '' : <ApplyButton /> }
+			{ isAuthenticated ? '' : '' }
 		</>
 	);
 };

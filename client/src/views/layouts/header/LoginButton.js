@@ -2,22 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { withStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 import Button from '@material-ui/core/Button';
 
 const StyledButton = withStyles(theme => ({
 	root: {
-		[ theme.breakpoints.down('xs') ]: {
-			margin: theme.spacing.unit * 2,
-			padding: `11px ${ theme.spacing.unit / 2 }px`,
-			borderRadius: theme.spacing.unit
+		[ theme.breakpoints.down('sm') ]: {
+			
 		}
 	}
 }))(Button);
 
-const LoginButton = ({ onClick }) => (
-	<StyledButton variant="outlined" color="secondary" size="small" onClick={onClick}>
-		Sign In
+const LoginButton = ({ handleClick }) => (
+	<StyledButton component={Link} to='/login' variant="outlined" color="secondary" size="small" onClick={handleClick}>
+		Log In
 	</StyledButton>
 );
 

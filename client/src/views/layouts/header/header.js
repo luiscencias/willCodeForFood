@@ -2,7 +2,8 @@ import React from 'react';
 
 import Hidden from '@material-ui/core/Hidden';
 
-import MainAppBar from './MainAppBar';
+import MainHeader from './MainHeader';
+
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
@@ -23,7 +24,7 @@ const authenticatedRoutes = [
 ];
 
 const Header = ({ isAuthenticated = false }) => (
-	<MainAppBar>
+	<MainHeader>
 		<Hidden xsDown>
 			<DesktopNav 
 				routes={ isAuthenticated ? authenticatedRoutes : publicRoutes } 
@@ -36,7 +37,7 @@ const Header = ({ isAuthenticated = false }) => (
 				isAuthenticated={isAuthenticated} 
 			/>
 		</Hidden>
-	</MainAppBar>
+	</MainHeader>
 );
 
 export default Header;

@@ -19,7 +19,7 @@ const theme = createMuiTheme({
   spacing: {
   	unit: spacing_unit,
   	mainHeader: {
-  		height: spacing_unit * 12
+  		height: spacing_unit * 8
   	}
   }
 });

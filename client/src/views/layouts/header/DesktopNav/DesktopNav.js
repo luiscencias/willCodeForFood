@@ -18,7 +18,7 @@ const DesktopNav = ({ isAuthenticated, routes }) => {
 			<Logo />
 			<Spacer />
 			<NavigationLinks routes={routes} />
-			{ isAuthenticated ? '' : <><LoginButton onClick={ () => setloginModalIsVisible(true) } /><ApplyButton /></> }
+			{ isAuthenticated ? '' : <><LoginButton onClick={ () => setloginModalIsVisible(true) } /></> }
 			<Dialog open={ loginModalIsVisible } onClose={ () => setloginModalIsVisible(false) }>
 				<LoginForm />
 			</Dialog>

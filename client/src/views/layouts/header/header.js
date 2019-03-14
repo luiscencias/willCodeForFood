@@ -7,9 +7,10 @@ import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
 const publicRoutes = [
-	{name: "About", path: '/about'},
-	{name: 'How To Apply', path: './how-to-apply'},
-	{name: "Gallery", path: '/gallery'},
+	{name: "Home", path: '/'},
+	{name: 'Dashboard', path: '/dashboard'},
+	{name: "About Us", path: '/about'},
+	{name: 'Membership', path: './membership'},
 	{name: "Events", path: '/events'},
 	{name: "Shop", path: '/shop'}
 ];

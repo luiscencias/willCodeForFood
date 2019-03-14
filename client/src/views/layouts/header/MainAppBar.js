@@ -22,7 +22,7 @@ const StyledToolBar = withStyles(theme => ({
 
 
 const MainAppBar = ({ children }) => (
-	<StyledAppBar position="static" color="default">
+	<StyledAppBar position="sticky" color="default">
 		<StyledToolBar>
 			{ children }
 		</StyledToolBar>

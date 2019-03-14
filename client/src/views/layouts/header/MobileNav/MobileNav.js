@@ -24,7 +24,7 @@ const MobileNav = ({ isAuthenticated, routes }) => {
 			>
 				{ isAuthenticated ? '' : <LoginForm /> }
 				<Divider />
-				<NavigationLinks handleClick={() => setDrawerIsOpen(false)} routes={[ { name: 'Home', path: '/' }, ...routes]} />
+				<NavigationLinks handleClick={() => setDrawerIsOpen(false)} routes={routes} />
 			</MobileDrawer>
 
 			<DrawerButton onClick={ () => setDrawerIsOpen(true) } />

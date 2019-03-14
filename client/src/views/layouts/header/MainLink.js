@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 const styles = theme => ({
 	root: {
 		...theme.typography.body2Next,
-		color: theme.palette.text.primary,
+		color: 'inherit',
 		textDecoration: 'none',
 
 		display: 'inline-flex',
@@ -32,7 +32,7 @@ const styles = theme => ({
 			borderRadius: theme.shape.borderRadius,
 
 			'&:hover': {
-				backgroundColor: theme.palette.grey[200]
+				backgroundColor: 'rgba(0, 0, 0, 0.08)'
 			}
 		}
 	},
@@ -44,7 +44,7 @@ const styles = theme => ({
 			backgroundColor: theme.palette.grey[300],
 
 			'&:hover': {
-				backgroundColor: theme.palette.grey[300]
+				backgroundColor: 'rgba(0, 0, 0, 0.08)'
 			}
 		},
 

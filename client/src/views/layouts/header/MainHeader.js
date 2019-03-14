@@ -4,13 +4,11 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { styledTag } from '../../../helpers';
 
-const MainHeader = withStyles(theme => ({
+const StyledHeader = withStyles(theme => ({
 	root: {
 		position: 'static', // Fallback for older browsers
 		position: 'sticky',
 		top: 0,
-
-		backgroundColor: theme.palette.background.default,
 
 		display: 'flex',
 		alignItems: 'center',
@@ -26,5 +24,22 @@ const MainHeader = withStyles(theme => ({
 		}
 	}
 }))(styledTag('header'));
+
+let MainHeader = ({ children, scrolled, classes }) => (
+	<StyledHeader classes={{ root: scrolled ? classes.scrolled : classes.atTop }}>
+		{children}
+	</StyledHeader>
+);
+
+MainHeader = withStyles(theme => ({
+	atTop: {
+		backgroundColor: theme.palette.primary.dark,
+		color: theme.palette.common.white
+	},
+	scrolled: {
+		backgroundColor: theme.palette.background.default,
+		color: theme.palette.text.default
+	}
+}))(MainHeader);
 
 export default MainHeader;

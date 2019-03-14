@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Logo from '../Logo';
 import { Spacer, LoginForm } from '../../../../components';
 import NavigationLinks from '../NavigationLinks';
-import Login from '../Login';
 import LoginButton from '../LoginButton';
 import ApplyButton from '../ApplyButton';
 

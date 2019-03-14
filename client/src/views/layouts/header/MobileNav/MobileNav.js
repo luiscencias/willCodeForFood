@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Logo from '../Logo';
 import { Spacer, LoginForm } from '../../../../components';
 import LoginButton from '../LoginButton';
-import ApplyButton from '../ApplyButton';
 import NavigationLinks from '../NavigationLinks';
 import NavHeader from './NavHeader';
 
@@ -33,7 +32,7 @@ const MobileNav = ({ isAuthenticated, routes }) => {
 			<Spacer />
 			<Logo />
 			<Spacer />
-			{ isAuthenticated ? '' : '' }
+			{ isAuthenticated ? '' : <LoginButton /> }
 		</>
 	);
 };

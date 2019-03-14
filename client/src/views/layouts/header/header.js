@@ -8,10 +8,10 @@ import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
 const publicRoutes = [
-	{name: "Home", path: '/'},
-	{name: 'Dashboard', path: '/dashboard'},
+	{name: "Home", path: '/', exact: true},
+	{name: 'Dashboard', path: '/dashboard', authRequired: true},
 	{name: "About Us", path: '/about'},
-	{name: 'Membership', path: './membership'},
+	{name: 'Membership', path: '/membership'},
 	{name: "Events", path: '/events'},
 	{name: "Shop", path: '/shop'}
 ];
@@ -25,13 +25,13 @@ const authenticatedRoutes = [
 
 const Header = ({ isAuthenticated = false }) => (
 	<MainHeader>
-		<Hidden xsDown>
+		<Hidden smDown>
 			<DesktopNav 
 				routes={ isAuthenticated ? authenticatedRoutes : publicRoutes } 
 				isAuthenticated={isAuthenticated} 
 			/>
 		</Hidden>
-		<Hidden smUp>
+		<Hidden mdUp>
 			<MobileNav 
 				routes={ isAuthenticated ? authenticatedRoutes : publicRoutes } 
 				isAuthenticated={isAuthenticated} 

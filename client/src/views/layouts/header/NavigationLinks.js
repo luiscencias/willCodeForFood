@@ -4,23 +4,48 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { styledTag } from '../../../helpers';
 
-import NavLink from './NavLink';
+import MainLink from './MainLink';
+
+import LockIcon from '@material-ui/icons/LockOutlined';
 
 
 const Nav = withStyles(theme => ({
 	root: {
-		[ theme.breakpoints.down('xs')]: {
-			display: 'flex',
-			flexDirection: 'column',
-			margin: theme.spacing.unit * 2
+		display: 'flex',
+
+		[ theme.breakpoints.down('sm')]: {
+			flexDirection: 'column'
+		},
+
+		[theme.breakpoints.up('md')]: {
+			marginRight: theme.spacing.unit * 2
 		}
 	}
-}))(styledTag('nav'))
+}))(styledTag('nav'));
+
+const AuthRequiredIcon = withStyles(theme => ({
+	root: {
+		fontSize: 'inherit',
+
+		[theme.breakpoints.down('sm')]: {
+			marginLeft: theme.spacing.unit
+		},
+
+		[theme.breakpoints.up('md')]: {
+			marginLeft: theme.spacing.unit / 2
+		}
+	}
+}))(LockIcon);
 
 
 const NavigationLinks = ({ routes, handleClick }) => (
 	<Nav>
-		{ routes.map( ({ path, name }) => <NavLink handleClick={handleClick} path={path} key={path}>{ name }</NavLink> ) }
+		{ routes.map( ({ path, name, exact, authRequired }) => (
+			<MainLink handleClick={handleClick} path={path} exact={exact} key={path}>
+				{ name }
+				{ authRequired && <AuthRequiredIcon /> }
+			</MainLink>
+		)) }
 	</Nav>
 );
 

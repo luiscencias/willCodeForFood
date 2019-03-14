@@ -19,7 +19,7 @@ const Nav = withStyles(theme => ({
 		},
 
 		[theme.breakpoints.up('md')]: {
-			marginRight: theme.spacing.unit * 2
+			marginRight: theme.spacing.unit
 		}
 	}
 }))(styledTag('nav'));

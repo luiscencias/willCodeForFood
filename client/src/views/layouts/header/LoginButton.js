@@ -5,18 +5,31 @@ import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
 import Button from '@material-ui/core/Button';
+import AccountIcon from '@material-ui/icons/AccountCircle';
 
 const StyledButton = withStyles(theme => ({
 	root: {
-		[ theme.breakpoints.down('sm') ]: {
-			
-		}
+		height: theme.spacing.unit * 4.5,
+		paddingLeft: theme.spacing.unit / 2,
+		paddingRight: theme.spacing.unit,
+		textTransform: 'none'
+	},
+
+	label: {
+		fontSize: '0.875rem'
 	}
 }))(Button);
 
+const StyledAccountIcon = withStyles(theme => ({
+	root: {
+		fontSize: '1.125rem',
+		marginRight: theme.spacing.unit / 2
+	}
+}))(AccountIcon);
+
 const LoginButton = ({ handleClick }) => (
-	<StyledButton component={Link} to='/login' variant="outlined" color="secondary" size="small" onClick={handleClick}>
-		Log In
+	<StyledButton component={Link} to='/login' variant="text" size="small" onClick={handleClick}>
+		<StyledAccountIcon /> Log In
 	</StyledButton>
 );
 

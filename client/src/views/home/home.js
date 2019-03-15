@@ -2,14 +2,19 @@ import React from 'react';
 
 import Typography from '@material-ui/core/Typography';
 
-import { HeroSection, HeroLogo, CallToActionButton, SummarySection } from './styles'
+import HeroSection from './HeroSection';
+
+import { HeroLogo, CallToActionButton, SummarySection } from './styles';
+
+import Section from './Section';
 
 const Home = () => (
-	<>
-		<HeroSection>
-			<HeroLogo variant="h1">PBE</HeroLogo>
-			<CallToActionButton variant="contained" color="secondary" size="large">Apply</CallToActionButton>
-		</HeroSection>
+	<main>
+		<HeroSection />
+		<Section>
+			<h2>Heading of this section</h2>
+			<p>Paragraph of this section</p>
+		</Section>
 		<SummarySection>
 			<section>
 				<Typography variant="h5">About</Typography>
@@ -25,7 +30,7 @@ const Home = () => (
 				<Typography variant="h5">Events</Typography>
 			</section>
 		</SummarySection>
-	</>
+	</main>
 );
 
 export default Home;

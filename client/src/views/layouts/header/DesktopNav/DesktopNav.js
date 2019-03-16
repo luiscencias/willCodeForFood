@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Logo from '../Logo';
 import { Spacer } from '../../../../components';
 import NavigationLinks from '../NavigationLinks';
-import Login from '../Login';
+import LoginButton from '../LoginButton';
 import ApplyButton from '../ApplyButton';
+
+import Dialog from '@material-ui/core/Dialog';
 
 const DesktopNav = ({ isAuthenticated, routes }) => (
 	<>
 		<Logo />
 		<Spacer />
 		<NavigationLinks routes={routes} />
-		{ isAuthenticated ? '' : <><Login /><ApplyButton /></> }
+		{ isAuthenticated ? '' : <LoginButton /> }
 	</>
 );
 

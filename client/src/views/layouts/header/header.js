@@ -1,43 +1,54 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import Hidden from '@material-ui/core/Hidden';
 
-import MainAppBar from './MainAppBar';
+import MainHeader from './MainHeader';
+
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
-const publicRoutes = [
-	{name: "About", path: '/about'},
-	{name: 'How To Apply', path: './how-to-apply'},
-	{name: "Gallery", path: '/gallery'},
+const routes = [
+	{name: "Home", path: '/', exact: true},
+	{name: 'Dashboard', path: '/dashboard', authRequired: true},
+	{name: "About Us", path: '/about'},
+	{name: 'Membership', path: '/membership'},
 	{name: "Events", path: '/events'},
-	{name: 'Contact', path: '/contact'},
 	{name: "Shop", path: '/shop'}
 ];
 
-const authenticatedRoutes = [
-	{name: "About", path: '/about'},
-	{name: "Gallery", path: '/gallery'},
-	{name: "Events", path: '/events'},
-	{name: 'Contact', path: '/contact'},
-	{name: "Shop", path: '/shop'}
-];
+const createHandleScroll = setScrolled => () => {
+	setScrolled( window.scrollY > 0 );
+}
 
-const Header = ({ isAuthenticated = false }) => (
-	<MainAppBar>
-		<Hidden xsDown>
-			<DesktopNav 
-				routes={ isAuthenticated ? authenticatedRoutes : publicRoutes } 
-				isAuthenticated={isAuthenticated} 
-			/>
-		</Hidden>
-		<Hidden smUp>
-			<MobileNav 
-				routes={ isAuthenticated ? authenticatedRoutes : publicRoutes } 
-				isAuthenticated={isAuthenticated} 
-			/>
-		</Hidden>
-	</MainAppBar>
-);
+const Header = ({ isAuthenticated = false }) => {
+	const [ scrolled, setScrolled ] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = createHandleScroll(setScrolled);
+
+		window.addEventListener("scroll", handleScroll);
+
+		// Will be run when header unmounts.
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+
+	return (
+		<MainHeader scrolled={scrolled}>
+			<Hidden smDown>
+				<DesktopNav 
+					routes={ routes } 
+					isAuthenticated={isAuthenticated}
+				/>
+			</Hidden>
+			<Hidden mdUp>
+				<MobileNav 
+					routes={ routes } 
+					isAuthenticated={isAuthenticated} 
+				/>
+			</Hidden>
+		</MainHeader>
+	);
+};
 
 export default Header;

@@ -7,12 +7,19 @@ import Typography from '@material-ui/core/Typography';
 
 export const HeroSection = withStyles(theme => ({
 	'section': {
-		minHeight: '60vh',
 		backgroundColor: theme.palette.primary.dark,
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
-		justifyContent: 'center'
+		justifyContent: 'center',
+
+		[theme.breakpoints.down('sm')]: {
+			height: `calc( 100vh - ${theme.spacing.unit * 7}px )`
+		},
+
+		[theme.breakpoints.up('md')]: {
+			height: `calc( 100vh - ${theme.spacing.unit * 8}px )`
+		}
 	}
 }))( ({ children, classes }) => (<section className={classes.section}>{children}</section>) );
 

@@ -1,24 +1,54 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Enzyme, { shallow, mount } from 'enzyme';
-import { navLinks } from './header'
-import {Button} from "@material-ui/core";
+import { shallow, mount, render } from 'enzyme';
+import Header from './header';
+import Hidden from '@material-ui/core/Hidden';
+import Toolbar from '@material-ui/core/Toolbar';
+import DesktopNav from "./DesktopNav";
 
-describe("navLinks", () => {
+describe("Header", () => {
+
+    let header;
+    beforeEach(() => header = shallow(<Header />));
 
     it('renders', () => {
 
-        const button = shallow(<Button/>);
-        expect(button.exists()).toBe(true);
+        expect(header.exists()).toBe(true);
+    });
+
+    it('is not authenticated', () => {
+        expect(header.props.isAuthenticated).toBeFalsy();
+    });
+
+    it('should\'nt render a div', () => {
+        expect(header.find('div').length).toEqual(0);
+    });
+
+    it('renders without changing', () => {
+        expect(header).toMatchSnapshot();
+        // console.log(header.debug());
+    });
+
+    it('should render Hidden Components', () => {
+        expect(header.contains(<Hidden/>));
+        // console.log(header.debug());
+    });
+
+    it('should render a toolbar', () => {
+        expect(header.contains(<Toolbar/>));
 
     });
 
-    it('has right names for links', () => {
-        expect(navLinks[0]['name']).toEqual('About');
-        expect(navLinks[1]['name']).toEqual('Events');
-        expect(navLinks[2]['name']).toEqual('Members');
-        expect(navLinks[3]['name']).toEqual('Gallery');
-        expect(navLinks[4]['name']).toEqual('Shop');
+    it('should have js implementation', () => {
+        // console.log(header.debug());
+
+        expect(header.find('.js')).toBeTruthy();
+    });
+
+
+    it('should display navLinks', () => {
+        // console.log(header.debug());
+
+        expect(header.contains(<DesktopNav isAuthenticated={false} routes={[]} />));
     });
 
 });

@@ -27,7 +27,8 @@ const StyledButton = withStyles(theme => ({
 
 	label: {
 		fontSize: '1rem',
-		fontWeight: 600
+		fontWeight: 600,
+		textAlign: 'center'
 	}
 }))(Button);
 

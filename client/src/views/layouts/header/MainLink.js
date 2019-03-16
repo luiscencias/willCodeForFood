@@ -16,7 +16,7 @@ const styles = theme => ({
 		alignItems: 'center',
 
 		[theme.breakpoints.down('sm')]: {
-			height: theme.spacing.unit * 6,
+			minHeight: theme.spacing.unit * 6,
 			justifyContent: 'flex-start',
 			padding: `0 ${theme.spacing.unit * 2}px`,
 

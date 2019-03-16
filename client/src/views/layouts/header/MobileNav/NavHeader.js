@@ -17,14 +17,15 @@ const Container = withStyles(theme => ({
 
 		paddingBottom: theme.spacing.unit,
 
-		backgroundColor: theme.palette.grey[100]
+		backgroundColor: theme.palette.grey[100],
+
+		minHeight: '9.75rem'
 	}
 }))(styledTag('div'))
 
 const StyledAccountIcon = withStyles(theme => ({
 	root: {
-		fontSize: theme.spacing.unit * 10,
-
+		fontSize: '5rem',
 		color: theme.palette.grey[300],
 
 		alignSelf: 'center',
@@ -38,7 +39,9 @@ const StyledButton = withStyles(theme => ({
 		marginTop: theme.spacing.unit * 2,
 		marginBottom: theme.spacing.unit,
 		marginLeft: theme.spacing.unit * 2,
-		marginRight: theme.spacing.unit * 2
+		marginRight: theme.spacing.unit * 2,
+
+		minHeight: '2.25rem'
 	}
 }))(Button);
 

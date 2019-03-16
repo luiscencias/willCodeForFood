@@ -14,7 +14,7 @@ const StyledDrawer = withStyles(theme => ({
 		width: theme.spacing.unit * 35,
 
 		[theme.breakpoints.down('xs')]: {
-			
+			overflowY: 'scroll'
 		}
 	}
 }))(Drawer);

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { withStyles } from '@material-ui/core/styles';
-import { styledTag } from '../../helpers';
 
 import Section from './Section';
 

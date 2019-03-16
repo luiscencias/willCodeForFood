@@ -13,13 +13,30 @@ const Section = withStyles(theme => ({
 		'& h2': {
 			gridColumn: '1 / -1',
 
-			...theme.typography.h4
+			...theme.typography.h5,
+			fontWeight: theme.typography.fontWeightMedium,
+
+			marginTop: 0,
+
+			'@media (min-width: 1280px) and (orientation: landscape)': {
+				...theme.typography.h4
+			}
 		},
 
 		'& p': {
 			gridColumn: '1 / -1',
 
-			...theme.typography.body1Next
+			...theme.typography.h6,
+			fontWeight: theme.typography.fontWeightRegular,
+
+			'@media (max-height: 720px)': {
+				...theme.typography.body1Next
+			},
+
+			'@media (min-width: 1280px) and (orientation: landscape)': {
+				...theme.typography.h5,
+				fontWeight: theme.typography.fontWeightRegular
+			}
 		}
 	}
 }))(styledTag('section'));

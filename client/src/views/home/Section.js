@@ -7,8 +7,8 @@ const Section = withStyles(theme => ({
 	root: {
 		...theme.grids.main,
 
-		paddingTop: theme.spacing.unit * 12,
-		paddingBottom: theme.spacing.unit * 12,
+		paddingTop: theme.spacing.unit * 15,
+		paddingBottom: theme.spacing.unit * 15,
 
 		'& h2': {
 			gridColumn: '1 / -1',
@@ -47,12 +47,14 @@ const Section = withStyles(theme => ({
 			color: theme.palette.secondary.main,
 
 			'@media (max-height: 720px)': {
-				...theme.typography.body1Next
+				...theme.typography.body1Next,
+				color: theme.palette.secondary.main
 			},
 
 			'@media (min-width: 1280px) and (orientation: landscape)': {
 				...theme.typography.h5,
-				fontWeight: theme.typography.fontWeightRegular
+				fontWeight: theme.typography.fontWeightRegular,
+				color: theme.palette.secondary.main
 			},
 		}
 	}

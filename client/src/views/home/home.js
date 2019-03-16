@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
 import ServicesSection from './ServicesSection';
+import GallerySection from './GallerySection';
 
 import { HeroLogo, CallToActionButton, SummarySection } from './styles';
 
@@ -18,6 +19,7 @@ const Home = () => {
 	return (
 		<main>
 			<HeroSection />
+			<GallerySection />
 			<AboutSection />
 			<ServicesSection />
 		</main>

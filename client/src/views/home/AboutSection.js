@@ -3,12 +3,12 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
 import { Link } from 'react-router-dom';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 import Section from './Section';
 
 const StyledSection = withStyles(theme => ({
 	root: {
+		backgroundColor: theme.palette.grey[200],
 
 		'& .about-section-text': {
 			[theme.breakpoints.up('4-col')]: {
@@ -25,7 +25,7 @@ const StyledSection = withStyles(theme => ({
 		},
 
 		'& .about-us-image': {
-			backgroundColor: theme.palette.grey[200],
+			backgroundColor: theme.palette.grey[400],
 			height: 250,
 
 			[theme.breakpoints.up('4-col')]: {
@@ -55,7 +55,7 @@ const AboutSection = () => (
 				for the future. Throughout the semester, PBE will have guest speakers from industry, 
 				entrepreneurship events, social events with other organizations on campus, and tailgates.
 			</p>
-			<Link className="text-link" to="/about">Learn more<ChevronRightIcon fontSize="inherit" /></Link>
+			<Link className="text-link" to="/about">Learn more about PBE</Link>
 		</div>
 		<div className="about-us-image"></div>
 	</StyledSection>

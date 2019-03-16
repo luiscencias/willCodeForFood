@@ -6,13 +6,14 @@ import Section from './Section';
 
 import IconButton from '@material-ui/core/IconButton';
 
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
+
 const StyledSection = withStyles(theme => ({
 	root: {
 
-		backgroundColor: theme.palette.grey[200],
-
 		'& .services-section-text': {
-			marginBottom: theme.spacing.unit * 8,
+			marginBottom: theme.spacing.unit * 10,
 
 			textAlign: 'center',
 
@@ -72,7 +73,7 @@ const StyledSection = withStyles(theme => ({
 					...theme.typography.h6,
 
 					marginTop: 0,
-					marginBottom: theme.spacing.unit * 2,
+					marginBottom: theme.spacing.unit * 1.5,
 
 					'@media (min-width: 1280px) and (orientation: landscape)': {
 						...theme.typography.h5,
@@ -85,6 +86,7 @@ const StyledSection = withStyles(theme => ({
 					fontWeight: theme.typography.fontWeightRegular,
 
 					marginTop: 0,
+					marginBottom: 0,
 
 					'@media (min-width: 1280px) and (orientation: landscape)': {
 						...theme.typography.h5,
@@ -107,9 +109,43 @@ const ServicesIconButton = withStyles(theme => ({
 		width: '3.75rem',
 		height: '3.75rem',
 
-		marginBottom: theme.spacing.unit * 4
+		marginBottom: theme.spacing.unit * 5
 	}
 }))(IconButton);
+
+const CallToActionButton = withStyles(theme => ({
+	root: {
+		gridRow: '3 / span 1',
+
+		padding: '12px 32px',
+		marginTop: theme.spacing.unit * 10,
+
+		textTransform: 'none',
+
+		borderColor: theme.palette.secondary.main,
+		color: theme.palette.secondary.main,
+
+		borderWidth: 2,
+
+		fontSize: '1rem',
+
+		'&:hover': {
+
+		},
+
+		[theme.breakpoints.up('4-col')]: {
+			gridColumn: '1 / -1'
+		},
+
+		[theme.breakpoints.up('8-col')]: {
+			gridColumn: '3 / span 4'
+		},
+
+		[theme.breakpoints.up('12-col')]: {
+			gridColumn: '5 / span 4'
+		}
+	}
+}))(Button);
 
 const ServicesSection = () => (
 	<StyledSection>
@@ -137,6 +173,9 @@ const ServicesSection = () => (
 				<p>A sentence or two explaining this benefit.</p>
 			</div>
 		</div>
+		<CallToActionButton variant="outlined" component={Link} to="/membership" >
+			Learn how to apply
+		</CallToActionButton>
 	</StyledSection>
 );
 

@@ -16,7 +16,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
         <Hidden
@@ -25,11 +25,11 @@ ShallowWrapper {
           lgUp={false}
           mdDown={false}
           mdUp={false}
-          smDown={false}
+          smDown={true}
           smUp={false}
           xlDown={false}
           xlUp={false}
-          xsDown={true}
+          xsDown={false}
           xsUp={false}
         >
           <DesktopNav
@@ -37,24 +37,26 @@ ShallowWrapper {
             routes={
               Array [
                 Object {
-                  "name": "About",
+                  "exact": true,
+                  "name": "Home",
+                  "path": "/",
+                },
+                Object {
+                  "authRequired": true,
+                  "name": "Dashboard",
+                  "path": "/dashboard",
+                },
+                Object {
+                  "name": "About Us",
                   "path": "/about",
                 },
                 Object {
-                  "name": "How To Apply",
-                  "path": "./how-to-apply",
-                },
-                Object {
-                  "name": "Gallery",
-                  "path": "/gallery",
+                  "name": "Membership",
+                  "path": "/membership",
                 },
                 Object {
                   "name": "Events",
                   "path": "/events",
-                },
-                Object {
-                  "name": "Contact",
-                  "path": "/contact",
                 },
                 Object {
                   "name": "Shop",
@@ -69,9 +71,9 @@ ShallowWrapper {
           lgDown={false}
           lgUp={false}
           mdDown={false}
-          mdUp={false}
+          mdUp={true}
           smDown={false}
-          smUp={true}
+          smUp={false}
           xlDown={false}
           xlUp={false}
           xsDown={false}
@@ -82,24 +84,26 @@ ShallowWrapper {
             routes={
               Array [
                 Object {
-                  "name": "About",
+                  "exact": true,
+                  "name": "Home",
+                  "path": "/",
+                },
+                Object {
+                  "authRequired": true,
+                  "name": "Dashboard",
+                  "path": "/dashboard",
+                },
+                Object {
+                  "name": "About Us",
                   "path": "/about",
                 },
                 Object {
-                  "name": "How To Apply",
-                  "path": "./how-to-apply",
-                },
-                Object {
-                  "name": "Gallery",
-                  "path": "/gallery",
+                  "name": "Membership",
+                  "path": "/membership",
                 },
                 Object {
                   "name": "Events",
                   "path": "/events",
-                },
-                Object {
-                  "name": "Contact",
-                  "path": "/contact",
                 },
                 Object {
                   "name": "Shop",
@@ -110,6 +114,7 @@ ShallowWrapper {
           />
         </Hidden>,
       ],
+      "scrolled": false,
     },
     "ref": null,
     "rendered": Array [
@@ -123,24 +128,26 @@ ShallowWrapper {
             routes={
               Array [
                 Object {
-                  "name": "About",
+                  "exact": true,
+                  "name": "Home",
+                  "path": "/",
+                },
+                Object {
+                  "authRequired": true,
+                  "name": "Dashboard",
+                  "path": "/dashboard",
+                },
+                Object {
+                  "name": "About Us",
                   "path": "/about",
                 },
                 Object {
-                  "name": "How To Apply",
-                  "path": "./how-to-apply",
-                },
-                Object {
-                  "name": "Gallery",
-                  "path": "/gallery",
+                  "name": "Membership",
+                  "path": "/membership",
                 },
                 Object {
                   "name": "Events",
                   "path": "/events",
-                },
-                Object {
-                  "name": "Contact",
-                  "path": "/contact",
                 },
                 Object {
                   "name": "Shop",
@@ -154,11 +161,11 @@ ShallowWrapper {
           "lgUp": false,
           "mdDown": false,
           "mdUp": false,
-          "smDown": false,
+          "smDown": true,
           "smUp": false,
           "xlDown": false,
           "xlUp": false,
-          "xsDown": true,
+          "xsDown": false,
           "xsUp": false,
         },
         "ref": null,
@@ -170,24 +177,26 @@ ShallowWrapper {
             "isAuthenticated": false,
             "routes": Array [
               Object {
-                "name": "About",
+                "exact": true,
+                "name": "Home",
+                "path": "/",
+              },
+              Object {
+                "authRequired": true,
+                "name": "Dashboard",
+                "path": "/dashboard",
+              },
+              Object {
+                "name": "About Us",
                 "path": "/about",
               },
               Object {
-                "name": "How To Apply",
-                "path": "./how-to-apply",
-              },
-              Object {
-                "name": "Gallery",
-                "path": "/gallery",
+                "name": "Membership",
+                "path": "/membership",
               },
               Object {
                 "name": "Events",
                 "path": "/events",
-              },
-              Object {
-                "name": "Contact",
-                "path": "/contact",
               },
               Object {
                 "name": "Shop",
@@ -211,24 +220,26 @@ ShallowWrapper {
             routes={
               Array [
                 Object {
-                  "name": "About",
+                  "exact": true,
+                  "name": "Home",
+                  "path": "/",
+                },
+                Object {
+                  "authRequired": true,
+                  "name": "Dashboard",
+                  "path": "/dashboard",
+                },
+                Object {
+                  "name": "About Us",
                   "path": "/about",
                 },
                 Object {
-                  "name": "How To Apply",
-                  "path": "./how-to-apply",
-                },
-                Object {
-                  "name": "Gallery",
-                  "path": "/gallery",
+                  "name": "Membership",
+                  "path": "/membership",
                 },
                 Object {
                   "name": "Events",
                   "path": "/events",
-                },
-                Object {
-                  "name": "Contact",
-                  "path": "/contact",
                 },
                 Object {
                   "name": "Shop",
@@ -241,9 +252,9 @@ ShallowWrapper {
           "lgDown": false,
           "lgUp": false,
           "mdDown": false,
-          "mdUp": false,
+          "mdUp": true,
           "smDown": false,
-          "smUp": true,
+          "smUp": false,
           "xlDown": false,
           "xlUp": false,
           "xsDown": false,
@@ -258,24 +269,26 @@ ShallowWrapper {
             "isAuthenticated": false,
             "routes": Array [
               Object {
-                "name": "About",
+                "exact": true,
+                "name": "Home",
+                "path": "/",
+              },
+              Object {
+                "authRequired": true,
+                "name": "Dashboard",
+                "path": "/dashboard",
+              },
+              Object {
+                "name": "About Us",
                 "path": "/about",
               },
               Object {
-                "name": "How To Apply",
-                "path": "./how-to-apply",
-              },
-              Object {
-                "name": "Gallery",
-                "path": "/gallery",
+                "name": "Membership",
+                "path": "/membership",
               },
               Object {
                 "name": "Events",
                 "path": "/events",
-              },
-              Object {
-                "name": "Contact",
-                "path": "/contact",
               },
               Object {
                 "name": "Shop",
@@ -296,7 +309,7 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           <Hidden
@@ -305,11 +318,11 @@ ShallowWrapper {
             lgUp={false}
             mdDown={false}
             mdUp={false}
-            smDown={false}
+            smDown={true}
             smUp={false}
             xlDown={false}
             xlUp={false}
-            xsDown={true}
+            xsDown={false}
             xsUp={false}
           >
             <DesktopNav
@@ -317,24 +330,26 @@ ShallowWrapper {
               routes={
                 Array [
                   Object {
-                    "name": "About",
+                    "exact": true,
+                    "name": "Home",
+                    "path": "/",
+                  },
+                  Object {
+                    "authRequired": true,
+                    "name": "Dashboard",
+                    "path": "/dashboard",
+                  },
+                  Object {
+                    "name": "About Us",
                     "path": "/about",
                   },
                   Object {
-                    "name": "How To Apply",
-                    "path": "./how-to-apply",
-                  },
-                  Object {
-                    "name": "Gallery",
-                    "path": "/gallery",
+                    "name": "Membership",
+                    "path": "/membership",
                   },
                   Object {
                     "name": "Events",
                     "path": "/events",
-                  },
-                  Object {
-                    "name": "Contact",
-                    "path": "/contact",
                   },
                   Object {
                     "name": "Shop",
@@ -349,9 +364,9 @@ ShallowWrapper {
             lgDown={false}
             lgUp={false}
             mdDown={false}
-            mdUp={false}
+            mdUp={true}
             smDown={false}
-            smUp={true}
+            smUp={false}
             xlDown={false}
             xlUp={false}
             xsDown={false}
@@ -362,24 +377,26 @@ ShallowWrapper {
               routes={
                 Array [
                   Object {
-                    "name": "About",
+                    "exact": true,
+                    "name": "Home",
+                    "path": "/",
+                  },
+                  Object {
+                    "authRequired": true,
+                    "name": "Dashboard",
+                    "path": "/dashboard",
+                  },
+                  Object {
+                    "name": "About Us",
                     "path": "/about",
                   },
                   Object {
-                    "name": "How To Apply",
-                    "path": "./how-to-apply",
-                  },
-                  Object {
-                    "name": "Gallery",
-                    "path": "/gallery",
+                    "name": "Membership",
+                    "path": "/membership",
                   },
                   Object {
                     "name": "Events",
                     "path": "/events",
-                  },
-                  Object {
-                    "name": "Contact",
-                    "path": "/contact",
                   },
                   Object {
                     "name": "Shop",
@@ -390,6 +407,7 @@ ShallowWrapper {
             />
           </Hidden>,
         ],
+        "scrolled": false,
       },
       "ref": null,
       "rendered": Array [
@@ -403,24 +421,26 @@ ShallowWrapper {
               routes={
                 Array [
                   Object {
-                    "name": "About",
+                    "exact": true,
+                    "name": "Home",
+                    "path": "/",
+                  },
+                  Object {
+                    "authRequired": true,
+                    "name": "Dashboard",
+                    "path": "/dashboard",
+                  },
+                  Object {
+                    "name": "About Us",
                     "path": "/about",
                   },
                   Object {
-                    "name": "How To Apply",
-                    "path": "./how-to-apply",
-                  },
-                  Object {
-                    "name": "Gallery",
-                    "path": "/gallery",
+                    "name": "Membership",
+                    "path": "/membership",
                   },
                   Object {
                     "name": "Events",
                     "path": "/events",
-                  },
-                  Object {
-                    "name": "Contact",
-                    "path": "/contact",
                   },
                   Object {
                     "name": "Shop",
@@ -434,11 +454,11 @@ ShallowWrapper {
             "lgUp": false,
             "mdDown": false,
             "mdUp": false,
-            "smDown": false,
+            "smDown": true,
             "smUp": false,
             "xlDown": false,
             "xlUp": false,
-            "xsDown": true,
+            "xsDown": false,
             "xsUp": false,
           },
           "ref": null,
@@ -450,24 +470,26 @@ ShallowWrapper {
               "isAuthenticated": false,
               "routes": Array [
                 Object {
-                  "name": "About",
+                  "exact": true,
+                  "name": "Home",
+                  "path": "/",
+                },
+                Object {
+                  "authRequired": true,
+                  "name": "Dashboard",
+                  "path": "/dashboard",
+                },
+                Object {
+                  "name": "About Us",
                   "path": "/about",
                 },
                 Object {
-                  "name": "How To Apply",
-                  "path": "./how-to-apply",
-                },
-                Object {
-                  "name": "Gallery",
-                  "path": "/gallery",
+                  "name": "Membership",
+                  "path": "/membership",
                 },
                 Object {
                   "name": "Events",
                   "path": "/events",
-                },
-                Object {
-                  "name": "Contact",
-                  "path": "/contact",
                 },
                 Object {
                   "name": "Shop",
@@ -491,24 +513,26 @@ ShallowWrapper {
               routes={
                 Array [
                   Object {
-                    "name": "About",
+                    "exact": true,
+                    "name": "Home",
+                    "path": "/",
+                  },
+                  Object {
+                    "authRequired": true,
+                    "name": "Dashboard",
+                    "path": "/dashboard",
+                  },
+                  Object {
+                    "name": "About Us",
                     "path": "/about",
                   },
                   Object {
-                    "name": "How To Apply",
-                    "path": "./how-to-apply",
-                  },
-                  Object {
-                    "name": "Gallery",
-                    "path": "/gallery",
+                    "name": "Membership",
+                    "path": "/membership",
                   },
                   Object {
                     "name": "Events",
                     "path": "/events",
-                  },
-                  Object {
-                    "name": "Contact",
-                    "path": "/contact",
                   },
                   Object {
                     "name": "Shop",
@@ -521,9 +545,9 @@ ShallowWrapper {
             "lgDown": false,
             "lgUp": false,
             "mdDown": false,
-            "mdUp": false,
+            "mdUp": true,
             "smDown": false,
-            "smUp": true,
+            "smUp": false,
             "xlDown": false,
             "xlUp": false,
             "xsDown": false,
@@ -538,24 +562,26 @@ ShallowWrapper {
               "isAuthenticated": false,
               "routes": Array [
                 Object {
-                  "name": "About",
+                  "exact": true,
+                  "name": "Home",
+                  "path": "/",
+                },
+                Object {
+                  "authRequired": true,
+                  "name": "Dashboard",
+                  "path": "/dashboard",
+                },
+                Object {
+                  "name": "About Us",
                   "path": "/about",
                 },
                 Object {
-                  "name": "How To Apply",
-                  "path": "./how-to-apply",
-                },
-                Object {
-                  "name": "Gallery",
-                  "path": "/gallery",
+                  "name": "Membership",
+                  "path": "/membership",
                 },
                 Object {
                   "name": "Events",
                   "path": "/events",
-                },
-                Object {
-                  "name": "Contact",
-                  "path": "/contact",
                 },
                 Object {
                   "name": "Shop",

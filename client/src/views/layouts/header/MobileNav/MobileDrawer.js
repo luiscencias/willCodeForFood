@@ -10,9 +10,12 @@ const StyledDrawer = withStyles(theme => ({
 		
 	},
 	paper: {
-		minWidth: '60%',
-		maxHeight: '100vh',
-		overflowY: 'scroll'
+		maxWidth: `calc( 100vw - ${theme.spacing.unit * 7}px )`,
+		width: theme.spacing.unit * 35,
+
+		[theme.breakpoints.down('xs')]: {
+			overflowY: 'scroll'
+		}
 	}
 }))(Drawer);
 

@@ -7,11 +7,13 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
 const StyledIcon = withStyles(theme => ({
-
+	
 }))(MenuIcon);
 
 const StyledIconButton = withStyles(theme => ({
-
+	root: {
+		color: 'inherit'
+	}
 }))(IconButton);
 
 const DrawerButton = ({ onClick }) => (

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Logo from '../Logo';
-import { Spacer } from '../../../../components';
-import Login from '../Login';
-import ApplyButton from '../ApplyButton';
+import { Spacer, LoginForm } from '../../../../components';
+import LoginButton from '../LoginButton';
 import NavigationLinks from '../NavigationLinks';
+import NavHeader from './NavHeader';
 
 import DrawerButton from './DrawerButton';
 import MobileDrawer from './MobileDrawer';
@@ -13,6 +13,7 @@ import MobileDrawer from './MobileDrawer';
 import Divider from '@material-ui/core/Divider';
 
 const MobileNav = ({ isAuthenticated, routes }) => {
+
 	const [ drawerIsOpen, setDrawerIsOpen ] = useState(false);
 
 	return (
@@ -21,9 +22,9 @@ const MobileNav = ({ isAuthenticated, routes }) => {
 				isOpen={ drawerIsOpen }
 				onClose={ () => setDrawerIsOpen(false) }
 			>
-				{ isAuthenticated ? '' : <Login /> }
+				{ isAuthenticated ? '' : <NavHeader handleClick={() => setDrawerIsOpen(false)} /> }
 				<Divider />
-				<NavigationLinks routes={[ { name: 'Home', path: '/' }, ...routes]} />
+				<NavigationLinks handleClick={() => setDrawerIsOpen(false)} routes={routes} />
 			</MobileDrawer>
 
 			<DrawerButton onClick={ () => setDrawerIsOpen(true) } />
@@ -31,7 +32,7 @@ const MobileNav = ({ isAuthenticated, routes }) => {
 			<Spacer />
 			<Logo />
 			<Spacer />
-			{ isAuthenticated ? '' : <ApplyButton /> }
+			{ isAuthenticated ? '' : <LoginButton /> }
 		</>
 	);
 };

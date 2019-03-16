@@ -37,6 +37,7 @@ const theme = createMuiTheme({
   grids: {
   	main: {
   		display: 'grid',
+  		alignContent: 'start',
 
   		'@media (min-width: 0px)': { // xs and up
   			gridTemplateColumns: 'repeat(4, 1fr)',

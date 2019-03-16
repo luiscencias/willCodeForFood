@@ -12,6 +12,8 @@ const StyledHeader = withStyles(theme => ({
 		position: 'sticky',
 		top: 0,
 
+		zIndex: theme.zIndex.appBar,
+
 		display: 'flex',
 		alignItems: 'center',
 

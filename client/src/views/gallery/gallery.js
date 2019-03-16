@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Zoom } from 'react-slideshow-image';
 
+import { useScrollToTopOnMount } from '../../helpers';
+
 
 class Gallery extends Component {
     render () {
@@ -36,4 +38,8 @@ class Gallery extends Component {
 
 
 
-export default Gallery;
+export default () => {
+    useScrollToTopOnMount();
+
+    return <Gallery />;
+};

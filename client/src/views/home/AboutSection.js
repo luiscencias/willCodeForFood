@@ -2,6 +2,9 @@ import React from 'react';
 
 import { withStyles } from '@material-ui/core/styles';
 
+import { Link } from 'react-router-dom';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+
 import Section from './Section';
 
 const StyledSection = withStyles(theme => ({
@@ -32,6 +35,7 @@ const StyledSection = withStyles(theme => ({
 
 			[theme.breakpoints.up('8-col')]: {
 				gridColumn: '6 / span 3',
+				marginTop: 0
 			},
 
 			[theme.breakpoints.up('12-col')]: {
@@ -51,6 +55,7 @@ const AboutSection = () => (
 				for the future. Throughout the semester, PBE will have guest speakers from industry, 
 				entrepreneurship events, social events with other organizations on campus, and tailgates.
 			</p>
+			<Link className="text-link" to="/about">Learn more<ChevronRightIcon fontSize="inherit" /></Link>
 		</div>
 		<div className="about-us-image"></div>
 	</StyledSection>

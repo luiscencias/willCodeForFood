@@ -6,7 +6,9 @@ import ThumbnailGrid from './Components/thumbnailGrid'
 
 import axios from 'axios'
 
-export default class About extends React.Component {
+import { useScrollToTopOnMount } from '../../helpers';
+
+class About extends React.Component {
     constructor(props){
         super(props)
         this.state = {
@@ -89,3 +91,9 @@ export default class About extends React.Component {
         )
     }
 }
+
+export default () => {
+    useScrollToTopOnMount();
+
+    return <About />;
+};

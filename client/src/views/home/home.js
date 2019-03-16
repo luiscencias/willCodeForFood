@@ -4,16 +4,25 @@ import Typography from '@material-ui/core/Typography';
 
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
+import ServicesSection from './ServicesSection';
 
 import { HeroLogo, CallToActionButton, SummarySection } from './styles';
 
+import { useScrollToTopOnMount } from '../../helpers';
+
 import Section from './Section';
 
-const Home = () => (
-	<main>
-		<HeroSection />
-		<AboutSection />
-	</main>
-);
+const Home = () => {
+	useScrollToTopOnMount();
+
+	return (
+		<main>
+			<HeroSection />
+			<AboutSection />
+			<ServicesSection />
+		</main>
+	);
+
+};
 
 export default Home;

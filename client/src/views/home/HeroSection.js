@@ -2,6 +2,8 @@ import React from 'react';
 
 import { withStyles } from '@material-ui/core/styles';
 
+import { Link } from 'react-router-dom';
+
 import Section from './Section';
 
 import Button from '@material-ui/core/Button';
@@ -201,8 +203,8 @@ const HeroSection = () => (
 			This text should span up to 1 to 3 lines and give a slightly more specific selling point.</h2>
 		</div>
 		<div className="calls-to-action">
-			<CallToAction variant="contained">Apply Now</CallToAction>
-			<CallToAction variant="outlined">Learn More</CallToAction>
+			<CallToAction component={Link} to="/membership-application" variant="contained">Apply Now</CallToAction>
+			<CallToAction component={Link} to="/membership" variant="outlined">Learn More</CallToAction>
 		</div>
 		<ArrowDownIcon>
 			<KeyboardArrowDownIcon />

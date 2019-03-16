@@ -22,13 +22,27 @@ const theme = createMuiTheme({
   		height: spacing_unit * 8
   	}
   },
+  breakpoints: {
+  	values: {
+  		'xs': 0,
+  		'4-col': 0,
+  		'sm': 600,
+  		'8-col': 600,
+  		'12-col': 840,
+  		'md': 960,
+  		'lg': 1280,
+  		'xl': 1920
+  	}
+  },
   grids: {
-  	mainLayout: {
+  	main: {
   		display: 'grid',
 
   		'@media (min-width: 0px)': { // xs and up
   			gridTemplateColumns: 'repeat(4, 1fr)',
-  			gridGap: '16px'
+  			gridColumnGap: '16px',
+  			paddingLeft: 16,
+  			paddingRight: 16
   		},
 
   		'@media (min-width: 600px)': { // sm and up
@@ -40,7 +54,9 @@ const theme = createMuiTheme({
   		},
 
   		'@media (min-width: 960px)': { // md and up
-  			gridGap: '24px'
+  			gridColumnGap: '24px',
+  			paddingLeft: 24,
+  			paddingRight: 24
   		}
   	}
   }

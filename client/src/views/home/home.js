@@ -6,6 +6,7 @@ import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
 import ServicesSection from './ServicesSection';
 import GallerySection from './GallerySection';
+import QuoteSection from './QuoteSection';
 
 import { HeroLogo, CallToActionButton, SummarySection } from './styles';
 
@@ -19,9 +20,11 @@ const Home = () => {
 	return (
 		<main>
 			<HeroSection />
+			
 			<GallerySection />
 			<AboutSection />
 			<ServicesSection />
+			<QuoteSection />
 		</main>
 	);
 

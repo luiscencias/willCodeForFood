@@ -8,38 +8,17 @@ import Section from './Section';
 
 const StyledSection = withStyles(theme => ({
 	root: {
-		backgroundColor: theme.palette.grey[200],
-
 		'& .about-section-text': {
 			[theme.breakpoints.up('4-col')]: {
 				gridColumn: '1 / -1',
 			},
 
 			[theme.breakpoints.up('8-col')]: {
-				gridColumn: '1 / span 5',
+				gridColumn: '2 / span 6',
 			},
 
 			[theme.breakpoints.up('12-col')]: {
-				gridColumn: '1 / span 8',
-			}
-		},
-
-		'& .about-us-image': {
-			backgroundColor: theme.palette.grey[400],
-			height: 250,
-
-			[theme.breakpoints.up('4-col')]: {
-				gridColumn: '1 / span 4',
-				marginTop: theme.spacing.unit * 3
-			},
-
-			[theme.breakpoints.up('8-col')]: {
-				gridColumn: '6 / span 3',
-				marginTop: 0
-			},
-
-			[theme.breakpoints.up('12-col')]: {
-				gridColumn: '9 / span 4',
+				gridColumn: '2 / span 10',
 			}
 		}
 
@@ -57,7 +36,6 @@ const AboutSection = () => (
 			</p>
 			<Link className="text-link" to="/about">Learn more about PBE</Link>
 		</div>
-		<div className="about-us-image"></div>
 	</StyledSection>
 );
 

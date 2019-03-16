@@ -11,38 +11,49 @@ import Section from './Section';
 
 const StyledSection = withStyles(theme => ({
 	root: {
-		paddingTop: theme.spacing.unit * 2,
-		paddingBottom: theme.spacing.unit * 2,
+		padding: 0,
 
 		'& .gallery-grid': {
 			display: 'grid',
 
-			height: 400,
+			gridGap: 0,
 
-			gridGap: `${theme.spacing.unit}px`,
-
-			gridAutoRows: '1fr',
+			gridColumn: '1 / -1',
 
 			[theme.breakpoints.up('4-col')]: {
 				gridRow: '2 / span 1',
 				gridColumn: '1 / -1',
-				gridTemplateColumns: 'repeat(2, 1fr)',
-				marginTop: theme.spacing.unit
+				gridTemplateColumns: 'repeat(3, 1fr)',
+				gridAutoRows: '100px'
 			},
 
 			[theme.breakpoints.up('8-col')]: {
-				gridTemplateColumns: 'repeat(3, 1fr)',
+				gridTemplateColumns: 'repeat(4, 1fr)',
 				gridRow: '1 / span 1',
-				gridColumn: '2 / -2',
-				marginTop: 0
+				gridAutoRows: '166px'
 			},
 
 			[theme.breakpoints.up('12-col')]: {
-				gridTemplateColumns: 'repeat(4, 1fr)'
+				gridTemplateColumns: 'repeat(6, 1fr)',
 			},
 
 			'& .gallery-image': {
-				backgroundColor: theme.palette.secondary.dark
+				backgroundColor: theme.palette.secondary.dark,
+				borderColor: theme.palette.text.secondary,
+				border: '1px solid',
+				transition: 'all .2s ease-in-out',
+
+				'&:hover': {
+					transform: 'scale(1.025)'
+				},
+
+				'&:nth-child(4n)': {
+					backgroundColor: theme.palette.secondary.main
+				},
+
+				'&:nth-child(3n)': {
+					backgroundColor: theme.palette.secondary.light
+				}
 			}
 		}
 	}
@@ -50,6 +61,8 @@ const StyledSection = withStyles(theme => ({
 
 const IconLeft = withStyles(theme => ({
 	root: {
+		borderRadius: 0,
+
 		[theme.breakpoints.up('4-col')]: {
 			gridColumn: '1 / span 2'
 		},
@@ -62,6 +75,8 @@ const IconLeft = withStyles(theme => ({
 
 const IconRight = withStyles(theme => ({
 	root: {
+		borderRadius: 0,
+
 		[theme.breakpoints.up('4-col')]: {
 			gridColumn: '3 / span 2'
 		},
@@ -78,9 +93,6 @@ const IconRight = withStyles(theme => ({
 
 const GallerySection = () => (
 	<StyledSection>
-		<IconLeft>
-			<ChevronLeftIcon />
-		</IconLeft>
 		<div className="gallery-grid">
 			<div className="gallery-image" />
 			<div className="gallery-image" />
@@ -90,10 +102,11 @@ const GallerySection = () => (
 			<div className="gallery-image" />
 			<div className="gallery-image" />
 			<div className="gallery-image" />
+			<div className="gallery-image" />
+			<div className="gallery-image" />
+			<div className="gallery-image" />
+			<div className="gallery-image" />
 		</div>
-		<IconRight>
-			<ChevronRightIcon />
-		</IconRight>
 	</StyledSection>
 );
 

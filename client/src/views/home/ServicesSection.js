@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 
 const StyledSection = withStyles(theme => ({
 	root: {
+		backgroundColor: theme.palette.grey[200],
 
 		'& .services-section-text': {
 			marginBottom: theme.spacing.unit * 10,
@@ -174,7 +175,7 @@ const ServicesSection = () => (
 			</div>
 		</div>
 		<CallToActionButton variant="outlined" component={Link} to="/membership" >
-			Learn how to apply
+			Learn More
 		</CallToActionButton>
 	</StyledSection>
 );

@@ -17,7 +17,7 @@ const styles = theme => ({
 });
 
 const ForgotPasswordLink = ({ classes }) => (
-	<Link className={classes.root} to='/forgot-password'>Forgot password?</Link>
+	<Link className={`${classes.root} forgot-password`} to='/forgot-password'>Forgot password?</Link>
 );
 
 export default withStyles(styles)(ForgotPasswordLink);

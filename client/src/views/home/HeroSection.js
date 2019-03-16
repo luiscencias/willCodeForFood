@@ -95,7 +95,7 @@ const StyledSection = withStyles(theme => ({
 			color: 'inherit',
 			fontWeight: theme.typography.fontWeightLight,
 
-			'@media (max-height: 600px)': { // sm and down
+			'@media (max-height: 720px)': { // sm and down
 				fontSize: '1rem',
 				lineHeight: 1.75,
 				letterSpacing: "0.00938em",

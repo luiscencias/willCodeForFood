@@ -10,10 +10,70 @@ const MainSection = withStyles(theme => ({
 		flexGrow: 1,
 		backgroundColor: theme.palette.grey[200],
 
-		display: 'flex',
+		...theme.grids.main,
+		alignContent: 'center',
 		justifyContent: 'center',
-		alignItems: 'center',
-		flexDirection: 'column'
+
+		'& .form-container': {
+			fontFamily: theme.typography.fontFamily,
+
+			padding: theme.spacing.unit * 2,
+			marginTop: theme.spacing.unit * 2,
+
+			backgroundColor: theme.palette.background.paper,
+			borderRadius: theme.shape.borderRadius,
+			boxShadow: theme.shadows[2],
+			display: 'flex',
+			flexDirection: 'column',
+
+			[theme.breakpoints.up('4-col')]: {
+				gridColumn: '1 / -1'
+			},
+
+			[theme.breakpoints.up('8-col')]: {
+				gridColumn: '3 / span 4'
+			},
+
+			[theme.breakpoints.up('12-col')]: {
+				gridColumn: '5 / span 4'
+			},
+
+			'& form': {
+				display: 'flex',
+				flexDirection: 'column'
+			},
+
+			'& .redirect-error': {
+				...theme.typography.body1Next,
+				color: theme.palette.error.main,
+				marginTop: 0,
+				textAlign: 'center'
+			},
+
+			'& .redirect-from': {
+
+			}
+		},
+
+		'& .forgot-password': {
+			gridRow: '2 / span 1',
+
+			textAlign: 'center',
+
+			marginBottom: theme.spacing.unit * 2,
+
+			[theme.breakpoints.up('4-col')]: {
+				gridColumn: '1 / -1'
+			},
+
+			[theme.breakpoints.up('8-col')]: {
+				gridColumn: '3 / span 4'
+			},
+
+			[theme.breakpoints.up('12-col')]: {
+				gridColumn: '5 / span 4'
+			}
+		}
 	}
 }))(styledTag('main'));
 

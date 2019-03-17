@@ -12,6 +12,9 @@ import EmailField from './EmailField';
 import SubmitButton from './SubmitButton';
 import FirstNameField from "./FirstNameField";
 import LastNameField from "./LastNameField";
+import PhoneNumberField from "./PhoneNumberField";
+import GraduationField from "./GraduationField";
+import MajorField from "./MajorField";
 
 const validationSchema = Yup.object({
 	email: Yup
@@ -42,26 +45,11 @@ const ApplyForm = ({ handleSubmit }) => {
 					<FirstNameField/>
 					<LastNameField/>
 					<EmailField />
-
-					/*
-					phone_number
-					graduation_year
-					major
-					member_status, default: false
-					password
-					 */
-
+					<PhoneNumberField/>
+					<GraduationField/>
+					<MajorField/>
 					<PasswordField />
-					/*
-					first_name
-					last_name
-					email
-					phone_number
-					graduation_year
-					major
-					member_status, default: false
-					password
-					 */
+					<PasswordField label = "Re-enter Password"/>
 					<SubmitButton />
 
 				</Form>

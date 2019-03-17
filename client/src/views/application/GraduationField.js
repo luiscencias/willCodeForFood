@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import StyledField from './StyledField';
 
-const PhoneNumberField = () => (
+const GraduationField = () => (
     <StyledField
         required
-        name="phoneNumber"
-        label="Phone Number"
+        name="graduationYear"
+        label="Graduation Year"
         variant="outlined"
         helperText="*Required"
     />
 );
 
-export default PhoneNumberField;
+export default GraduationField;

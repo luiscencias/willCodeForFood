@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import StyledField from './StyledField';
 
-const PhoneNumberField = () => (
+const MajorField = () => (
     <StyledField
         required
-        name="phoneNumber"
-        label="Phone Number"
+        name="major"
+        label="Major"
         variant="outlined"
         helperText="*Required"
     />
 );
 
-export default PhoneNumberField;
+export default MajorField;

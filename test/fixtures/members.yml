@@ -5,11 +5,9 @@ one:
   last_name: MyString
   email: MyString
   phone_number: 1
-  graduation: MyString
-  year: 1
+  graduation_year: 1
   major: MyString
-  member: false
-  username: MyString
+  member_status: false
   password: MyString
 
 two:
@@ -17,9 +15,7 @@ two:
   last_name: MyString
   email: MyString
   phone_number: 1
-  graduation: MyString
-  year: 1
+  graduation_year: 1
   major: MyString
-  member: false
-  username: MyString
+  member_status: false
   password: MyString

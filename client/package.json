@@ -12,6 +12,7 @@
     "formik-material-fields": "0.0.3",
     "http-proxy-middleware": "^0.19.1",
     "jest-enzyme": "^7.0.1",
+    "jest-junit": "^6.3.0",
     "jss": "^9.8.7",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
@@ -20,17 +21,21 @@
     "react-jss": "^8.6.1",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5",
+    "react-scripts": "^2.1.8",
     "react-slideshow-image": "^1.1.2",
+    "react-social-icons": "^4.1.0",
     "react-test-renderer": "^16.8.3",
     "redux": "^4.0.1",
     "redux-starter-kit": "^0.4.3",
+    "service-worker-mock": "^2.0.0",
+    "smoothscroll-polyfill": "^0.4.3",
     "yup": "^0.26.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "testc": "react-scripts test ",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,5 +46,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.2.0"
+  }
 }

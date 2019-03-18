@@ -14,10 +14,10 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 
 const StyledIcon = withStyles(theme => ({
 	root: {
-		height: theme.spacing.unit * 5,
-		width: theme.spacing.unit * 5,
+		height: theme.spacing.unitScaleToRem(5),
+		width: theme.spacing.unitScaleToRem(5),
 		fontSize: '2rem',
-		padding: theme.spacing.unit
+		padding: theme.spacing.unitScaleToRem(1)
 	}
 }))(IconButton);
 

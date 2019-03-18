@@ -11,22 +11,24 @@ import { AppLayout } from '../views/layouts/app-layout';
 import { BrowserRouter as Router}  from 'react-router-dom';
 import Routes from './routes';
 
-class App extends Component {
-  render() {
-    return (
-      <MuiThemeProvider theme={theme}>
+import smoothscroll from 'smoothscroll-polyfill';
+
+const App = () => {
+  smoothscroll.polyfill();
+  
+  return (
+    <MuiThemeProvider theme={theme}>
+    
+      <CssBaseline />
       
-        <CssBaseline />
-        
-        <Router>
-          <AppLayout>
-            <Routes />
-          </AppLayout>
-        </Router>
-        
-      </MuiThemeProvider>
-    );
-  }
+      <Router>
+        <AppLayout>
+          <Routes />
+        </AppLayout>
+      </Router>
+      
+    </MuiThemeProvider>
+  );
 }
 
 export default App;

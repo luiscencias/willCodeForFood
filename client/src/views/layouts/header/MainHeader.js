@@ -12,19 +12,21 @@ const StyledHeader = withStyles(theme => ({
 		position: 'sticky',
 		top: 0,
 
+		transition: 'all 0.25s ease',
+
 		zIndex: theme.zIndex.appBar,
 
 		display: 'flex',
 		alignItems: 'center',
 
 		[theme.breakpoints.down('sm')]: {
-			padding: `0 ${theme.spacing.unit * 2}px`,
-			height: theme.spacing.unit * 7
+			padding: `0 ${theme.spacing.unitScaleToRem(2)}`,
+			height: theme.spacing.unitScaleToRem(7)
 		},
 
 		[theme.breakpoints.up('md')]: {
-			padding: `0 ${theme.spacing.unit * 3}px`,
-			height: theme.spacing.unit * 8
+			padding: `0 ${theme.spacing.unitScaleToRem(3)}`,
+			height: theme.spacing.unitScaleToRem(8)
 		}
 	}
 }))(styledTag('header'));
@@ -44,7 +46,9 @@ MainHeader = withStyles(theme => ({
 	},
 	scrolled: {
 		backgroundColor: theme.palette.background.default,
-		color: theme.palette.text.default
+		color: theme.palette.text.default,
+
+		boxShadow: theme.shadows[2]
 	}
 }))(MainHeader);
 

@@ -12,8 +12,8 @@ import { NotFound } from '../views/notfound';
 import { About } from '../views/about';
 import { Gallery } from '../views/gallery';
 import { Login } from '../views/login';
-import {Apply} from "../views/application";
 import { Membership } from '../views/membership';
+import { Shop } from '../views/shop';
 
 export default () => (
     <Switch>
@@ -22,8 +22,8 @@ export default () => (
         <Route path="/gallery" component={Gallery} />
         <ProtectedRoute path="/dashboard" component={() => (<div />)} />
         <Route path="/login" component={Login} />
-        <Route path="/membership-application" component={Apply} />
         <Route path="/membership" component={Membership} />
+        <Route path="/shop" component={Shop} />
 
 
         /* 	keep not found route below everything else	*/

@@ -5,7 +5,6 @@ import Logo from '../Logo';
 import { Spacer } from '../../../../components';
 import NavigationLinks from '../NavigationLinks';
 import LoginButton from '../LoginButton';
-import ApplyButton from '../ApplyButton';
 
 import Dialog from '@material-ui/core/Dialog';
 

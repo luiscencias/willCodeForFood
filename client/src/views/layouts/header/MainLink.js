@@ -16,9 +16,9 @@ const styles = theme => ({
 		alignItems: 'center',
 
 		[theme.breakpoints.down('sm')]: {
-			minHeight: theme.spacing.unit * 6,
+			minHeight: theme.spacing.unitScaleToRem(6),
 			justifyContent: 'flex-start',
-			padding: `0 ${theme.spacing.unit * 2}px`,
+			padding: `0 ${theme.spacing.unitScaleToRem(2)}`,
 
 			'&:hover': {
 				backgroundColor: theme.palette.grey[200]
@@ -26,8 +26,8 @@ const styles = theme => ({
 		},
 
 		[theme.breakpoints.up('md')]: {
-			height: theme.spacing.unit * 4.5,
-			padding: `0 ${theme.spacing.unit}px`,
+			height: theme.spacing.unitScaleToRem(4.5),
+			padding: `0 ${theme.spacing.unitScaleToRem(1)}`,
 
 			borderRadius: theme.shape.borderRadius,
 

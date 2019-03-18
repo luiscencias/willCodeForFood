@@ -30,7 +30,7 @@ const StyledSection = withStyles(theme => ({
 
 			[theme.breakpoints.up('4-col')]: {
 				gridColumn: '1 / -1',
-				marginTop: theme.spacing.unit * 2
+				marginTop: theme.spacing.unitScaleToRem(2)
 			},
 
 			[theme.breakpoints.up('8-col')]: {

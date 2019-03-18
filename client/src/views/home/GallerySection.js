@@ -91,9 +91,9 @@ const IconRight = withStyles(theme => ({
 	}
 }))(IconButton);
 
-const GallerySection = () => (
+const GallerySection = ({ topRef }) => (
 	<StyledSection>
-		<div className="gallery-grid">
+		<div ref={topRef} className="gallery-grid">
 			<div className="gallery-image" />
 			<div className="gallery-image" />
 			<div className="gallery-image" />

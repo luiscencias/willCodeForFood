@@ -10,13 +10,13 @@ const styles = theme => ({
 		height: '3.5rem'
 	},
 	inputAdornedEnd: {
-		paddingRight: theme.spacing.unit
+		paddingRight: theme.spacing.unitScaleToRem(1)
 	},
 	inputLabel: {
 
 	},
 	formHelperTextRoot: {
-		marginBottom: theme.spacing.unit * 2
+		marginBottom: theme.spacing.unitScaleToRem(2)
 	}
 });
 

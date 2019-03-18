@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const styles = theme => ({
 	root: {
 		fontSize: '0.875rem',
-		marginTop: theme.spacing.unit * 2,
+		marginTop: theme.spacing.unitScaleToRem(2),
 		color: theme.palette.secondary.dark,
 		fontFamily: theme.typography.fontFamily
 	}

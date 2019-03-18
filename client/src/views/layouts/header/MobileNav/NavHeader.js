@@ -15,7 +15,7 @@ const Container = withStyles(theme => ({
 		display: 'flex',
 		flexDirection: 'column',
 
-		paddingBottom: theme.spacing.unit,
+		paddingBottom: theme.spacing.unitScaleToRem(1),
 
 		backgroundColor: theme.palette.grey[100],
 
@@ -30,16 +30,16 @@ const StyledAccountIcon = withStyles(theme => ({
 
 		alignSelf: 'center',
 
-		marginTop: theme.spacing.unit * 2
+		marginTop: theme.spacing.unitScaleToRem(2)
 	}
 }))(AccountIcon);
 
 const StyledButton = withStyles(theme => ({
 	root: {
-		marginTop: theme.spacing.unit * 2,
-		marginBottom: theme.spacing.unit,
-		marginLeft: theme.spacing.unit * 2,
-		marginRight: theme.spacing.unit * 2,
+		marginTop: theme.spacing.unitScaleToRem(2),
+		marginBottom: theme.spacing.unitScaleToRem(1),
+		marginLeft: theme.spacing.unitScaleToRem(2),
+		marginRight: theme.spacing.unitScaleToRem(2),
 
 		minHeight: '2.25rem'
 	}

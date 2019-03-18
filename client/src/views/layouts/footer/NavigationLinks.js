@@ -12,15 +12,7 @@ import LockIcon from '@material-ui/icons/LockOutlined';
 const Nav = withStyles(theme => ({
 	root: {
 		display: 'flex',
-
-		[ theme.breakpoints.down('sm')]: {
-			flexDirection: 'column',
-			marginTop: theme.spacing.unitScaleToRem(1)
-		},
-
-		[theme.breakpoints.up('md')]: {
-			marginRight: theme.spacing.unitScaleToRem(1)
-		}
+		flexDirection: 'column'
 	}
 }))(styledTag('nav'));
 

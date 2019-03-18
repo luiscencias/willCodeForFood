@@ -25,8 +25,8 @@ const StyledSection = withStyles(theme => ({
 		},
 
 		'& .apply-button': {
-			height: theme.spacing.unit * 20,
-			paddingRight: theme.spacing.unit * 3,
+			height: theme.spacing.unitScaleToRem(20),
+			paddingRight: theme.spacing.unitScaleToRem(3),
 
 			display: 'flex',
 

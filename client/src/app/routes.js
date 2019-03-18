@@ -13,6 +13,7 @@ import { About } from '../views/about';
 import { Gallery } from '../views/gallery';
 import { Login } from '../views/login';
 import { Membership } from '../views/membership';
+import { Shop } from '../views/shop';
 
 export default () => (
 	<Switch>
@@ -22,6 +23,7 @@ export default () => (
 		<ProtectedRoute path="/dashboard" component={() => (<div />)} />
 		<Route path="/login" component={Login} />
 		<Route path="/membership" component={Membership} />
+		<Route path="/shop" component={Shop} />
 
 
 		/* 	keep not found route below everything else	*/

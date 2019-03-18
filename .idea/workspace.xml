@@ -1,85 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f9620e2-9fdf-4f64-9658-cfcffeb34c7e" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/client/src/components/ProtectedRoute/ProtectedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/ProtectedRoute/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/helpers/useScrollToTopOnMount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/home/AboutSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/home/BenefitsSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/home/GallerySection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/home/HeroSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/home/QuoteSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/home/Section.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/home/ServicesSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/layouts/app-layout/MainContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/layouts/header/DesktopNav/LoginDialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/layouts/header/MainHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/layouts/header/MainLink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/layouts/header/MobileNav/NavHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/EmailField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/ForgotPasswordLink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/FormHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/Login.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/LoginForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/MainSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/PasswordField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/StyledField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/SubmitButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/login/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/membership/BenefitsSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/membership/HowToApplySection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/membership/IntroSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/membership/Membership.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/membership/Section.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/membership/StartApplicationButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/membership/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/mui-theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/mui-theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LogInModal/LogInModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/ProtectedRoute.js," afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LogInModal/LogInModal.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/ProtectedRoute.test.js}" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LogInModal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProtectedRoute/ProtectedRoute.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/helpers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/about/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/gallery/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/gallery/gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/home/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/home/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/app-layout/AppLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/app-layout/AppLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/app-layout/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/DesktopNav/DesktopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/header/DesktopNav/DesktopNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/LoginButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/header/LoginButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/header/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/MainAppBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/MobileNav/DrawerButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/header/MobileNav/DrawerButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/MobileNav/MobileDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/header/MobileNav/MobileDrawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/MobileNav/MobileNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/header/MobileNav/MobileNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/NavLink.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/NavigationLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/header/NavigationLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/layouts/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/layouts/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/notfound/notfound.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/notfound/notfound.js" afterDir="false" />
-=======
+    <list default="true" id="e0fb70da-e4c1-42fe-a975-48b3d48562a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/willCodeForFood.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/willCodeForFood.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
->>>>>>> kylan_apply
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/routes.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/node_modules/" />
-    <ignored path="$PROJECT_DIR$/client/node_modules/" />
-    <ignored path="$PROJECT_DIR$/.bundle/" />
-    <ignored path="$PROJECT_DIR$/components/" />
-    <ignored path="$PROJECT_DIR$/log/" />
-    <ignored path="$PROJECT_DIR$/public/system/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <ignored path="$PROJECT_DIR$/vendor/bundle/" />
-    <ignored path="$PROJECT_DIR$/vendor/cache/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,89 +14,86 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+        <entry file="file://$PROJECT_DIR$/client/src/views/login/LoginForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="216">
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/members_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="238">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20190316174008_create_members.rb">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/state/store.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-=======
-            <state relative-caret-position="205">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
->>>>>>> kylan_apply
+            <state relative-caret-position="121">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20190316174008_create_members.rb">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="-289">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-=======
-            <state relative-caret-position="154">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
->>>>>>> kylan_apply
+            <state relative-caret-position="-51" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/cors.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="283">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="697">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
->>>>>>> kylan_apply
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+            <state relative-caret-position="17">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby Class Template" />
+        <option value="Erb File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,27 +101,32 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/client/src/views/layouts/footer/footer.js" />
+        <option value="$PROJECT_DIR$/client/public/index.html" />
+        <option value="$PROJECT_DIR$/client/src/views/home/ButtonAppbar.js" />
+        <option value="$PROJECT_DIR$/client/src/views/layouts/header/header.js" />
         <option value="$PROJECT_DIR$/client/src/views/home/home.js" />
-        <option value="$PROJECT_DIR$/client/src/views/notfound/styles.js" />
-        <option value="$PROJECT_DIR$/client/src/views/notfound/notfound.js" />
-        <option value="$PROJECT_DIR$/client/src/app/routes.js" />
+        <option value="$PROJECT_DIR$/app/views/Members/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/members_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/member.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20190316174008_create_members.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/serializers/member_serializer.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="114" />
-    <option name="y" value="45" />
-    <option name="width" value="1644" />
-    <option name="height" value="876" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,27 +137,56 @@
             <path>
               <item name="willCodeForFood" type="b2602c69:ProjectViewProjectNode" />
               <item name="willCodeForFood" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="willCodeForFood" type="b2602c69:ProjectViewProjectNode" />
               <item name="willCodeForFood" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="willCodeForFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="willCodeForFood" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="willCodeForFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="willCodeForFood" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="willCodeForFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="willCodeForFood" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="initializers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="willCodeForFood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="willCodeForFood" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../431-HW1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\luisc\OneDrive\Documents\Senior Year\CSCE431\Project\willCodeForFood\app\controllers" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -329,129 +287,160 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0f9620e2-9fdf-4f64-9658-cfcffeb34c7e" name="Default Changelist" comment="" />
-      <created>1551137908983</created>
+      <changelist id="e0fb70da-e4c1-42fe-a975-48b3d48562a1" name="Default Changelist" comment="" />
+      <created>1550611750424</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551137908983</updated>
-      <workItem from="1551137912966" duration="1754000" />
-      <workItem from="1551157754266" duration="1253000" />
-      <workItem from="1551190836723" duration="2307000" />
-      <workItem from="1551212890860" duration="2508000" />
-      <workItem from="1551465926067" duration="5786000" />
-      <workItem from="1551482594528" duration="432000" />
-      <workItem from="1551816041761" duration="2601000" />
-      <workItem from="1551822522984" duration="1416000" />
-      <workItem from="1551988122536" duration="822000" />
+      <updated>1550611750424</updated>
+      <workItem from="1550611753514" duration="1460000" />
+      <workItem from="1550780863969" duration="25566000" />
+      <workItem from="1551215125389" duration="2201000" />
+      <workItem from="1551384978461" duration="3734000" />
+      <workItem from="1551990197578" duration="2274000" />
+      <workItem from="1551992828396" duration="1273000" />
+      <workItem from="1552928958597" duration="6961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="19085000" />
-=======
-    <option name="totallyTimeSpent" value="19339000" />
->>>>>>> kylan_apply
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="47958000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.11904762" visible="true" weight="0.17489879" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Version Control" order="3" sideWeight="0.88095236" side_tool="true" weight="0.24939272" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.3285968" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3516874" />
-=======
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.46003553" />
->>>>>>> kylan_apply
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.3285968" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19463088" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.23087819" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.23087819" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19463088" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.23087819" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.23087819" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/views/home/home.test.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/pbe/bin/webpack" />
+    <entry file="file://$PROJECT_DIR$/pbe/bin/webpack-dev-server" />
+    <entry file="file://$PROJECT_DIR$/client/node_modules/@material-ui/icons/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/jssconfig.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/views/home/ButtonAppbar.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/views/home/Album.js" />
     <entry file="file://$PROJECT_DIR$/client/src/views/notfound/header.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/views/notfound/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/views/home/styles.css.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/mui-theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/views/notfound/styles.css.js" />
-    <entry file="file://$PROJECT_DIR$/client/src/views/notfound/styles.css" />
-    <entry file="file://$PROJECT_DIR$/client/src/views/home/styles.css.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/client/src/views/layouts/footer/footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/views/home/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/app/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/App.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/views/layouts/header/NavigationLinks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297665" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/layouts/header/header.module.css" />
+    <entry file="file://$PROJECT_DIR$/client/src/views/layouts/app-layout/styles.css.js" />
     <entry file="file://$PROJECT_DIR$/client/src/views/layouts/header/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="-153">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/layouts/header/header.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/home/home.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/home/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -462,101 +451,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/views/home/styles.js">
+    <entry file="file://$PROJECT_DIR$/client/src/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/application_controller.rb" />
+    <entry file="file://$PROJECT_DIR$/client/src/app/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="24" lean-forward="true" selection-end-line="53" selection-end-column="94" />
+        <state relative-caret-position="221">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/views/notfound/notfound.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/layouts/app-layout/AppLayout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/views/notfound/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/client/src/views/layouts/app-layout/AppLayout.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> kylan_apply
     <entry file="file://$PROJECT_DIR$/client/src/views/home/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PBE_app_controller.rb" />
+    <entry file="file://$PROJECT_DIR$/app/jobs/application_job.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/application_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/PasswordField.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-406">
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/SubmitButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/FormHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/ForgotPasswordLink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/Login.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/MainSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/state/store.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/views/login/LoginForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Members/new.html.erb" />
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/member.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/cors.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/controllers/members_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-289">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-=======
-        <state relative-caret-position="697">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
->>>>>>> kylan_apply
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/routes.js">
+    <entry file="file://$PROJECT_DIR$/app/serializers/member_serializer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190316174008_create_members.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
+        <state relative-caret-position="-51" />
       </provider>
     </entry>
   </component>

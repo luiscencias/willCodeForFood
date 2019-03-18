@@ -48,9 +48,9 @@ const theme = createMuiTheme({
 
   		'@media (min-width: 0px)': { // xs and up
   			gridTemplateColumns: 'repeat(4, 1fr)',
-  			gridColumnGap: '16px',
-  			paddingLeft: 16,
-  			paddingRight: 16,
+  			gridColumnGap: '1rem',
+  			paddingLeft: '1rem',
+  			paddingRight: '1rem',
   		},
 
   		'@media (min-width: 600px)': { // sm and up
@@ -62,9 +62,9 @@ const theme = createMuiTheme({
   		},
 
   		'@media (min-width: 960px)': { // md and up
-  			gridColumnGap: '24px',
-  			paddingLeft: 24,
-  			paddingRight: 24,
+  			gridColumnGap: '1.5rem',
+  			paddingLeft: '1.5rem',
+  			paddingRight: '1.5rem',
   		}
   	}
   }

@@ -14,7 +14,7 @@ const StyledSection = withStyles(theme => ({
 		backgroundColor: theme.palette.grey[200],
 
 		'& .services-section-text': {
-			marginBottom: theme.spacing.unitScaleToRem(10),
+			marginBottom: theme.spacing.unitScaleToRem(8),
 
 			textAlign: 'center',
 
@@ -39,8 +39,51 @@ const StyledSection = withStyles(theme => ({
 			},
 
 			[theme.breakpoints.up('8-col')]: {
-				gridColumn: '3 / -3'
+				gridColumn: '2 / -2'
 			},
+
+			'& > div': {
+				display: 'flex',
+
+				marginBottom: theme.spacing.unitScaleToRem(3),
+
+				'&:last-child': {
+					marginBottom: 0
+				},
+
+				'@media (max-width: 480px)': {
+					flexDirection: 'column',
+					alignItems: 'center',
+					textAlign: 'center'
+				},
+
+				'@media (min-width: 480px)': {
+					flexDirection: 'row',
+					alignItems: 'flex-start',
+					textAlign: 'left'
+				},
+
+				'& h3': {
+					...theme.typography.h6,
+
+					marginTop: 0,
+					marginBottom: theme.spacing.unitScaleToRem(2)
+				},
+
+				'& p': {
+					marginBottom: 0,
+
+					'@media (max-width: 480px)': {
+						marginBottom: theme.spacing.unitScaleToRem(4)
+					}
+				},
+
+				'&:last-child p': {
+					'@media (max-width: 480px)': {
+						marginBottom: 0
+					}
+				}
+			}
 		}
 
 	}
@@ -49,14 +92,20 @@ const StyledSection = withStyles(theme => ({
 const ServicesIconButton = withStyles(theme => ({
 	root: {
 		backgroundColor: theme.palette.secondary.main,
-		padding: 6,
+		padding: '0.375rem',
 
 		color: theme.palette.common.white,
 		fontSize: '3rem',
 		width: '3.75rem',
 		height: '3.75rem',
 
-		marginBottom: theme.spacing.unitScaleToRem(5)
+		'@media (max-width: 480px)': {
+			marginBottom: theme.spacing.unitScaleToRem(2)
+		},
+
+		'@media (min-width: 480px)': {
+			marginRight: theme.spacing.unitScaleToRem(2)
+		}
 	}
 }))(IconButton);
 

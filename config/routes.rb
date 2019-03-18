@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   resources :members
-  root 'home#index'
-  get 'signup', to: 'members#new', as: 'signup'
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/destroy'

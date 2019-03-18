@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 
 const StyledButton = withStyles(theme => ({
 	root: {
-		padding: '12px 32px',
+		padding: `${theme.spacing.unitScaleToRem(1.5)} ${theme.spacing.unitScaleToRem(4)}`,
 
 		borderWidth: '2px',
 
@@ -26,7 +26,8 @@ const StyledButton = withStyles(theme => ({
 	},
 
 	label: {
-		fontSize: '1rem',
+		fontSize: theme.typography.body2Next.fontSize,
+		lineHeight: theme.typography.body2Next.lineHeight,
 		fontWeight: 600,
 		textAlign: 'center'
 	}

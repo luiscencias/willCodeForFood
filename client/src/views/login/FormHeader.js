@@ -9,14 +9,14 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const Title = withStyles(theme => ({
 	root: {
-		height: theme.spacing.unit * 5.5,
+		height: theme.spacing.unitScaleToRem(5.5),
 		...theme.typography.h5,
-		lineHeight: `${theme.spacing.unit * 5.5}px`,
+		lineHeight: `${theme.spacing.unitScaleToRem(5.5)}`,
 
 		textAlign: 'center',
 
 		margin: 0,
-		marginBottom: theme.spacing.unit * 3
+		marginBottom: theme.spacing.unitScaleToRem(3)
 	}
 }))(styledTag('h5'));
 

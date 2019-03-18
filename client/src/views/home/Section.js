@@ -7,8 +7,8 @@ const Section = withStyles(theme => ({
 	root: {
 		...theme.grids.main,
 
-		paddingTop: theme.spacing.unit * 15,
-		paddingBottom: theme.spacing.unit * 15,
+		paddingTop: theme.spacing.unitScaleToRem(15),
+		paddingBottom: theme.spacing.unitScaleToRem(15),
 
 		'& h2': {
 			gridColumn: '1 / -1',
@@ -17,10 +17,6 @@ const Section = withStyles(theme => ({
 			fontWeight: theme.typography.fontWeightMedium,
 
 			marginTop: 0,
-
-			'@media (min-width: 1280px) and (orientation: landscape)': {
-				...theme.typography.h4
-			}
 		},
 
 		'& p': {
@@ -28,15 +24,6 @@ const Section = withStyles(theme => ({
 
 			...theme.typography.h6,
 			fontWeight: theme.typography.fontWeightRegular,
-
-			'@media (max-height: 720px)': {
-				...theme.typography.body1Next
-			},
-
-			'@media (min-width: 1280px) and (orientation: landscape)': {
-				...theme.typography.h5,
-				fontWeight: theme.typography.fontWeightRegular
-			},
 		},
 
 		'& a.text-link': {
@@ -45,17 +32,6 @@ const Section = withStyles(theme => ({
 			...theme.typography.h6,
 			fontWeight: theme.typography.fontWeightRegular,
 			color: theme.palette.secondary.main,
-
-			'@media (max-height: 720px)': {
-				...theme.typography.body1Next,
-				color: theme.palette.secondary.main
-			},
-
-			'@media (min-width: 1280px) and (orientation: landscape)': {
-				...theme.typography.h5,
-				fontWeight: theme.typography.fontWeightRegular,
-				color: theme.palette.secondary.main
-			},
 		}
 	}
 }))(styledTag('section'));

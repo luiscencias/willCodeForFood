@@ -14,13 +14,7 @@ describe('Gallery', () => {
         expect(gallery.exists()).toBe(true);
     });
 
-    // it('is not authenticated', () => {
-    //     expect(gallery.props.isAuthenticated).toBeFalsy();
-    // });
 
-    it('should render 2 div', () => {
-        expect(gallery.find('div').length).toEqual(2);
-    });
 
     it('renders without changing', () => {
         expect(gallery).toMatchSnapshot();
@@ -37,10 +31,7 @@ describe('Gallery', () => {
         expect(gallery.contains(<img/>));
     });
 
-    // it('should render a toolbar', () => {
-    //     expect(gallery.contains(<Toolbar/>));
-    //
-    // });
+
 
     it('should have js implementation', () => {
         // console.log(gallery.debug());
@@ -49,11 +40,6 @@ describe('Gallery', () => {
     });
 
 
-    // it('should display navLinks', () => {
-    //     // console.log(gallery.debug());
-    //
-    //     expect(gallery.contains(<DesktopNav isAuthenticated={false} routes={[]} />));
-    // });
 
 });
 

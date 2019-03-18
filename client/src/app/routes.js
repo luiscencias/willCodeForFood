@@ -13,6 +13,7 @@ import { About } from '../views/about';
 import { Gallery } from '../views/gallery';
 import { Login } from '../views/login';
 import { Membership } from '../views/membership';
+import { Apply } from '../views/application';
 import { Shop } from '../views/shop';
 
 export default () => (
@@ -23,6 +24,7 @@ export default () => (
         <ProtectedRoute path="/dashboard" component={() => (<div />)} />
         <Route path="/login" component={Login} />
         <Route path="/membership" component={Membership} />
+        <Route path="/membership-application" component={Apply} />
         <Route path="/shop" component={Shop} />
 
 

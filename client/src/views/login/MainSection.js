@@ -17,8 +17,8 @@ const MainSection = withStyles(theme => ({
 		'& .form-container': {
 			fontFamily: theme.typography.fontFamily,
 
-			padding: theme.spacing.unit * 2,
-			marginTop: theme.spacing.unit * 2,
+			padding: theme.spacing.unitScaleToRem(2),
+			marginTop: theme.spacing.unitScaleToRem(2),
 
 			backgroundColor: theme.palette.background.paper,
 			borderRadius: theme.shape.borderRadius,
@@ -60,7 +60,7 @@ const MainSection = withStyles(theme => ({
 
 			textAlign: 'center',
 
-			marginBottom: theme.spacing.unit * 2,
+			marginBottom: theme.spacing.unitScaleToRem(2),
 
 			[theme.breakpoints.up('4-col')]: {
 				gridColumn: '1 / -1'

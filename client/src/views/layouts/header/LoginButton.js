@@ -9,9 +9,9 @@ import AccountIcon from '@material-ui/icons/AccountCircle';
 
 const StyledButton = withStyles(theme => ({
 	root: {
-		height: theme.spacing.unit * 4.5,
-		paddingLeft: theme.spacing.unit * 3/2,
-		paddingRight: theme.spacing.unit * 2,
+		height: theme.spacing.unitScaleToRem(4.5),
+		paddingLeft: theme.spacing.unitScaleToRem(1.5),
+		paddingRight: theme.spacing.unitScaleToRem(2),
 		textTransform: 'none',
 		color: 'inherit'
 	},
@@ -24,7 +24,7 @@ const StyledButton = withStyles(theme => ({
 const StyledAccountIcon = withStyles(theme => ({
 	root: {
 		fontSize: '1.125rem',
-		marginRight: theme.spacing.unit / 2
+		marginRight: theme.spacing.unitScaleToRem(0.5)
 	}
 }))(AccountIcon);
 

@@ -14,7 +14,7 @@ const StyledSection = withStyles(theme => ({
 		backgroundColor: theme.palette.grey[200],
 
 		'& .services-section-text': {
-			marginBottom: theme.spacing.unit * 10,
+			marginBottom: theme.spacing.unitScaleToRem(10),
 
 			textAlign: 'center',
 
@@ -33,68 +33,14 @@ const StyledSection = withStyles(theme => ({
 
 		'& .services-section-list': {
 			gridRow: '2 / span 1',
-			gridColumn: '1 / -1',
-
-			display: 'flex',
-
+			
 			[theme.breakpoints.up('4-col')]: {
-				flexDirection: 'column',
-				alignItems: 'center'
+				gridColumn: '1 / -1'
 			},
 
 			[theme.breakpoints.up('8-col')]: {
-				flexDirection: 'row',
-				justifyContent: 'space-evenly'
+				gridColumn: '3 / -3'
 			},
-
-			'& div': {
-				display: 'flex',
-				flexDirection: 'column',
-				alignItems: 'center',
-
-				textAlign: 'center',
-
-				[theme.breakpoints.up('4-col')]: {
-					marginBottom: theme.spacing.unit * 5,
-
-					maxWidth: '75%',
-
-					'&:last-child': {
-						marginBottom: 0
-					}
-				},
-
-				[theme.breakpoints.up('8-col')]: {
-					marginBottom: 0,
-
-					maxWidth: '25%',
-				},
-
-				'& h3': {
-					...theme.typography.h6,
-
-					marginTop: 0,
-					marginBottom: theme.spacing.unit * 1.5,
-
-					'@media (min-width: 1280px) and (orientation: landscape)': {
-						...theme.typography.h5,
-						fontWeight: theme.typography.fontWeightMedium
-					}
-				},
-
-				'& p': {
-					...theme.typography.h6,
-					fontWeight: theme.typography.fontWeightRegular,
-
-					marginTop: 0,
-					marginBottom: 0,
-
-					'@media (min-width: 1280px) and (orientation: landscape)': {
-						...theme.typography.h5,
-						fontWeight: theme.typography.fontWeightRegular
-					}
-				}
-			}
 		}
 
 	}
@@ -110,7 +56,7 @@ const ServicesIconButton = withStyles(theme => ({
 		width: '3.75rem',
 		height: '3.75rem',
 
-		marginBottom: theme.spacing.unit * 5
+		marginBottom: theme.spacing.unitScaleToRem(5)
 	}
 }))(IconButton);
 
@@ -118,8 +64,8 @@ const CallToActionButton = withStyles(theme => ({
 	root: {
 		gridRow: '3 / span 1',
 
-		padding: '12px 32px',
-		marginTop: theme.spacing.unit * 10,
+		padding: `${theme.spacing.unitScaleToRem(1.5)} ${theme.spacing.unitScaleToRem(4)}`,
+		marginTop: theme.spacing.unitScaleToRem(10),
 
 		textTransform: 'none',
 
@@ -128,7 +74,8 @@ const CallToActionButton = withStyles(theme => ({
 
 		borderWidth: 2,
 
-		fontSize: '1rem',
+		fontSize: theme.typography.body1Next.fontSize,
+		lineHeight: theme.typography.body1Next.lineHeight,
 
 		'&:hover': {
 
@@ -160,18 +107,27 @@ const ServicesSection = () => (
 		<div className="services-section-list">
 			<div>
 				<ServicesIconButton>X</ServicesIconButton>
-				<h3>Benefit One</h3>
-				<p>A sentence or two explaining this benefit.</p>
+				<div>
+					<h3>First benefit</h3>
+					<p>
+						A sentence or two explaining this benefit. This text should relate a concrete
+						benefit to some emotional need.
+					</p>
+				</div>
 			</div>
 			<div>
 				<ServicesIconButton>Y</ServicesIconButton>
-				<h3>Benefit Two</h3>
-				<p>A sentence or two explaining this benefit.</p>
+				<div>
+					<h3>A catchy headline for the second benefit</h3>
+					<p>A sentence or two explaining this benefit. The same for this one.</p>
+				</div>
 			</div>
 			<div>
 				<ServicesIconButton>Z</ServicesIconButton>
-				<h3>Benefit Three</h3>
-				<p>A sentence or two explaining this benefit.</p>
+				<div>
+					<h3>Something about the third benefit</h3>
+					<p>Ditto. These paragraphs should be 2 to 3 lines.</p>
+				</div>
 			</div>
 		</div>
 		<CallToActionButton variant="outlined" component={Link} to="/membership" >

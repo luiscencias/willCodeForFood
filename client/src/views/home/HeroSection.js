@@ -22,17 +22,17 @@ const StyledSection = withStyles(theme => ({
 		fontFamily: theme.typography.fontFamily,
 		color: theme.palette.common.white,
 
-		'@media (min-width: 600px) and (orientation: portrait)': { // sm and up portrait
-			textAlign: 'center',
-			justifyItems: 'center'
+		'@media (max-height: 480px)': {
+			alignContent: 'space-between',
+			paddingBottom: '1rem'
 		},
 
 		[theme.breakpoints.down('sm')]: {
-			height: `calc( 100vh - ${theme.spacing.unit * 7}px )`
+			height: `calc( 100vh - ${theme.spacing.unitScaleToRem(7)} )`
 		},
 
 		[theme.breakpoints.up('md')]: {
-			height: `calc( 100vh - ${theme.spacing.unit * 8}px )`
+			height: `calc( 100vh - ${theme.spacing.unitScaleToRem(8)} )`
 		},
 
 		'& .hero-text': {
@@ -48,91 +48,72 @@ const StyledSection = withStyles(theme => ({
 				gridColumn: '1 / span 8'
 			},
 
-			'@media (min-width: 600px) and (orientation: portrait)': { // sm and up portrait
-				gridColumn: '1 / -1'
+			'@media (min-width: 840px) and (orientation: portrait)': { // 12-col and up portrait
+				gridColumn: '1 / span 9'
 			},
 
-			'@media (max-height: 480px)': {
+			'@media (max-height: 480px) and (max-width: 600px)': {
 				gridColumn: '1 / -1'
 			}
 		},
 
 		'& h1': {
-			fontSize: '3rem',
-			lineHeight: 1,
-			letterSpacing: "-0.00833em",
+			fontSize: theme.typography.h3.fontSize,
+			lineHeight: theme.typography.h3.lineHeight,
+			letterSpacing: theme.typography.h3.letterSpacing,
+
 			color: 'inherit',
 			fontWeight: theme.typography.fontWeightMedium,
 
-			marginBottom: '2.5rem',
+			marginBottom: theme.spacing.unitScaleToRem(5),
 
-			'@media (max-height: 720px)': { // around sm and down
-				fontSize: '2.125rem',
-				lineHeight: 1.17,
-				letterSpacing: "0.00735em",
-				marginBottom: '1.5rem'
+			'@media (max-height: 480px)': {
+				marginBottom: theme.spacing.unitScaleToRem(2),
+				marginTop: 0,
+
+				fontSize: theme.typography.h4.fontSize,
+				lineHeight: theme.typography.h4.lineHeight,
+				letterSpacing: theme.typography.h4.letterSpacing,
 			},
-
-			'@media (max-height: 480px)': { // around sm and down
-				marginBottom: '1rem'
-			},
-
-			'@media (min-width: 1280px) and (orientation: landscape)': { // lg and up landscape
-				fontSize: '3.75rem',
-				marginBottom: '3rem',
-			}
 		},
 
 		'& h2': {
-			fontSize: '1.5rem',
-			lineHeight: 1.33,
-			letterSpacing: "0em",
+			fontSize: theme.typography.h5.fontSize,
+			lineHeight: theme.typography.h5.lineHeight,
+			letterSpacing: theme.typography.h5.letterSpacing,
 
-			maxWidth: '32em',
-
-			marginTop: "0rem",
-			marginBottom: '2.5rem',
+			marginTop: 0,
+			marginBottom: theme.spacing.unitScaleToRem(5),
 
 			color: 'inherit',
 			fontWeight: theme.typography.fontWeightLight,
 
-			'@media (max-height: 720px)': { // sm and down
-				fontSize: '1rem',
-				lineHeight: 1.75,
-				letterSpacing: "0.00938em",
-				marginBottom: '1.5rem',
-				fontWeight: theme.typography.fontWeightRegular
-			},
+			'@media (max-height: 480px)': {
+				marginBottom: theme.spacing.unitScaleToRem(2),
 
-			'@media (max-height: 480px)': { // around sm and down
-				marginBottom: '1rem'
-			},
-
-			'@media (min-width: 1280px) and (orientation: landscape)': { // lg and up landscape
-				fontSize: '2.125rem',
-				lineHeight: 1.17,
-				letterSpacing: "0em",
-				marginBottom: '3rem',
+				fontSize: theme.typography.h6.fontSize,
+				lineHeight: theme.typography.h6.lineHeight,
+				letterSpacing: theme.typography.h6.letterSpacing,
 			}
 		},
 
 		'& .calls-to-action': {
-			gridColumn: '1 / -1'
+			gridColumn: '1 / -1',
+
+			'@media (max-height: 720px)': {
+
+			}
 		}
 	}
 }))(Section);
 
 const CallToAction = withStyles(theme => ({
 	root: {
-		padding: '12px 32px',
+		padding: `${theme.spacing.unitScaleToRem(1.5)} ${theme.spacing.unitScaleToRem(4)}`,
 
 		'@media (max-width: 480px)': { // around sm and down
 			width: '100%'
 		},
-
-		'@media (min-width: 1280px) and (orientation: landscape)': { // lg and up landscape
-			padding: ''
-		}
 	},
 
 	outlined: {
@@ -150,11 +131,11 @@ const CallToAction = withStyles(theme => ({
 		color: theme.palette.text.primary,
 
 		'@media (min-width: 480px)': { // around sm and up
-			marginRight: theme.spacing.unit * 2,
+			marginRight: theme.spacing.unitScaleToRem(2)
 		},
 
 		'@media (max-width: 480px)': { // around sm and down
-			marginBottom: theme.spacing.unit * 2
+			marginBottom: theme.spacing.unitScaleToRem(2)
 		},
 
 		'&:hover': {
@@ -164,10 +145,8 @@ const CallToAction = withStyles(theme => ({
 
 	label: {
 		color: 'inherit',
-
-		'@media (min-height: 600px)': { // around sm and up
-			fontSize: '1rem'
-		}
+		fontSize: theme.typography.body1Next.fontSize,
+		lineHeight: theme.typography.body1Next.lineHeight
 	}
 }))(Button);
 
@@ -175,23 +154,27 @@ const ArrowDownIcon = withStyles(theme => ({
 	root: {
 		position: 'absolute',
 
-		bottom: '2vh',
+		bottom: theme.spacing.unitScaleToRem(2),
 		left: '50%',
 		transform: 'translateX(-50%)',
 
-		height: 60,
-		width: 60,
+		height: '3rem',
+		width: '3rem',
 
 		color: 'inherit',
 
-		padding: 0
+		padding: 0,
+
+		'@media (max-height: 480px)': {
+			left: 'auto',
+			right: '1rem',
+			transform: 'none'
+		}
 	},
 
 	label: {
-		height: 60,
-		width: 60,
 
-		fontSize: '3.75rem'
+		fontSize: '3rem'
 	}
 }))(IconButton);
 
@@ -207,7 +190,7 @@ const HeroSection = () => (
 			<CallToAction component={Link} to="/membership" variant="outlined">Learn More</CallToAction>
 		</div>
 		<ArrowDownIcon>
-			<KeyboardArrowDownIcon />
+			<KeyboardArrowDownIcon fontSize="inherit" />
 		</ArrowDownIcon>
 	</StyledSection>
 );

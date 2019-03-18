@@ -18,13 +18,13 @@ const StyledHeader = withStyles(theme => ({
 		alignItems: 'center',
 
 		[theme.breakpoints.down('sm')]: {
-			padding: `0 ${theme.spacing.unit * 2}px`,
-			height: theme.spacing.unit * 7
+			padding: `0 ${theme.spacing.unitScaleToRem(2)}`,
+			height: theme.spacing.unitScaleToRem(7)
 		},
 
 		[theme.breakpoints.up('md')]: {
-			padding: `0 ${theme.spacing.unit * 3}px`,
-			height: theme.spacing.unit * 8
+			padding: `0 ${theme.spacing.unitScaleToRem(3)}`,
+			height: theme.spacing.unitScaleToRem(8)
 		}
 	}
 }))(styledTag('header'));

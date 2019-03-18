@@ -15,11 +15,11 @@ const Nav = withStyles(theme => ({
 
 		[ theme.breakpoints.down('sm')]: {
 			flexDirection: 'column',
-			marginTop: theme.spacing.unit
+			marginTop: theme.spacing.unitScaleToRem(1)
 		},
 
 		[theme.breakpoints.up('md')]: {
-			marginRight: theme.spacing.unit
+			marginRight: theme.spacing.unitScaleToRem(1)
 		}
 	}
 }))(styledTag('nav'));
@@ -29,11 +29,11 @@ const AuthRequiredIcon = withStyles(theme => ({
 		fontSize: 'inherit',
 
 		[theme.breakpoints.down('sm')]: {
-			marginLeft: theme.spacing.unit
+			marginLeft: theme.spacing.unitScaleToRem(1)
 		},
 
 		[theme.breakpoints.up('md')]: {
-			marginLeft: theme.spacing.unit / 2
+			marginLeft: theme.spacing.unitScaleToRem(0.5)
 		}
 	}
 }))(LockIcon);

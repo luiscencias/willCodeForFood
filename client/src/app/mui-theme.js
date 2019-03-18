@@ -1,9 +1,15 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import cyan from '@material-ui/core/colors/cyan';
 
-const spacing_unit = 8;
+const base_spacing_unit = 8;
+
+const defaultTheme = createMuiTheme();
+
+const { typography, spacing } = defaultTheme;
 
 const theme = createMuiTheme({
+  ...defaultTheme,
+
 	palette: {
 		primary: {
 			main: '#9e9e9e'
@@ -17,9 +23,10 @@ const theme = createMuiTheme({
     useNextVariants: true,
   },
   spacing: {
-  	unit: spacing_unit,
+  	unit: spacing.unit,
+    unitScaleToRem: s => `${ 0.5 * s }rem`,
   	mainHeader: {
-  		height: spacing_unit * 8
+  		height: typography.pxToRem(spacing.unit * 8)
   	}
   },
   breakpoints: {
@@ -43,21 +50,21 @@ const theme = createMuiTheme({
   			gridTemplateColumns: 'repeat(4, 1fr)',
   			gridColumnGap: '16px',
   			paddingLeft: 16,
-  			paddingRight: 16
+  			paddingRight: 16,
   		},
 
   		'@media (min-width: 600px)': { // sm and up
-  			gridTemplateColumns: 'repeat(8, 1fr)'
+  			gridTemplateColumns: 'repeat(8, 1fr)',
   		},
 
   		'@media (min-width: 840px)': { // between sm and md
-  			gridTemplateColumns: 'repeat(12, 1fr)'
+  			gridTemplateColumns: 'repeat(12, 1fr)',
   		},
 
   		'@media (min-width: 960px)': { // md and up
   			gridColumnGap: '24px',
   			paddingLeft: 24,
-  			paddingRight: 24
+  			paddingRight: 24,
   		}
   	}
   }

@@ -21,7 +21,7 @@ const StyledSection = withStyles(theme => ({
 		},
 
 		'& p': {
-			marginBottom: theme.spacing.unit * 6
+			marginBottom: theme.spacing.unitScaleToRem(6)
 		}
 	}
 }))(Section);

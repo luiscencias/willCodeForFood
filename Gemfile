@@ -12,6 +12,13 @@ gem 'puma', '~> 3.11'
 #gem 'webpacker', '~> 3.5.5'
 gem 'foreman', '~> 0.82.0'
 
+
+# bcrypt for password handling
+gem 'bcrypt', '~> 3.1.7'
+
+
+# ActiveSerializer for creating easy to read json
+gem 'active_model_serializers'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

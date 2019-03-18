@@ -180,7 +180,7 @@ const ArrowDownIcon = withStyles(theme => ({
 	}
 }))(IconButton);
 
-const HeroSection = () => (
+const HeroSection = ({ scrollDownFunction }) => (
 	<StyledSection>
 		<div className="hero-text">
 			<h1>A compelling headline for this org</h1>
@@ -191,7 +191,7 @@ const HeroSection = () => (
 			<CallToAction component={Link} to="/membership-application" variant="contained">Apply Now</CallToAction>
 			<CallToAction component={Link} to="/membership" variant="outlined">Learn More</CallToAction>
 		</div>
-		<ArrowDownIcon>
+		<ArrowDownIcon onClick={scrollDownFunction}>
 			<KeyboardArrowDownIcon fontSize="inherit" />
 		</ArrowDownIcon>
 	</StyledSection>

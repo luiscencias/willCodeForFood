@@ -8,8 +8,8 @@ const StyledFooter = withStyles(theme => ({
 	root: {
 		...theme.grids.main,
 
-		paddingTop: theme.spacing.unitScaleToRem(15),
-		paddingBottom: theme.spacing.unitScaleToRem(15),
+		paddingTop: theme.spacing.unitScaleToRem(10),
+		paddingBottom: theme.spacing.unitScaleToRem(10),
 
 		backgroundColor: theme.palette.primary.dark,
 		color: theme.palette.common.white,

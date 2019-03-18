@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import Typography from '@material-ui/core/Typography';
 
@@ -14,14 +14,21 @@ import { useScrollToTopOnMount } from '../../helpers';
 
 import Section from './Section';
 
+const scrollPastFold = ref => () => ref.current.scrollIntoView({
+	behavior: 'smooth',
+	block: 'start'
+});
+
 const Home = () => {
 	useScrollToTopOnMount();
 
+	const foldBottom = useRef(null);
+
 	return (
 		<main>
-			<HeroSection />
+			<HeroSection scrollDownFunction={scrollPastFold(foldBottom)} />
 			
-			<GallerySection />
+			<GallerySection topRef={foldBottom} />
 			<AboutSection />
 			<ServicesSection />
 			<QuoteSection />

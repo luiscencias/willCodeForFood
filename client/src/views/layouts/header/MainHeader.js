@@ -12,6 +12,8 @@ const StyledHeader = withStyles(theme => ({
 		position: 'sticky',
 		top: 0,
 
+		transition: 'all 0.25s ease',
+
 		zIndex: theme.zIndex.appBar,
 
 		display: 'flex',
@@ -44,7 +46,9 @@ MainHeader = withStyles(theme => ({
 	},
 	scrolled: {
 		backgroundColor: theme.palette.background.default,
-		color: theme.palette.text.default
+		color: theme.palette.text.default,
+
+		boxShadow: theme.shadows[2]
 	}
 }))(MainHeader);
 

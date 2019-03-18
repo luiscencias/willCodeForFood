@@ -169,7 +169,9 @@ const ArrowDownIcon = withStyles(theme => ({
 			left: 'auto',
 			right: '1rem',
 			transform: 'none'
-		}
+		},
+
+		animation: `hero_button_bounce 1000ms ${theme.transitions.easing.easeInOut} 0s infinite`
 	},
 
 	label: {

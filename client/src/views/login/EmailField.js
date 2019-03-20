@@ -8,8 +8,6 @@ const EmailField = () => (
 		required
 		name="email"
 		label="Email"
-		variant="outlined"
-		type="password"	//bizzare bug
 		helperText="*Required"
 	/>
 );

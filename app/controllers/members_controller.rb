@@ -1,6 +1,16 @@
 class MembersController < ApplicationController
   before_action :set_member, only: [:show, :update, :destroy]
 
+  def test
+    puts :name
+    puts "Here"
+  end
+
+  def test2
+    puts "Test 2"
+    render json: :name
+  end
+
   # GET /members
   def index
     @members = Member.all
@@ -15,6 +25,9 @@ class MembersController < ApplicationController
 
   # POST /members
   def create
+    puts params
+    puts "Here 1"
+    puts params[0]
     @member = Member.new(member_params)
 
     if @member.save

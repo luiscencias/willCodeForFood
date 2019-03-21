@@ -8,6 +8,7 @@ const EmailField = () => (
 		required
 		name="email"
 		label="Email"
+		variant="outlined"
 		helperText="*Required"
 	/>
 );

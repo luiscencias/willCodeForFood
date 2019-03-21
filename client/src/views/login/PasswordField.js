@@ -29,7 +29,7 @@ const PasswordField = () => {
 			required
 			name="password"
 			label="Password"
-			// variant="outlined"
+			variant="outlined"
 			type={ showPassword ? 'text' : 'password' }
 			InputProps={{
 				endAdornment: (

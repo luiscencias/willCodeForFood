@@ -1,0 +1,2 @@
+class Fname < ApplicationRecord
+end

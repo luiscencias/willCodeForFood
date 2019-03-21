@@ -1,12 +1,11 @@
-class UserMailer < ApplicationMailer
+class UserMailer < ActionMailer::Base
 
   default from: 'pbetamuorg@gmail.com'
 
   def confirmation_email(email, subject)
     @url = 'http://localhost:8081/shop'
-    puts 'Hello'
-    @subject = subject
     @email = email
-    mail(to: @email, subject: @subject)
+    @subject = subject
+    mail(to: @email, subject: 'PBE Store Order Confirmation', body: @subject, template_path: 'user_mailer', template_name: 'mailer')
   end
 end

@@ -1,10 +1,12 @@
 class UserMailer < ApplicationMailer
 
-  default from: 'ianberns1@gmail.com'
+  default from: 'pbetamuorg@gmail.com'
 
-  def confirmation_email
+  def confirmation_email(email, subject)
     @url = 'http://localhost:8081/shop'
+    puts 'Hello'
+    @subject = subject
+    @email = email
     mail(to: @email, subject: @subject)
-    puts @email
   end
 end

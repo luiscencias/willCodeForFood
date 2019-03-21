@@ -28,9 +28,7 @@ class Shop extends React.Component {
         event.preventDefault();
 
         const data = new FormData(event.target);
-        // for (var pair of data.entries()) {
-        //     console.log(pair)
-        // }
+
         axios({
             method: 'post',
             url: 'http://localhost:8081/shop',

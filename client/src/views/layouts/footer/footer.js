@@ -25,12 +25,12 @@ const Footer = () => (
 			<Logo />
 			<p>Designed and built by:</p>
 			<ul>
-				<li><a href="#">Example Name</a></li>
-				<li><a href="#">Example Name</a></li>
-				<li><a href="#">Example Name</a></li>
-				<li><a href="#">Example Name</a></li>
-				<li><a href="#">Example Name</a></li>
-				<li><a href="#">Example Name</a></li>
+				<li><a href="#">Ian Berns</a></li>
+				<li><a href="#">Luis Davila Labastida</a></li>
+				<li><a href="#">Stephanie Keck</a></li>
+				<li><a href="#">Jonathan Mejia</a></li>
+				<li><a href="#">Kylan Snyder</a></li>
+				<li><a href="http://www.linkedin.com/in/blake-stolle-b5a071129">Blake Stolle</a></li>
 			</ul>
 		</section>
 		<section className="nav">

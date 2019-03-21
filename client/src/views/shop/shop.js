@@ -7,6 +7,7 @@ import Section from './Section';
 import {useScrollToTopOnMount} from "../../helpers";
 
 class Shop extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -29,7 +30,10 @@ class Shop extends React.Component {
 
         return (
             <div className="Shop">
+                <p></p>
                 <p>PBE Official Store</p>
+                <GallerySection/>
+
                 <div>
                     <form action="#">
                         <label>First Name</label>

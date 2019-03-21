@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-  post '/test/:name' => 'members#test'
 
-  get '/test2' => 'members#test2'
   resources :members
 
   get 'sessions/new'

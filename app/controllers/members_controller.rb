@@ -25,9 +25,10 @@ class MembersController < ApplicationController
 
   # POST /members
   def create
-    puts params
     puts "Here 1"
-    puts params[0]
+    puts params
+
+
     @member = Member.new(member_params)
 
     if @member.save
@@ -59,6 +60,7 @@ class MembersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def member_params
-      params.require(:member).permit(:email, :password, :password_confirmation, :first_name, :last_name)
+      params.permit(:email, :password, :password_confirmation, :first_name, :last_name)
+      #params.require(:member).permit(:email, :password, :password_confirmation, :first_name, :last_name)
     end
 end

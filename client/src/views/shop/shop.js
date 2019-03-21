@@ -1,39 +1,45 @@
 import React, {useRef} from 'react';
 import './shop.css';
+import GallerySection from './GallerySection';
+import Section from './Section';
+
 
 import {useScrollToTopOnMount} from "../../helpers";
 
 class Shop extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
             fname: '',
             lname: '',
             email: '',
-            subject: ''
-
+            subject: '',
+            message: '',
+            mailSent: false,
+            error: null
         }
     }
 
-    handleChange (event) {
+    handleFormSubmit( event ) {
         event.preventDefault();
+        console.log(this.state);
     }
 
     render() {
 
         return (
-
             <div className="Shop">
                 <p>PBE Official Store</p>
                 <div>
-                    <form action="/action_page.php">
+                    <form action="#">
                         <label>First Name</label>
                         <input type="text" id="fname" name="fname" placeholder="Your name.." required={true}
                                 value = {this.state.fname}
                                 onChange={e => this.setState({fname: e.target.value})}
 
                         />
+
+
                         <label>Last Name</label>
                         <input type="text" id="lname" name="lname" placeholder="Your last name.." required={true}
                                value = {this.state.lname}
@@ -53,7 +59,9 @@ class Shop extends React.Component {
                                   value = {this.state.subject}
                                   onChange={e => this.setState({subject: e.target.value})}
                         ></textarea>
-                        <input type="submit" value="Submit" required={true} />
+
+                        <input type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit" />
+
                     </form>
                 </div>
             </div>

@@ -8,6 +8,7 @@ class ShopController < ActionController::API
 
     puts @fname
     puts @lname
+    UserMailer.with(email: @email).confirmation_email
     respond_with do |format|
       msg = {:status => "success!", :message => "hello", :response => @fname}
       format.json {render :json => msg}

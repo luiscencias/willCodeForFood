@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'events/new'
   resources :members
   get 'sessions/new'
   get 'sessions/create'

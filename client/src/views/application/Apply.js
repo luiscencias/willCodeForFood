@@ -17,7 +17,7 @@ const Apply = ({ location }) => {
 				<ApplyForm
 					handleSubmit={values => {
 						//var formData = new FormData(values);
-						var json_str = JSON.stringify(values);
+						//var json_str = JSON.stringify(values);
 						//alert(json_str);
 
 						//params.require(:member).permit(:email, :password, :password_confirmation, :first_name, :last_name)

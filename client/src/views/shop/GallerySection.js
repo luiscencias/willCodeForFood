@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { withStyles } from '@material-ui/core/styles';
 import { styledTag } from '../../helpers';
 
@@ -15,7 +16,7 @@ const StyledSection = withStyles(theme => ({
 		'& .gallery-grid': {
 			display: 'grid',
 
-			gridGap: 0,
+			gridGap: "50px",
 
 			gridColumn: '1 / -1',
 
@@ -27,13 +28,13 @@ const StyledSection = withStyles(theme => ({
 			},
 
 			[theme.breakpoints.up('8-col')]: {
-				gridTemplateColumns: 'repeat(4, 1fr)',
+				gridTemplateColumns: 'repeat(, 1fr)',
 				gridRow: '1 / span 1',
 				gridAutoRows: '166px'
 			},
 
 			[theme.breakpoints.up('12-col')]: {
-				gridTemplateColumns: 'repeat(6, 1fr)',
+				gridTemplateColumns: 'repeat(4, 1fr)',
 			},
 
 			'& .gallery-image': {
@@ -41,10 +42,9 @@ const StyledSection = withStyles(theme => ({
 				borderColor: theme.palette.text.secondary,
 				border: '1px solid',
 				transition: 'all .2s ease-in-out',
-				src: "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjH_6awwYzhAhVGZKwKHaK-CTsQjhx6BAgBEAM&url=https%3A%2F%2Fwww.gettyimages.com%2F&psig=AOvVaw0N-QPggK8_5q0_cp1eqnl_&ust=1553026684099506",
 
 				'&:hover': {
-					transform: 'scale(1.025)'
+					transform: 'scale(1.75)'
 				},
 
 				'&:nth-child(4n)': {
@@ -94,18 +94,71 @@ const IconRight = withStyles(theme => ({
 const GallerySection = ({ topRef }) => (
 	<StyledSection>
 		<div ref={topRef} className="gallery-grid">
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
-			<div className="gallery-image" />
+			<div className="gallery-image">
+				{/* <span style={{color: "black", fontSize: "10pt", width: "50px", align: "center"}}>#1 -- ye inspired shirt (front)</span> */}
+				<img src={"https://i.imgur.com/GWJsBmz.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#1 -- ye inspired shirt (back)</span>*/}
+				<img src={"https://i.imgur.com/hpnVQWf.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#2 -- "CSTAT" shirt (front)</span>*/}
+				<img src={"https://i.imgur.com/Icuh6pI.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#2 -- "CSTAT" shirt (back)</span>*/}
+				<img src={"https://i.imgur.com/CJDmUO7.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#3 -- maroon OG shirt (front)</span>*/}
+				<img src={"https://i.imgur.com/qR2Linm.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#3 -- maroon OG shirt (back)</span>*/}
+				<img src={"https://i.imgur.com/BtCHn1X.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#4 -- simple PBE shirt [Lavender] (front)</span>*/}
+				<img src={"https://i.imgur.com/UXWl7zL.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#4 -- simple PBE shirt [Lavender] (back)</span>*/}
+				<img src={"https://i.imgur.com/VV6CwP4.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#5 -- simple PBE shirt [Navy] (front)</span>*/}
+				<img src={"https://i.imgur.com/uMYw67b.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#5 -- simple PBE shirt [Navy] (back)</span>*/}
+				<img src={"https://i.imgur.com/WAUf3lb.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#6 -- ye inspired crew neck (front)</span>*/}
+				<img src={"https://i.imgur.com/3CCeC6R.png"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#6 -- ye inspired crew neck (back)</span>*/}
+				<img src={"https://i.imgur.com/dx1o4NU.jpg"} width={"100%"} height={"100%"}/>
+			</div>
+
+			<div className="gallery-image">
+				{/*<span style={{color: "black", fontSize: "10pt"}}>#7 -- PBE maroon polo </span>*/}
+				<img src={"https://i.imgur.com/nHqHvWE.png"} width={"100%"} height={"100%"}/>
+			</div>
+
 		</div>
 	</StyledSection>
 );

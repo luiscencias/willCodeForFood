@@ -1,5 +1,7 @@
 class CreateMembers < ActiveRecord::Migration[5.2]
   def change
+    drop_table :members
+
     create_table :members do |t|
       t.string :email
       t.string :password_digest

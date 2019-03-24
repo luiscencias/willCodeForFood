@@ -20,7 +20,7 @@ input[type=text],input[type=email], select, textarea {
     resize: vertical;
 }
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #00E6E6;
     color: white;
     padding: 12px 20px;
     border: none;

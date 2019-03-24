@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+events = [{:title => 'Celebrate',  :date => '15-May-2019'},
+
+          ]
+
+events.each do |event|
+  Event.create!(event)
+end

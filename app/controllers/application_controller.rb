@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
   include ActionController::MimeResponds
 
-  respond_with :html, :json, :js
+  respond_to :html, :json, :js
 end

@@ -23,76 +23,89 @@ const styles = theme => ({
     },
 });
 
-function Events(props) {
-    useScrollToTopOnMount();
+class Events extends React.Component {
+    // useScrollToTopOnMount();
+    constructor(props) {
+        super(props);
+        this.state = {
+            events: []
+        }
+    }
 
-    const { classes } = props;
 
-    axios.get('http://localhost:8081/members')
-        .then(res => {
-            const persons = res.data;
-            // this.setState({ persons });
-        });
+    componentDidMount() {
+        axios.get('http://localhost:8081/events')
+            .then(res => {
+                const events = res.data;
+                this.setState({events});
+            });
+        // const { classes } = props;
 
-    return (
+    }
 
-        <List className={classes.root}>
-            <ListItem alignItems="flex-start">
-                <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="https://nerdemia.com/wp-content/uploads/2017/05/twistedm-st-close-100x100.jpg" />
-                </ListItemAvatar>
-                <ListItemText
-                    primary="Celebrate"
-                    secondary={
-                        <React.Fragment>
-                            <Typography component="span" className={classes.inline} color="textPrimary">
-                                Sweet Tooth
-                            </Typography>
-                            {" — I'll be in your neighborhood..."}
-                        </React.Fragment>
-                    }
-                />
-            </ListItem>
-            {/*<ListItem alignItems="flex-start">*/}
+    render() {
+
+        return (
+
+            <List >
+                <ListItem alignItems="flex-start">
+                    <ListItemAvatar>
+                        <Avatar alt="Remy Sharp"
+                                src="https://i1.wp.com/votenesbit.com/wp-content/uploads/2017/12/calendar-date-may15.png?resize=248%2C300&ssl=1"/>
+                    </ListItemAvatar>
+                    <ListItemText
+                        primary="Celebrate"
+                        secondary={
+                            <React.Fragment>
+                                <Typography component="span"  color="textPrimary">
+                                    May 15, 2019
+                                </Typography>
+                                {" Helloooo Summer!! "}
+                            </React.Fragment>
+                        }
+                    />
+                </ListItem>
+                {/*<ListItem alignItems="flex-start">*/}
                 {/*<ListItemAvatar>*/}
-                    {/*<Avatar alt="Remy Sharp"  />*/}
+                {/*<Avatar alt="Remy Sharp"  />*/}
                 {/*</ListItemAvatar>*/}
                 {/*<ListItemText*/}
-                    {/*primary="Summer BBQ"*/}
-                    {/*secondary={*/}
-                        {/*<React.Fragment>*/}
-                            {/*<Typography component="span" className={classes.inline} color="textPrimary">*/}
-                                {/*to Scott, Alex, Jennifer*/}
-                            {/*</Typography>*/}
-                            {/*{" — Wish I could come, but I'm out of town this…"}*/}
-                        {/*</React.Fragment>*/}
-                    {/*}*/}
+                {/*primary="Summer BBQ"*/}
+                {/*secondary={*/}
+                {/*<React.Fragment>*/}
+                {/*<Typography component="span" className={classes.inline} color="textPrimary">*/}
+                {/*to Scott, Alex, Jennifer*/}
+                {/*</Typography>*/}
+                {/*{" — Wish I could come, but I'm out of town this…"}*/}
+                {/*</React.Fragment>*/}
+                {/*}*/}
                 {/*/>*/}
-            {/*</ListItem>*/}
-            {/*<ListItem alignItems="flex-start">*/}
+                {/*</ListItem>*/}
+                {/*<ListItem alignItems="flex-start">*/}
                 {/*<ListItemAvatar>*/}
-                    {/*<Avatar alt="Remy Sharp"  />*/}
+                {/*<Avatar alt="Remy Sharp"  />*/}
                 {/*</ListItemAvatar>*/}
                 {/*<ListItemText*/}
-                    {/*primary="Oui Oui"*/}
-                    {/*secondary={*/}
-                        {/*<React.Fragment>*/}
-                            {/*<Typography component="span" className={classes.inline} color="textPrimary">*/}
-                                {/*Sandra Adams*/}
-                            {/*</Typography>*/}
-                            {/*{' — Do you have Paris recommendations? Have you ever…'}*/}
-                        {/*</React.Fragment>*/}
-                    {/*}*/}
+                {/*primary="Oui Oui"*/}
+                {/*secondary={*/}
+                {/*<React.Fragment>*/}
+                {/*<Typography component="span" className={classes.inline} color="textPrimary">*/}
+                {/*Sandra Adams*/}
+                {/*</Typography>*/}
+                {/*{' — Do you have Paris recommendations? Have you ever…'}*/}
+                {/*</React.Fragment>*/}
+                {/*}*/}
                 {/*/>*/}
-            {/*</ListItem>*/}
+                {/*</ListItem>*/}
 
-        </List>
-    );
+            </List>
+        );
+    }
 }
 
-Events.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
+// Events.propTypes = {
+//     classes: PropTypes.object.isRequired,
+// };
 
 export default withStyles(styles)(Events);
 // export default Events;

@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+
   resources :events
   get 'events/new'
   get 'events' => 'events#index'
   # get 'events'
+
+
   resources :members
+
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/destroy'

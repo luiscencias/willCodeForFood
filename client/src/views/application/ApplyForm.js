@@ -15,6 +15,7 @@ import LastNameField from "./LastNameField";
 import PhoneNumberField from "./PhoneNumberField";
 import GraduationField from "./GraduationField";
 import MajorField from "./MajorField";
+import ConfirmPasswordField from "./ConfirmPassword";
 
 const validationSchema = Yup.object({
 
@@ -40,6 +41,9 @@ const validationSchema = Yup.object({
 	password: Yup
 		.string("Enter your password")
 		.required("Password is required"),
+	confirmPassword: Yup
+		.string("Confirm your password")
+		.required("You must confirm your password")
 });
 
 const initialValues = {
@@ -50,7 +54,7 @@ const initialValues = {
 	graduationYear: '',
 	major: '',
 	password: '',
-
+	confirmPassword: '',
 
 };
 
@@ -72,7 +76,7 @@ const ApplyForm = ({ handleSubmit }) => {
 					<GraduationField/>
 					<MajorField/>
 					<PasswordField />
-					<PasswordField label = "Re-enter Password"/>
+					<ConfirmPasswordField/>
 					<SubmitButton />
 				</Form>
 			)}

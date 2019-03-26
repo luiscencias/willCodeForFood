@@ -12,6 +12,13 @@ gem 'puma', '~> 3.11'
 #gem 'webpacker', '~> 3.5.5'
 gem 'foreman', '~> 0.82.0'
 
+
+# bcrypt for password handling
+gem 'bcrypt', '~> 3.1.7'
+
+
+# ActiveSerializer for creating easy to read json
+gem 'active_model_serializers'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -29,7 +36,9 @@ gem 'foreman', '~> 0.82.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
+
+gem 'responders'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -52,3 +61,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#rails told me to add this
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?

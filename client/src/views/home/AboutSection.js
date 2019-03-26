@@ -28,7 +28,7 @@ const StyledSection = withStyles(theme => ({
 const AboutSection = () => (
 	<StyledSection>
 		<div className="about-section-text">
-			<h2>About Us</h2>
+			<h2 align="center">About Us</h2>
 			<p>
 				The Professional Brotherhood of Engineers is an organization focused on developing leaders 
 				for the future. Throughout the semester, PBE will have guest speakers from industry, 

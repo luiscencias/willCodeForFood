@@ -30,7 +30,7 @@ const Apply = ({ location }) => {
 						};
 
 						axios({
-							url: 'http://localhost:8081/members',
+							url: 'http://localhost:8081/api/members',
 							params: post,
 							method: 'post',
 						});

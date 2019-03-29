@@ -1,5 +1,6 @@
 const proxy = require('http-proxy-middleware');
 
 module.exports = function(app) {
-  app.use(proxy('/api', { target: 'http://localhost:8081/' }));
+  let port_number = 8081;
+  app.use(proxy('/api', { target: 'http://[::1]:'+ port_number}));
 }

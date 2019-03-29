@@ -29,6 +29,6 @@ export default () => (
 
 
         /* 	keep not found route below everything else	*/
-        <Route path="*" component={NotFound} />
+        <Route component={NotFound} />
     </Switch>
 );

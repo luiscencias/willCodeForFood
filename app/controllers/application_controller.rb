@@ -1,9 +1,3 @@
-class ApplicationController < ActionController::API
-  #include ActionController::MimeResponds
+class ApplicationController < ActionController::Base
 
-  #respond_with :html, :json, :js
-
-  def fallback_index_html
-    render :file => 'public/index.html'
-  end
 end

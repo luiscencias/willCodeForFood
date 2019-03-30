@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
-
   #we're going to want to put all our backend routes under this scope /api
   scope '/api' do
   resources :members
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 
   get 'sessions/new'
   get 'sessions/create'

@@ -19,7 +19,6 @@ import ConfirmPasswordField from "./ConfirmPassword";
 import axios from "axios";
 import { withRouter } from "react-router";
 
-require('dotenv').config();
 
 
 const validationSchema = Yup.object({

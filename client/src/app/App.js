@@ -13,9 +13,12 @@ import Routes from './routes';
 
 import smoothscroll from 'smoothscroll-polyfill';
 
+
+
+
 const App = () => {
   smoothscroll.polyfill();
-  
+
   return (
     <MuiThemeProvider theme={theme}>
     

@@ -19,6 +19,8 @@ import ConfirmPasswordField from "./ConfirmPassword";
 import axios from "axios";
 import { withRouter } from "react-router";
 
+require('dotenv').config();
+
 
 const validationSchema = Yup.object({
 
@@ -74,7 +76,7 @@ class InnerForm extends React.Component {
 		};
 
 		axios({
-			url: 'http://localhost:8081/api/members',
+			url: process.env.REACT_APP_API_URL + '/api/members',
 			params: post,
 			method: 'post',
 		}).then(function (response) {

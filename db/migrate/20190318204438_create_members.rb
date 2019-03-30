@@ -10,12 +10,15 @@ class CreateMembers < ActiveRecord::Migration[5.2]
       t.integer :graduation_year
       t.string :major
       t.boolean :is_member
+      t.integer :points
 
       t.timestamps
     end
+
     add_index :members, :email, unique: true
 
     change_column :members, :is_member, :boolean, :default => false
+    change_column :members, :points, :integer, :default => 0
   end
 
   def down

@@ -71,6 +71,10 @@ class InnerForm extends React.Component {
 			last_name: values.lastName,
 			email: values.email,
 			password: values.password,
+			phone_number: values.phoneNumber,
+			graduation_year: values.graduationYear,
+			major: values.major,
+
 		};
 
 		axios({

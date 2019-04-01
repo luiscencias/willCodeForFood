@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
+ActiveRecord::Schema.define(version: 2019_03_22_215426) do
+
+  create_table "events", force: :cascade do |t|
+    t.string "title"
+    t.date "date"
+    t.time "start_time"
+    t.time "end_time"
+    t.text "details"
+    t.text "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+end
+
 ActiveRecord::Schema.define(version: 2019_03_30_004251) do
+
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"

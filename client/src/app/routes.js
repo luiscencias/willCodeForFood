@@ -16,6 +16,7 @@ import { Login } from '../views/login';
 import { Membership } from '../views/membership';
 import { Apply } from '../views/application';
 import { Shop } from '../views/shop';
+import { Events } from '../views/events';
 
 export default () => (
     <Switch>
@@ -27,6 +28,8 @@ export default () => (
         <Route path="/membership" component={Membership} />
         <Route path="/membership-application" component={Apply} />
         <Route path="/shop" component={Shop} />
+        <Route path="/events" component={Events} />
+
         /* 	keep not found route below everything else	*/
         <Route component={NotFound} />
     </Switch>

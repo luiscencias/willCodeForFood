@@ -171,7 +171,7 @@ const ArrowDownIcon = withStyles(theme => ({
 			transform: 'none'
 		},
 
-		animation: `hero_button_bounce 1000ms ${theme.transitions.easing.easeInOut} 0s infinite`
+		animation: `hero_button_bounce 2000ms ${theme.transitions.easing.easeInOut} 0s infinite`
 	},
 
 	label: {

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+    BrowserRouter as Router,
     Route,
     Switch
 } from 'react-router-dom';
@@ -26,8 +27,6 @@ export default () => (
         <Route path="/membership" component={Membership} />
         <Route path="/membership-application" component={Apply} />
         <Route path="/shop" component={Shop} />
-
-
         /* 	keep not found route below everything else	*/
         <Route component={NotFound} />
     </Switch>

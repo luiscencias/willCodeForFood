@@ -20,6 +20,7 @@ import axios from "axios";
 import { withRouter } from "react-router";
 
 
+
 const validationSchema = Yup.object({
 
 	firstName: Yup
@@ -78,7 +79,7 @@ class InnerForm extends React.Component {
 		};
 
 		axios({
-			url: 'http://localhost:8081/api/members',
+			url: process.env.REACT_APP_API_URL + '/api/members',
 			params: post,
 			method: 'post',
 		}).then(function (response) {

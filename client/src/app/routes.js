@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+    BrowserRouter as Router,
     Route,
     Switch
 } from 'react-router-dom';
@@ -29,8 +30,7 @@ export default () => (
         <Route path="/shop" component={Shop} />
         <Route path="/events" component={Events} />
 
-
         /* 	keep not found route below everything else	*/
-        <Route path="*" component={NotFound} />
+        <Route component={NotFound} />
     </Switch>
 );

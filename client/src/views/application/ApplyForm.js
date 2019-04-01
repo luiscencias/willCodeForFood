@@ -16,6 +16,10 @@ import PhoneNumberField from "./PhoneNumberField";
 import GraduationField from "./GraduationField";
 import MajorField from "./MajorField";
 import ConfirmPasswordField from "./ConfirmPassword";
+import axios from "axios";
+import { withRouter } from "react-router";
+
+
 
 const validationSchema = Yup.object({
 
@@ -58,30 +62,59 @@ const initialValues = {
 
 };
 
-const ApplyForm = ({ handleSubmit }) => {
-	const [ showPassword, setShowPassword ] = useState(false);
+class InnerForm extends React.Component {
+	handleSubmit = (values, formikBag) => {
+		const { history } = this.props;
+		alert(JSON.stringify(values));
 
-	return (
-		<Formik
-			initialValues={initialValues}
-			validationSchema={validationSchema}
-			onSubmit={handleSubmit}
-		>
-			{() => (
-				<Form>
-					<FirstNameField/>
-					<LastNameField/>
-					<EmailField />
-					<PhoneNumberField/>
-					<GraduationField/>
-					<MajorField/>
-					<PasswordField />
-					<ConfirmPasswordField/>
-					<SubmitButton />
-				</Form>
-			)}
-		</Formik>
-	);
-};
+		const post = {
+			first_name: values.firstName,
+			last_name: values.lastName,
+			email: values.email,
+			password: values.password,
+			phone_number: values.phoneNumber,
+			graduation_year: values.graduationYear,
+			major: values.major,
+
+		};
+
+		axios({
+			url: process.env.REACT_APP_API_URL + '/api/members',
+			params: post,
+			method: 'post',
+		}).then(function (response) {
+			history.push("/");
+		})
+			.catch(function (error) {
+				console.log(error);
+			});
+	}
+
+	render() {
+		return (
+			<Formik
+				initialValues={initialValues}
+				validationSchema={validationSchema}
+				onSubmit={this.handleSubmit}
+			>
+				{() => (
+					<Form>
+						<FirstNameField/>
+						<LastNameField/>
+						<EmailField />
+						<PhoneNumberField/>
+						<GraduationField/>
+						<MajorField/>
+						<PasswordField />
+						<ConfirmPasswordField/>
+						<SubmitButton />
+					</Form>
+				)}
+			</Formik>
+		)
+	}
+}
+
+const ApplyForm = withRouter(InnerForm);
 
 export default ApplyForm;

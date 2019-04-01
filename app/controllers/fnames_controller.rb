@@ -1,4 +1,4 @@
-class FnamesController < ApplicationController
+class FnamesController < ApiController
   before_action :set_fname, only: [:show, :update, :destroy]
 
   # GET /fnames

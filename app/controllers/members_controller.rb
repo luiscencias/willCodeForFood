@@ -1,4 +1,4 @@
-class MembersController < ApplicationController
+class MembersController < ApiController
   before_action :set_member, only: [:show, :update, :destroy]
 
   # GET /members
@@ -17,6 +17,8 @@ class MembersController < ApplicationController
   def create
 
     @member = Member.new(member_params)
+    puts @member.points
+    puts @member.is_member
 
     if @member.save
       render json: @member, status: :created, location: @member
@@ -47,7 +49,7 @@ class MembersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def member_params
-      params.permit(:email, :password, :password_confirmation, :first_name, :last_name)
+      params.permit(:email, :password, :first_name, :last_name, :phone_number, :graduation_year, :major, :is_member, :points)
       #params.require(:member).permit(:email, :password, :password_confirmation, :first_name, :last_name)
     end
 end

@@ -1,2 +1,2 @@
-web: cd client && npm start
-api: bundle exec rails s -p 8081
+web: bundle exec rails s
+release: bin/rake db:migrate

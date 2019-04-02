@@ -17,8 +17,6 @@ class MembersController < ApiController
   def create
 
     @member = Member.new(member_params)
-    puts @member.points
-    puts @member.is_member
 
     if @member.save
       render json: @member, status: :created, location: @member

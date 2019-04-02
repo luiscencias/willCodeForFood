@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 2019_03_22_215426) do
+
+  create_table "events", force: :cascade do |t|
+    t.string "title"
+    t.date "date"
+    t.time "start_time"
+    t.time "end_time"
+    t.text "details"
+    t.text "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+end
+
 ActiveRecord::Schema.define(version: 2019_03_30_004251) do
+
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -38,23 +53,19 @@ ActiveRecord::Schema.define(version: 2019_03_30_004251) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
-  create_table "events", force: :cascade do |t|
-    t.string "title"
-    t.date "date"
-    t.time "start_time"
-    t.time "end_time"
-    t.text "details"
-    t.text "location"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "fnames", force: :cascade do |t|
-    t.string "lname"
+  create_table "members", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
     t.string "email"
-    t.string "subject"
+    t.string "password_digest"
+    t.integer "phone_number"
+    t.integer "graduation_year"
+    t.string "major"
+    t.boolean "is_member", default: false
+    t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_members_on_email", unique: true
   end
 
 end

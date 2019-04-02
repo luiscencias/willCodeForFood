@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-events = [{:title => 'Celebrate',  :date => '15-May-2019'},
+events = [{:title => 'Celebrate',  :date => '15-May-2019', :details => 'Enjoy the summer!!'},
 
           ]
 

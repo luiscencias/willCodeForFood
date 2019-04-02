@@ -29,22 +29,32 @@ class Events extends React.Component {
         super(props);
         this.state = {
             events: []
-        }
+        };
     }
 
 
     componentDidMount() {
-        axios.get('http://localhost:8081/events')
-            .then(res => {
-                const events = res.data;
-                this.setState({events});
-            });
-        // const { classes } = props;
-
+        fetch('http://localhost:8081/api/events')
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        isLoaded: true,
+                        events: result
+                    });
+                },
+                // error handler
+                (error) => {
+                    this.setState({
+                        isLoaded: true,
+                        error
+                    });
+                }
+            )
     }
 
     render() {
-
+        const {events} = this.state;
         return (
 
             <List >
@@ -54,13 +64,14 @@ class Events extends React.Component {
                                 src="https://i1.wp.com/votenesbit.com/wp-content/uploads/2017/12/calendar-date-may15.png?resize=248%2C300&ssl=1"/>
                     </ListItemAvatar>
                     <ListItemText
-                        primary="Celebrate"
+                        primary={events.map(event => <div>{event.date}</div>)}
                         secondary={
                             <React.Fragment>
                                 <Typography component="span"  color="textPrimary">
-                                    May 15, 2019
+                                    { events.map(event => <div>{event.title}</div>) }
+                                    {/*{events[0].title}*/}
                                 </Typography>
-                                {" Helloooo Summer!! "}
+                                {events.map(event => <div>{event.details}</div>)}
                             </React.Fragment>
                         }
                     />

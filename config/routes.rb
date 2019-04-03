@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :events
   get 'events/new'
   get 'events' => 'events#index'
-  # get 'events'
+  get 'events/later' => 'events#later'
 
   get 'sessions/new'
   get 'sessions/create'

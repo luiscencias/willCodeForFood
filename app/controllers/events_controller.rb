@@ -2,15 +2,29 @@ class EventsController < ApplicationController
 
   # GET /events
   def index
-    @events = Event.all
+
+    if params[:show] == 'later'
+      @events = Event.later_events
+    else
+      page = params[:page] || 1
+      @events = Event.all.paginate(page: params[:page], per_page: 10)
+    end
+
     render json: @events  # returns all events; default action for component to retrieve data; consider ordering by date
+
   end
 
   # GET /events/1
   def show
+    id = params[:id]
+    @event = Event.find(id)
+    # will render app/views/movies/show.<extension> by default
     render json: @event # show specific event/ (perhaps a stretch)
   end
-  
+
+  def later
+
+  end
   
   def new # create new event
     @event = Event.new(event_params)

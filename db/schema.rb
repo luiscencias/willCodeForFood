@@ -10,21 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_22_215426) do
-
-  create_table "events", force: :cascade do |t|
-    t.string "title"
-    t.date "date"
-    t.time "start_time"
-    t.time "end_time"
-    t.text "details"
-    t.text "location"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-end
-
-ActiveRecord::Schema.define(version: 2019_03_30_004251) do
+ActiveRecord::Schema.define(version: 2019_04_04_133923) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -50,6 +36,24 @@ ActiveRecord::Schema.define(version: 2019_03_30_004251) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "title"
+    t.date "date"
+    t.time "start_time"
+    t.time "end_time"
+    t.text "details"
+    t.text "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events_members", id: false, force: :cascade do |t|
+    t.integer "event_id", null: false
+    t.integer "member_id", null: false
+    t.index ["event_id"], name: "index_events_members_on_event_id"
+    t.index ["member_id"], name: "index_events_members_on_member_id"
   end
 
   create_table "members", force: :cascade do |t|

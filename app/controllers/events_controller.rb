@@ -9,24 +9,17 @@ class EventsController < ApplicationController
       page = params[:page] || 1
       @events = Event.all.paginate(page: params[:page], per_page: 10)
     end
-
     render json: @events  # returns all events; default action for component to retrieve data; consider ordering by date
-
   end
 
   # GET /events/1
   def show
     id = params[:id]
     @event = Event.find(id)
-    # will render app/views/movies/show.<extension> by default
     render json: @event # show specific event/ (perhaps a stretch)
   end
-
-  def later
-
-  end
   
-  def new # create new event
+  def create # create new event
     @event = Event.new(event_params)
 
     if @event.save
@@ -38,6 +31,7 @@ class EventsController < ApplicationController
 
   # PATCH/PUT /events/1
   def update
+    @event = Event.find(params[:id])
     if @event.update(event_params)
       render json: @event
     else
@@ -47,6 +41,7 @@ class EventsController < ApplicationController
 
   # DELETE /events/1
   def destroy
+    @event = Event.find(params[:id])
     @event.destroy
   end
 

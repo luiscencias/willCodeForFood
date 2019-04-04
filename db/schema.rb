@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_03_22_215426) do
     t.time "start_time"
     t.time "end_time"
     t.text "details"
-    t.text "location"
+    t.text "location"g
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

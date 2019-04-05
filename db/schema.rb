@@ -64,8 +64,8 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.integer "phone_number"
     t.integer "graduation_year"
     t.string "major"
-    t.integer "points", default: 0
     t.boolean "is_member", default: false
+    t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_members_on_email", unique: true

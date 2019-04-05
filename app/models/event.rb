@@ -6,7 +6,12 @@ class Event < ApplicationRecord
 
   def self.later_events
     # event Date.parse(:date) > Date.today.prev_day
-    @events = Event.where(date: Date.today.prev_day..Date.today >> (30*12)) #prev_day to 30 years from now
+    @events = Event.where(date: Date.today.prev_day..Date.today >> (30*12)).order('Date DESC') #prev_day to 30 years from now
+    @events
+  end
+
+  def self.all_events_ordered
+    @events = Event.order('Date DESC')
     @events
   end
 

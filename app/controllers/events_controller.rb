@@ -6,9 +6,9 @@ class EventsController < ApplicationController
     if params[:show] == 'later'
       @events = Event.later_events
     elsif params[:page] != nil
-      @events = Event.all.paginate(page: params[:page], per_page: 10)
+      @events = Event.all_events_ordered.paginate(page: params[:page], per_page: 10)
     else
-      @events = Event.all
+      @events = Event.all_events_ordered
     end
     render json: @events # returns all events; default action for component to retrieve data; consider ordering by date
   end

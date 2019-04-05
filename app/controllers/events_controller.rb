@@ -5,27 +5,28 @@ class EventsController < ApplicationController
 
     if params[:show] == 'later'
       @events = Event.later_events
-    else
-      page = params[:page] || 1
+    elsif params[:page] != nil
       @events = Event.all.paginate(page: params[:page], per_page: 10)
+    else
+      @events = Event.all
     end
-    render json: @events.to_json  # returns all events; default action for component to retrieve data; consider ordering by date
+    render json: @events # returns all events; default action for component to retrieve data; consider ordering by date
   end
 
   # GET /events/1
   def show
     id = params[:id]
     @event = Event.find(id)
-    render json: @event.to_json # show specific event/ (perhaps a stretch)
+    render json: @event # show specific event/ (perhaps a stretch)
   end
   
   def create # create new event
     @event = Event.new(event_params)
 
     if @event.save
-      render json: @event.to_json, status: :created, location: @event
+      render json: @event, status: :created, location: @event
     else
-      render json: @event.errors.to_json, status: :unprocessable_entity
+      render json: @event.errors, status: :unprocessable_entity
     end
   end
 
@@ -33,9 +34,9 @@ class EventsController < ApplicationController
   def update
     @event = Event.find(params[:id])
     if @event.update(event_params)
-      render json: @event.to_json
+      render json: @event
     else
-      render json: @event.errors.to_json, status: :unprocessable_entity
+      render json: @event.errors, status: :unprocessable_entity
     end
   end
 

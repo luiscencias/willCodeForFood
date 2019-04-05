@@ -6,23 +6,23 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-events = [
-    {title: 'Celebrate',  date: '2019-05-15', details: 'take it easy for a lil'},
-    {title: 'Telefone comes out', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'Mardi', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'Christmas', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'Thanks', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'Bad and Boujee comes out', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'Drake signs', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'Kendrick removes KDOT moniker', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'The germans invade Poland', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'Erwin Rommel becomes head of the Africa campaign', date: '2016-07-31', details: 'Noname\'s debut album'},
-    {title: 'Kravchenko dies', date: '2016-07-31', details: 'Noname\'s debut album'},
-]
+#events = [
+#    {title: 'Celebrate',  date: '2019-05-15', details: 'take it easy for a lil'},
+#    {title: 'Telefone comes out', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'Mardi', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'Christmas', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'Thanks', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'Bad and Boujee comes out', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'Drake signs', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'Kendrick removes KDOT moniker', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'The germans invade Poland', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'Erwin Rommel becomes head of the Africa campaign', date: '2016-07-31', details: 'Noname\'s debut album'},
+#    {title: 'Kravchenko dies', date: '2016-07-31', details: 'Noname\'s debut album'},
+#]
 
-events.each do |event|
-  Event.create!(event)
-end
+#events.each do |event|
+ # Event.create!(event)
+#end
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 

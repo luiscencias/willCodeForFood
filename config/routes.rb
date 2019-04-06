@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
 
-
-
-
   #we're going to want to put all our backend routes under this scope /api
   scope '/api' do
   resources :members

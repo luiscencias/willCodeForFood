@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0fb70da-e4c1-42fe-a975-48b3d48562a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/members_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/members_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/application/ApplyForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/application/ApplyForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/members.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/members.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="288">
+              <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -113,16 +110,16 @@
         <entry file="file://$PROJECT_DIR$/app/admin/members.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="5" />
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.9.5/lib/bundler/lockfile_parser.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="816" selection-start-line="816" selection-end-line="816" />
+            <state relative-caret-position="170">
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -143,6 +140,7 @@
       <find>webpack</find>
       <find>axios</find>
       <find>devis</find>
+      <find>pagin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,8 +177,6 @@
         <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/admin/members.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/initializers/knock.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api_controller.rb" />
@@ -188,6 +184,8 @@
         <option value="$PROJECT_DIR$/client/src/views/login/Login.js" />
         <option value="$PROJECT_DIR$/app/controllers/members_controller.rb" />
         <option value="$PROJECT_DIR$/client/src/views/application/ApplyForm.js" />
+        <option value="$PROJECT_DIR$/app/admin/members.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -560,7 +558,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106205000" />
+    <option name="totallyTimeSpent" value="106655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,8 +571,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13603239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13603239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -587,7 +586,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.28774422" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932885" visible="true" weight="0.28774422" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.23087819" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -622,19 +621,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/channels/application_cable/connection.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/views/layouts/header/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -811,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/members_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -894,13 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/members.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/knock.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/api_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -940,6 +912,34 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="833" column="12" lean-forward="true" selection-start-line="833" selection-start-column="12" selection-end-line="833" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/members.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/bundler-1.9.5/lib/bundler/lockfile_parser.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
         </state>
       </provider>
     </entry>

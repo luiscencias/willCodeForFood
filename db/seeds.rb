@@ -8,6 +8,7 @@
 
 events = [
     {title: 'Celebrate',  date: '2019-05-15', details: 'take it easy for a lil'},
+    {title: 'Internship', date: '2019-05-20',},
     {title: 'Telefone comes out', date: '2016-07-31'},
     {title: 'Mardi', date: '2016-07-31'},
     {title: 'Christmas', date: '2018-12-31', details: 'In the chimney'},
@@ -22,6 +23,19 @@ events = [
 
 events.each do |event|
   Event.create!(event)
+end
+
+members = [
+    {first_name: 'jonathan', email: 'a', password: 'p'},
+    {first_name: 'ian', email: 'b', password: 'p'},
+    {first_name: 'blake', email: 'c', password: 'p'},
+    {first_name: 'stephanie', email: 'd', password: 'p'},
+    {first_name: 'luis', email: 'e', password: 'p'},
+    {first_name: 'kylan', email: 'f', password: 'p'},
+]
+
+members.each do |member|
+  Member.create!(member)
 end
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

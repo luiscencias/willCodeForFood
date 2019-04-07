@@ -15,4 +15,6 @@ class Event < ApplicationRecord
     @events
   end
 
+  # make function for returning specific events' registered members
+
 end

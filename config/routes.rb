@@ -11,9 +11,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   resources :events
-  get 'events/new'
+  get 'events/create'
   get 'events' => 'events#index'
-  get 'events/later' => 'events#later'
 
   get 'sessions/new'
   get 'sessions/create'

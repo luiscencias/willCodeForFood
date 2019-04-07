@@ -4,24 +4,7 @@ Rails.application.routes.draw do
   scope '/api' do
     resources :members
 
-<<<<<<< HEAD
     post '/auth' => 'members#login'
-=======
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
-
-  resources :events
-  get 'events/create'
-  get 'events' => 'events#index'
-
-  get 'sessions/new'
-  get 'sessions/create'
-  get 'sessions/destroy'
-  resources :sessions
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  post 'shop/create'
-  resources :shop
->>>>>>> master
 
     devise_for :admin_users, ActiveAdmin::Devise.config
     ActiveAdmin.routes(self)

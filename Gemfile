@@ -78,11 +78,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #rails told me to add this
-<<<<<<< HEAD
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 # for pagination
 #gem 'will_paginate', "3.0.pre2"
-=======
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
->>>>>>> master

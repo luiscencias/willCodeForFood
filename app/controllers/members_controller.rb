@@ -56,7 +56,7 @@ class MembersController < ApiController
 
     # Only allow a trusted parameter "white list" through.
     def member_params
-      params.permit(:email, :password, :first_name, :last_name, :phone_number, :graduation_year, :major, :is_member, :points)
+      params.permit(:email, :password, :first_name, :last_name, :phone_number, :graduation_year, :major, :member_status, :points)
       #params.require(:member).permit(:email, :password, :password_confirmation, :first_name, :last_name)
     end
 end

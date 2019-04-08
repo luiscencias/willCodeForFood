@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2019_03_30_004251) do
-=======
 ActiveRecord::Schema.define(version: 2019_04_04_133923) do
->>>>>>> master
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -53,8 +49,6 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-=======
   create_table "events_members", id: false, force: :cascade do |t|
     t.integer "event_id", null: false
     t.integer "member_id", null: false
@@ -62,7 +56,6 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.index ["member_id"], name: "index_events_members_on_member_id"
   end
 
->>>>>>> master
   create_table "members", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -71,7 +64,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.integer "phone_number"
     t.integer "graduation_year"
     t.string "major"
-    t.boolean "is_member", default: false
+    t.string "member_status", default: "Pending"
     t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

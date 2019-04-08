@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :members
 
     post '/auth' => 'members#login'
+    #get '/admin/member/:id'
 
     devise_for :admin_users, ActiveAdmin::Devise.config
     ActiveAdmin.routes(self)

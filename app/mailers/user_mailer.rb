@@ -30,4 +30,14 @@ class UserMailer < ActionMailer::Base
 
     mail(to: email, subject: 'PBE Rejected', body: body, template_path: 'user_mailer', template_name: 'mailer')
   end
+
+
+  #  UserMailer.contact_batch_email(user.first_name + " " + user.last_name, inputs[:message], inputs[:subject], member.email).deliver
+  def contact_batch_email(name, message, subject, recipient)
+    @message = "Dear " + name + ",\n\n" + message + "\n\nSincerely,\nPBE"
+    @name = name
+    @subject = subject
+    @recipient = recipient
+    mail(to: @recipient, subject: @subject, body: @message, template_path: 'user_mailer', template_name: 'mailer')
+  end
 end

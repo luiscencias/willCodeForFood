@@ -5,14 +5,38 @@ class EventsController < ApplicationController
   # GET /events
   def index
 
-    if params[:show] == 'later'
-      @events = Event.later_events
-    elsif params[:page] != nil
-      @events = Event.all_events_ordered.page(params[:page]).per(10)
-    else
-      @events = Event.all_events_ordered
+    proxy = Event.all
+
+    if params[:page] != nil && params[:page_no] != nil  # select page and number per page
+      page = params[:page]
+      page_no = params[:page_no]
+
+      proxy = proxy.page(page).per(page_no)
     end
-    render json: @events # returns all events; default action for component to retrieve data; consider ordering by date
+
+    if params[:show] != nil # select whether events shown are earlier or later
+      show = params[:show]
+
+      if show == 'earlier'
+        proxy = proxy.earlier_events
+      elsif show == 'later'
+        proxy = proxy.later_events
+      end
+
+    end
+
+    if params[:order] != nil  # select whether events are ascending or descending by date
+      order = params[:order]
+
+      if order == 'desc'
+        proxy = proxy.descending
+      elsif order == 'asc'
+        proxy = proxy.ascending
+      end
+
+    end
+
+    render json: proxy # returns all events; default action for component to retrieve data; consider ordering by date
   end
 
   # GET /events/1

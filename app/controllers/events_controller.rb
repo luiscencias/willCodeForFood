@@ -21,10 +21,10 @@ class EventsController < ApplicationController
     @event = Event.find(id)
 
     if params[:registered_members]
-
       render json: @event.members
     else
-      render json: @event
+      response = {event: @event, members: @event.members}
+      render json: response
     end
   end
   

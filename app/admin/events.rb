@@ -4,6 +4,21 @@ ActiveAdmin.register Event do
   permit_params :title, :date, :start_time, :end_time, :details, :location
 
 
+  filter :members, as: :select, collection: proc  {
+    Member.all.map { |mem|
+      [mem.first_name.to_s + ' ' + mem.last_name.to_s, mem.id]
+    }
+  }
+
+  filter :title, as: :string
+  filter :date, as: :date_range
+
+  filter :details, as: :string
+  filter :location, as: :string
+
+  filter :created_at, as: :date_range
+  filter :updated_at, as: :date_range
+
   controller do
     def create
       # Good
@@ -16,5 +31,29 @@ ActiveAdmin.register Event do
       end
     end
   end
+
+
+  show do
+    attributes_table do
+      row :title
+
+      row :date
+      row :start_time
+      row :end_time
+
+      row :details
+      row :location
+
+      row :created_at
+      row :updated_at
+
+      # panel "Members" do
+      #   table_for event.members do
+      #     row :first_name
+      #   end
+      # end
+    end
+  end
+
 
 end

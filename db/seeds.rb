@@ -26,8 +26,8 @@ events.each do |event|
 end
 
 members = [
-    {first_name: 'jonathan', email: 'a', password: 'p'},
-    {first_name: 'ian', email: 'b', password: 'p'},
+    {first_name: 'jonathan', last_name: 'drizzy',  email: 'a', password: 'p'},
+    {first_name: 'ian', last_name: 'blake', email: 'b', password: 'p'},
     {first_name: 'blake', email: 'c', password: 'p'},
     {first_name: 'stephanie', email: 'd', password: 'p'},
     {first_name: 'luis', email: 'e', password: 'p'},

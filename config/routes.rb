@@ -15,7 +15,6 @@ Rails.application.routes.draw do
     get 'events' => 'events#index'
     get 'events/later' => 'events#later'
 
-    get 'sessions/new'
     get 'sessions/create'
     get 'sessions/destroy'
     resources :sessions

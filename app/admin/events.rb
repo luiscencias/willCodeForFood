@@ -46,13 +46,23 @@ ActiveAdmin.register Event do
 
       row :created_at
       row :updated_at
-
-      # panel "Members" do
-      #   table_for event.members do
-      #     row :first_name
-      #   end
-      # end
     end
+
+    active_admin_comments
+
+    panel "Registered Members" do
+      table_for event.members do
+        column(:first_name) { |member| member.first_name}
+        column :last_name
+        column :email
+        column :phone_number
+        column :graduation_year
+        column :major
+        column :points
+        column('Is a Member') { |member| member.is_member ? 'YES' : 'NO'}
+      end
+    end
+
   end
 
 

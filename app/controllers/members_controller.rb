@@ -6,6 +6,7 @@ class MembersController < ApiController
 
     if member && member.authenticate(params[:password])
       puts "Logged in"
+      puts Member_logged_in?
     else
       puts "Username or Password Incorrect"
     end

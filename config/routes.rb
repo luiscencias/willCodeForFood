@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/api' => redirect('/')
 
   #we're going to want to put all our backend routes under this scope /api
   scope '/api' do

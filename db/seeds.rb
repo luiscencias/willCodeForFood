@@ -25,8 +25,8 @@
 #end
 
 members = [
-    {first_name: 'Jonathan', last_name: 'Mejia',  email: 'jonathan.mejia@tamu.edu', phone_number: 1235888582, graduation_year: 2019, major: 'Computer Science', password: 'p', is_member: false},
-    {first_name: 'Ian', last_name: 'Berns', email: 'ian.berns@tamu.edu', password: 'p', phone_number: 6545818848, graduation_year: 2019, major: 'Computer Science', is_member: true},
+    {first_name: 'Jonathan', last_name: 'Mejia',  email: 'jonathan.mejia@tamu.edu', phone_number: 1235888582, graduation_year: 2019, major: 'Computer Science', password: 'p'},
+    {first_name: 'Ian', last_name: 'Berns', email: 'ian.berns@tamu.edu', password: 'p', phone_number: 6545818848, graduation_year: 2019, major: 'Computer Science'},
     {first_name: 'blake', email: 'c', password: 'p'},
     {first_name: 'stephanie', email: 'd', password: 'p'},
     {first_name: 'luis', email: 'e', password: 'p'},

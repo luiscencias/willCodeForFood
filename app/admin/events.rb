@@ -19,18 +19,18 @@ ActiveAdmin.register Event do
   filter :created_at, as: :date_range
   filter :updated_at, as: :date_range
 
-  controller do
-    def create
-      # Good
-      @event = Event.new(permitted_params[:event])
-
-      if @event.save
-        render json: @event, status: :created, location: @event
-      else
-        render json: @event.errors, status: :unprocessable_entity
-      end
-    end
-  end
+  # controller do
+  #   def create
+  #     # Good
+  #     @event = Event.new(permitted_params[:event])
+  #
+  #     if @event.save
+  #       render json: @event, status: :created, location: @event
+  #     else
+  #       render json: @event.errors, status: :unprocessable_entity
+  #     end
+  #   end
+  # end
 
 
   show do

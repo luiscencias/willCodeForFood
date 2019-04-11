@@ -16,6 +16,8 @@ Rails.application.routes.draw do
     get 'events' => 'events#index'
     get 'events/later' => 'events#later'
 
+    get '/confirmAuth' => 'api#authenticate'
+
     get 'sessions/create'
     get 'sessions/destroy'
     resources :sessions

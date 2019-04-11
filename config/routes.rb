@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   scope '/api' do
     resources :members
 
-    post '/auth' => 'members#login'
+    post '/auth' => 'sessions#create'
     #get '/admin/member/:id'
 
     devise_for :admin_users, ActiveAdmin::Devise.config

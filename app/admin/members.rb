@@ -48,7 +48,7 @@ ActiveAdmin.register Member do
   end
 
   action_item :approve, priority: 0, only: :show do
-    link_to "Unapprove",  unapprove_admin_member_path(member), method: :put if member.member_status != "Pending" and member.member_status != "Rejected"
+    link_to "Un-Approve",  unapprove_admin_member_path(member), method: :put if member.member_status != "Pending" and member.member_status != "Rejected"
   end
 
   action_item :reject, priority: 1, only: :show do
@@ -56,7 +56,7 @@ ActiveAdmin.register Member do
   end
 
   action_item :reject, priority: 1, only: :show do
-    link_to "Unreject", unreject_admin_member_path(member), method: :put if member.member_status != "Pending" and member.member_status != "Approved"
+    link_to "Un-Reject", unreject_admin_member_path(member), method: :put if member.member_status != "Pending" and member.member_status != "Approved"
   end
 
   member_action :approve, method: :put do

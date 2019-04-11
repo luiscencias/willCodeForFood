@@ -86,6 +86,7 @@ class InnerForm extends React.Component {
 			history.push("/");
 		})
 			.catch(function (error) {
+				alert("Entry already exists!");
 				console.log(error);
 			});
 	}

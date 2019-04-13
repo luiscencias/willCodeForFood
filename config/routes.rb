@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :members
 
     post '/auth' => 'sessions#create'
+    get '/auth' => 'api#authorize'
     #get '/admin/member/:id'
 
     devise_for :admin_users, ActiveAdmin::Devise.config
@@ -16,7 +17,6 @@ Rails.application.routes.draw do
     get 'events' => 'events#index'
     get 'events/later' => 'events#later'
 
-    get '/confirmAuth' => 'api#authenticate'
 
     get 'sessions/create'
     get 'sessions/destroy'

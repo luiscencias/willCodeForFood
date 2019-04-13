@@ -7,12 +7,13 @@ class SessionsController < ApiController
       # logged in when they navigate around our website.
       session[:member_id] = member.id
 
-      redirect_to'http://localhost:5000'
+      #redirect_to'http://localhost:5000'
       #redirect_to '/'
+
+      render json:member
     else
+      render json:"login failed!"
       # If user's login doesn't work, send them back to the login form.
-      #redirect_to '/login'
-      redirect_to'http://localhost:5000/login'
     end
   end
 

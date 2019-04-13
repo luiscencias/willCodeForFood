@@ -6,7 +6,7 @@ class CreateMembers < ActiveRecord::Migration[5.2]
       t.string :last_name
       t.string :email
       t.string :password_digest
-      t.integer :phone_number
+      t.integer :phone_number, :limit => 8
       t.integer :graduation_year
       t.string :major
       t.string :member_status

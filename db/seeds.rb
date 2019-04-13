@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 events = [
-    {title: 'Celebrate',  date: '2019-05-15', details: 'take it easy for a lil'},
+    {title: 'Celebrate',  date: '2019-05-15', details: 'take it easy for a lil', points: 10},
     {title: 'Internship', date: '2019-05-20',},
     {title: 'Telefone comes out', date: '2016-07-31'},
     {title: 'Mardi', date: '2016-07-31'},

@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.time "end_time"
     t.text "details"
     t.text "location"
+    t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

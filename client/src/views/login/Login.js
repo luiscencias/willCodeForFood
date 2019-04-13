@@ -29,6 +29,7 @@ const Login = ({ location }) => {
 						params: post,
 						method: 'post',
 					}).then(function (response) {
+						alert(JSON.stringify(response))
 					})
 						.catch(function (error) {
 							console.log(error);

@@ -10,9 +10,10 @@ class SessionsController < ApiController
       #redirect_to'http://localhost:5000'
       #redirect_to '/'
 
-      render json:member
+      render json: member
     else
-      render json:"login failed!"
+      output = "login failed! wrong password."
+      render json:output
       # If user's login doesn't work, send them back to the login form.
     end
   end
@@ -20,6 +21,6 @@ class SessionsController < ApiController
   def destroy
     session[:member_id] = nil
     #redirect_to '/login'
-    redirect_to'http://localhost:5000/login'
+    #redirect_to'http://localhost:5000/login'
   end
 end

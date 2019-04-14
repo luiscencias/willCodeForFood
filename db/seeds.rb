@@ -23,9 +23,9 @@ events = [
 ]
 
 
-#events.each do |event|
- # Event.create!(event)
-#end
+events.each do |event|
+ Event.create!(event)
+end
 
 members = [
     {first_name: 'Jonathan', last_name: 'Mejia',  email: 'jonathan.mejia@tamu.edu', phone_number: 1235888582, graduation_year: 2019, major: 'Computer Science', password: 'p'},

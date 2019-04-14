@@ -59,7 +59,7 @@ ActiveAdmin.register Event do
         column :graduation_year
         column :major
         column :points
-        column('Is a Member') { |member| member.is_member ? 'YES' : 'NO'}
+        column('Member Status') { |member| member.member_status }
       end
     end
 

@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.string "last_name"
     t.string "email"
     t.string "password_digest"
-    t.integer "phone_number"
+    t.integer "phone_number", limit: 8
     t.integer "graduation_year"
     t.string "major"
     t.string "member_status", default: "Pending"

@@ -8,7 +8,8 @@ ActiveAdmin.register Member do
 
 
   # Below determines what the view link displays
-    show do
+    show title: :first_name do
+
       attributes_table do
         row :first_name
         row :last_name

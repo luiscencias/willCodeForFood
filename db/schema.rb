@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.integer "phone_number"
     t.integer "graduation_year"
     t.string "major"
-    t.boolean "is_member", default: false
+    t.string "member_status", default: "Pending"
     t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

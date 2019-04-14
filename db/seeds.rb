@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 events = [
     {title: 'Celebrate',  date: '2019-05-15', details: 'take it easy for a lil', points: 10},
     {title: 'Internship', date: '2019-05-20',},
@@ -21,13 +22,14 @@ events = [
     {title: 'Kravchenko dies', date: '1972-07-31'},
 ]
 
-events.each do |event|
-  Event.create!(event)
-end
+
+#events.each do |event|
+ # Event.create!(event)
+#end
 
 members = [
-    {first_name: 'Jonathan', last_name: 'Mejia',  email: 'jonathan.mejia@tamu.edu', phone_number: 1235888582, graduation_year: 2019, major: 'Computer Science', password: 'p', is_member: false},
-    {first_name: 'Ian', last_name: 'Berns', email: 'ian.berns@tamu.edu', password: 'p', phone_number: 6545818848, graduation_year: 2019, major: 'Computer Science', is_member: true},
+    {first_name: 'Jonathan', last_name: 'Mejia',  email: 'jonathan.mejia@tamu.edu', phone_number: 1235888582, graduation_year: 2019, major: 'Computer Science', password: 'p'},
+    {first_name: 'Ian', last_name: 'Berns', email: 'ian.berns@tamu.edu', password: 'p', phone_number: 6545818848, graduation_year: 2019, major: 'Computer Science'},
     {first_name: 'blake', email: 'c', password: 'p'},
     {first_name: 'stephanie', email: 'd', password: 'p'},
     {first_name: 'luis', email: 'e', password: 'p'},
@@ -39,4 +41,5 @@ members.each do |member|
 end
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.production?
 

@@ -31,8 +31,8 @@ module Pbe
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
 
-    config.time_zone = 'Central America'
-    config.active_record.default_timezone = :local
+    config.time_zone = 'Central Time (US & Canada)'
+    # config.active_record.default_timezone = :local
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

@@ -6,19 +6,22 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#events = [
-#    {title: 'Celebrate',  date: '2019-05-15', details: 'take it easy for a lil'},
-#    {title: 'Telefone comes out', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'Mardi', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'Christmas', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'Thanks', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'Bad and Boujee comes out', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'Drake signs', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'Kendrick removes KDOT moniker', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'The germans invade Poland', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'Erwin Rommel becomes head of the Africa campaign', date: '2016-07-31', details: 'Noname\'s debut album'},
-#    {title: 'Kravchenko dies', date: '2016-07-31', details: 'Noname\'s debut album'},
-#]
+
+events = [
+    {title: 'Celebrate',  date: '2019-05-15', details: 'take it easy for a lil', points: 10},
+    {title: 'Internship', date: '2019-05-20',},
+    {title: 'Telefone comes out', date: '2016-07-31'},
+    {title: 'Mardi', date: '2016-07-31'},
+    {title: 'Christmas', date: '2018-12-31', details: 'In the chimney'},
+    {title: 'Thanks', date: '2016-07-31'},
+    {title: 'Bad and Boujee comes out', date: '2016-07-31'},
+    {title: 'Drake signs', date: '2001-07-31'},
+    {title: 'Kendrick removes KDOT moniker', date: '2005-07-31'},
+    {title: 'The germans invade Poland', date: '1939-07-31'},
+    {title: 'Erwin Rommel becomes head of the Africa campaign', date: '1944-07-31'},
+    {title: 'Kravchenko dies', date: '1972-07-31'},
+]
+
 
 #events.each do |event|
  # Event.create!(event)

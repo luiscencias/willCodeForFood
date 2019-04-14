@@ -1,10 +1,10 @@
 ActiveAdmin.register Event do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  permit_params :title, :date, :start_time, :end_time, :details, :location
+  permit_params :title, :date, :start_time, :end_time, :details, :location, :points, member_ids: []
 
 
-  filter :members, as: :select, collection: proc  {
+  filter :members, as: :select, collection: proc {
     Member.all.map { |mem|
       [mem.first_name.to_s + ' ' + mem.last_name.to_s, mem.id]
     }
@@ -63,6 +63,25 @@ ActiveAdmin.register Event do
       end
     end
 
+  end
+
+  form html: { multipart: true } do |f|
+    f.inputs do
+      f.input :title, label: "Title"
+
+      f.input :date
+      f.input :start_time
+      f.input :end_time
+
+      f.input :details
+      f.input :location
+
+      f.input :points
+
+      f.input :member_ids, label: 'Register Members', as: :check_boxes,
+              collection: Member.all.map {|m| [m.first_name.to_s + ' ' + m.last_name.to_s, m.id]}
+    end
+    f.actions
   end
 
 

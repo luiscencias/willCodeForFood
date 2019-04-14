@@ -7,11 +7,11 @@ class EventsController < ApplicationController
 
     proxy = Event.all
 
-    if params[:page] != nil && params[:page_no] != nil  # select page and number per page
+    if params[:page] != nil && params[:limit] != nil  # select page and number per page
       page = params[:page]
-      page_no = params[:page_no]
+      limit = params[:limit]
 
-      proxy = proxy.page(page).per(page_no)
+      proxy = proxy.page(page).per(limit)
     end
 
     if params[:show] != nil # select whether events shown are earlier or later
@@ -35,8 +35,8 @@ class EventsController < ApplicationController
       end
 
     end
-
-    render json: proxy # returns all events; default action for component to retrieve data; consider ordering by date
+    @events = proxy
+    render json: @events # returns all events; default action for component to retrieve data; consider ordering by date
   end
 
   # GET /events/1

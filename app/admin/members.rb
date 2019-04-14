@@ -1,8 +1,7 @@
 ActiveAdmin.register Member do
 
-  permit_params :email, :password_digest, :first_name, :last_name, :phone_number, :graduation_year, :major, :member_status, :points
 
-  show title: :first_name
+  permit_params :email, :password_digest, :first_name, :last_name, :phone_number, :graduation_year, :major, :member_status, :points
 
   index :download_links => false do
     selectable_column
@@ -82,5 +81,53 @@ ActiveAdmin.register Member do
     member.update(member_status: "Pending")
     redirect_to admin_member_path(member)
   end
+
+  #action_item :approve_member, only: :show do
+   # link_to "Approve",
+  #end
+
+
+
+  # Below determines what the view link displays
+    show title: :first_name do
+
+      attributes_table do
+        row :first_name
+        row :last_name
+
+        row :email
+        row :phone_number
+
+        row :graduation_year
+        row :major
+
+        row :points
+
+        row :created_at
+        row :updated_at
+      end
+
+      active_admin_comments
+
+      # possible values for member status
+      # accepted, rejected, pending
+      panel "Registered Events" do
+        table_for member.events do
+          column :title
+
+          column :date
+          column :start_time
+          column :end_time
+
+          column :details
+          column :location
+
+          column :points
+        end
+      end
+
+
+    end
+
 
 end

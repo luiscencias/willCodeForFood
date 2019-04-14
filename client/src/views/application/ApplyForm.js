@@ -47,7 +47,7 @@ const validationSchema = Yup.object({
 		.required("Password is required"),
 	confirmPassword: Yup
 		.string("Confirm your password")
-		.required("You must confirm your password")
+		.oneOf([Yup.ref('password'), null], 'Passwords must match')
 });
 
 const initialValues = {
@@ -65,7 +65,7 @@ const initialValues = {
 class InnerForm extends React.Component {
 	handleSubmit = (values, formikBag) => {
 		const { history } = this.props;
-		alert(JSON.stringify(values));
+		//alert(JSON.stringify(values));
 
 		const post = {
 			first_name: values.firstName,
@@ -86,6 +86,7 @@ class InnerForm extends React.Component {
 			history.push("/");
 		})
 			.catch(function (error) {
+				alert("Entry already exists!");
 				console.log(error);
 			});
 	}

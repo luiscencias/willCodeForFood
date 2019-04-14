@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.time "end_time"
     t.text "details"
     t.text "location"
+    t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -61,10 +62,10 @@ ActiveRecord::Schema.define(version: 2019_04_04_133923) do
     t.string "last_name"
     t.string "email"
     t.string "password_digest"
-    t.integer "phone_number"
+    t.integer "phone_number", limit: 8
     t.integer "graduation_year"
     t.string "major"
-    t.boolean "is_member", default: false
+    t.string "member_status", default: "Pending"
     t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -6,10 +6,10 @@ class CreateMembers < ActiveRecord::Migration[5.2]
       t.string :last_name
       t.string :email
       t.string :password_digest
-      t.integer :phone_number
+      t.integer :phone_number, :limit => 8
       t.integer :graduation_year
       t.string :major
-      t.boolean :is_member
+      t.string :member_status
       t.integer :points
 
       t.timestamps
@@ -17,7 +17,7 @@ class CreateMembers < ActiveRecord::Migration[5.2]
 
     add_index :members, :email, unique: true
 
-    change_column :members, :is_member, :boolean, :default => false
+    change_column :members, :member_status, :string, :default => "Pending"
     change_column :members, :points, :integer, :default => 0
   end
 

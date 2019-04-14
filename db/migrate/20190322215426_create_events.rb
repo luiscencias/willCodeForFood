@@ -7,6 +7,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.time :end_time
       t.text :details
       t.text :location
+      t.integer :points, default: 0
 
       t.timestamps
     end

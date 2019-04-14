@@ -1,6 +1,17 @@
 class MembersController < ApiController
   before_action :set_member, only: [:show, :update, :destroy]
 
+  def login
+    member = Member.find_by(email: params[:email])
+
+    if member && member.authenticate(params[:password])
+      puts "Logged in"
+      puts Member_logged_in?
+    else
+      puts "Username or Password Incorrect"
+    end
+  end
+
   # GET /members
   def index
     @members = Member.all
@@ -15,7 +26,6 @@ class MembersController < ApiController
 
   # POST /members
   def create
-
     @member = Member.new(member_params)
 
     if @member.save
@@ -47,7 +57,7 @@ class MembersController < ApiController
 
     # Only allow a trusted parameter "white list" through.
     def member_params
-      params.permit(:email, :password, :first_name, :last_name, :phone_number, :graduation_year, :major, :is_member, :points)
+      params.permit(:email, :password, :first_name, :last_name, :phone_number, :graduation_year, :major, :member_status, :points)
       #params.require(:member).permit(:email, :password, :password_confirmation, :first_name, :last_name)
     end
 end
